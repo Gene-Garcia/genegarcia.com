@@ -21,8 +21,9 @@ const theme = createTheme({
     },
   },
   typography: {
+    fontFamily: "Open Sans, sans-serif",
     h1: {
-      fontFamily: "sans-serif",
+      fontFamily: "Source Sans Pro, sans-serif",
       fontWeight: 600,
       fontSize: "38px",
     },

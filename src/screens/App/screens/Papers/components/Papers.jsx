@@ -1,7 +1,10 @@
 import React from "react";
 
+// MUI
+import { Typography } from "@material-ui/core";
+
 function Papers() {
-  return <h1>Paper</h1>;
+  return <Typography variant="h1">Paper</Typography>;
 }
 
 export default Papers;

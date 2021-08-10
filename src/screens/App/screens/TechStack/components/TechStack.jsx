@@ -1,7 +1,10 @@
 import React from "react";
 
+// MUI
+import { Typography } from "@material-ui/core";
+
 function TechStack() {
-  return <h1>Technology Stack</h1>;
+  return <Typography variant="h1">Technology Stack</Typography>;
 }
 
 export default TechStack;
