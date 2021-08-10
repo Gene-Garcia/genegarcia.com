@@ -1,5 +1,8 @@
 import React from "react";
 
+// Styles
+import "./AppBar.css";
+
 // Router
 import { Link } from "react-router-dom";
 
@@ -11,9 +14,11 @@ function GenerateLinks() {
 
   for (const [k, v] of Object.entries(routeConstants)) {
     links.push(
-      <Link to={v.PATH} key={k}>
-        {v.NAME}
-      </Link>
+      <div className="app-bar-link">
+        <Link to={v.PATH} key={k} className="app-bar-item">
+          {v.NAME}
+        </Link>
+      </div>
     );
   }
 
@@ -21,7 +26,7 @@ function GenerateLinks() {
 }
 
 function AppBar() {
-  return <div>{GenerateLinks()}</div>;
+  return <div className="app-bar">{GenerateLinks()}</div>;
 }
 
 export default AppBar;

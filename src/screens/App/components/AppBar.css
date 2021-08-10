@@ -1,0 +1,35 @@
+.app-bar {
+  min-height: 60px;
+  background-color: #f4f4f4;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.app-bar-link {
+}
+
+.app-bar-item {
+  min-height: 60px;
+  background-color: #f6f6f6;
+
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  color: #808080;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+
+  transition: 0.2s;
+}
+
+.app-bar-item:hover {
+  background-color: #2196f3;
+  color: white;
+}
