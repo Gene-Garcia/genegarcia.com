@@ -30,6 +30,10 @@
 }
 
 .app-bar-item:hover {
+  color: #2196f3;
+}
+
+.app-bar-item.active {
   background-color: #2196f3;
   color: white;
 }

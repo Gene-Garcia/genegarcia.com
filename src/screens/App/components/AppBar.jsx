@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+
+// Context
+import AppBarContext from "../../../context/AppBarContext";
 
 // Router
 import { Link } from "react-router-dom";
@@ -9,16 +12,16 @@ import routeConstants from "../../../shared/routes";
 // Styles
 import "./AppBar.css";
 
-// MUI
-import { Button } from "@material-ui/core";
-
-function GenerateLinks() {
+function GenerateLinks(linksState) {
   let links = [];
 
+  let classActive = "";
   for (const [k, v] of Object.entries(routeConstants)) {
+    classActive = linksState[k] ? "app-bar-item active" : "app-bar-item";
+
     links.push(
-      <div className="app-bar-link">
-        <Link to={v.PATH} key={k} className="app-bar-item">
+      <div className="app-bar-link" key={k}>
+        <Link to={v.PATH} className={classActive}>
           {v.NAME}
         </Link>
       </div>
@@ -29,7 +32,9 @@ function GenerateLinks() {
 }
 
 function AppBar() {
-  return <div className="app-bar">{GenerateLinks()}</div>;
+  const { linksState } = useContext(AppBarContext);
+
+  return <div className="app-bar">{GenerateLinks(linksState)}</div>;
 }
 
 export default AppBar;

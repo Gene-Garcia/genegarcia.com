@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // Components
 import AppBar from "./AppBar";
 
+// Context
+import { AppBarProvider } from "../../../context/AppBarContext";
+
 // MUI
 import { createTheme, ThemeProvider, makeStyles } from "@material-ui/core";
 import { Container } from "@material-ui/core";
@@ -42,11 +45,13 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <AppBar />
+        <AppBarProvider>
+          <AppBar />
 
-        <Container className={classess.root}>
-          <Switch>{RouteHandler()}</Switch>
-        </Container>
+          <Container className={classess.root}>
+            <Switch>{RouteHandler()}</Switch>
+          </Container>
+        </AppBarProvider>
       </Router>
     </ThemeProvider>
   );
@@ -58,7 +63,7 @@ function RouteHandler() {
   for (const [k, v] of Object.entries(Routes)) {
     handlers.push(<Route {...v} key={k} />);
   }
-  console.log(handlers);
+
   return handlers;
 }
 
