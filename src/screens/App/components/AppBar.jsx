@@ -1,13 +1,16 @@
 import React from "react";
 
-// Styles
-import "./AppBar.css";
-
 // Router
 import { Link } from "react-router-dom";
 
 // Constants
 import routeConstants from "../../../shared/routes";
+
+// Styles
+import "./AppBar.css";
+
+// MUI
+import { Button } from "@material-ui/core";
 
 function GenerateLinks() {
   let links = [];
