@@ -9,7 +9,7 @@ export default {
   },
   TECH_STACK: {
     NAME: "Tech Stack",
-    PATH: "/tectstack",
+    PATH: "/techstack",
   },
   PAPERS: {
     NAME: "Papers",
