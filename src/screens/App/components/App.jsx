@@ -5,11 +5,12 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 // index route
 import routes from "../route";
+import Nav from "./Nav";
 
 function Router() {
   return (
     <>
-      <i>Nav Here</i>
+      <Nav />
 
       <Switch>
         {/* iteratively & dynamically create routes */}
