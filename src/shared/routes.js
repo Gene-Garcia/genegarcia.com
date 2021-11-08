@@ -1,7 +1,7 @@
 export default {
   HOME: {
     NAME: "Home",
-    PATH: "/home",
+    PATH: "/",
   },
   PORTFOLIO: {
     NAME: "Portfolio",
