@@ -15,12 +15,14 @@ function Router() {
     <>
       <Nav />
 
-      <Switch>
-        {/* iteratively & dynamically create routes */}
-        {Object.entries(routes).map(([k, v]) => (
-          <Route key={k} {...v} />
-        ))}
-      </Switch>
+      <div className="h-ninety">
+        <Switch>
+          {/* iteratively & dynamically create routes */}
+          {Object.entries(routes).map(([k, v]) => (
+            <Route key={k} {...v} />
+          ))}
+        </Switch>
+      </div>
     </>
   );
 }

@@ -16,6 +16,9 @@ module.exports = {
         "my-orange": "#EE6F57",
         "my-purple": "#A82FFC",
       },
+
+      width: { ninety: "90%", ten: "10%" },
+      height: { ninety: "90%", ten: "10%" },
     },
   },
   variants: {

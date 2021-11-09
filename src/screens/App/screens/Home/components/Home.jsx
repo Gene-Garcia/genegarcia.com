@@ -7,13 +7,15 @@ function Home() {
 
   //
   useEffect(() => {
-    activateThisLink("HOME")
+    activateThisLink("HOME");
   }, []);
 
   return (
-    <>
-      <h1>Home</h1>
-    </>
+    <div className="flex flex-row items-center justify-center h-full">
+      <div className="w-2/5 bg-accent">a</div>
+
+      <div className="w-2/5 bg-my-green">a</div>
+    </div>
   );
 }
 
