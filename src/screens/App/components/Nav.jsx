@@ -9,8 +9,12 @@ import imageLogo from "../../../shared/images/logov2.png";
 
 // Text Logo
 import textLogo from "../../../shared/images/logonamev1.png";
+import useNavbar from "../../../context/useNavbar";
 
 function Nav() {
+  // navbar context
+  const { linksState } = useNavbar();
+
   return (
     <div className="flex flex-row justify-between items-center px-6 py-2.5">
       {/* logo */}
@@ -23,8 +27,11 @@ function Nav() {
       <div className="flex-grow-0 flex-shrink space-x-9">
         {Object.entries(routes).map(([k, v]) => (
           <Link
+            key={k}
             to={v.PATH}
-            className="font-sans font-semibold text-gray-500 text-sm transition duration-200 hover:text-blue-300"
+            className={`${
+              linksState[k] ? "text-accent" : "text-black"
+            } font-sans font-semibold text-sm transition duration-200 hover:text-accent border-b border-transparent hover:border-accent`}
           >
             {v.NAME.toUpperCase()}
           </Link>

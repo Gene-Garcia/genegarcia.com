@@ -2,6 +2,9 @@ import React from "react";
 
 // react router
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { NavbarProvider } from "../../../context/NavbarContext";
+
+// navbar context to handle active state
 
 // index route
 import routes from "../route";
@@ -26,7 +29,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Router />
+        <NavbarProvider>
+          <Router />
+        </NavbarProvider>
       </BrowserRouter>
     </>
   );
