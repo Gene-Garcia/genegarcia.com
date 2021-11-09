@@ -16,7 +16,7 @@ function Nav() {
   const { linksState } = useNavbar();
 
   return (
-    <div className="flex flex-row justify-between items-center px-6 py-2.5 h-ten">
+    <div className="flex flex-row justify-between items-center px-6 h-ten">
       {/* logo */}
       <div className="flex flex-row items-center">
         <img src={imageLogo} className="w-1/6 h-1/6" />
