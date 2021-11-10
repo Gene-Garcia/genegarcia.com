@@ -9,24 +9,26 @@ export default {
     name: "Lokal Music",
     logo: lokalLogo,
 
-    date: "November 2020 - February 2021",
     description:
       "An eCommerce website and a platform for digital music created by Filipino artists.",
+    longDescription:
+      "Lokal is a Laguna-based start-up partnership company. The company provides a web-based localized digital marketplace for Filipino music artists; the digital marketplace website is a Transaction Processing System. It is the vision of Lokal to be the front-running marketplace for Filipino music artists, and the mission of the company to provide the best experience for the users, both artists and fans. Artists are able to upload and market their music through the company's web marketplace platform. Fans, on the other hand, can purchase the artists' music.",
+
+    date: "November 2020 - February 2021",
     technologies: [
-      "ASP .NET",
-      "MVC",
-      "SQL Server",
-      "Entity Framework",
-      "C#",
-      "HTML",
-      "CSS",
-      "Bootstrap",
+      "ASP_DOT_NET",
+      "WINDOWS_FORM",
+      "SQL_SERVER",
+      "SQL",
+      "JAVASCRIPT",
+      "JQUERY",
+      "C_SHARP",
+      "HTML_5",
+      "CSS_3",
+      "BOOTSTRAP",
     ],
     github: false,
-
     live: false,
-    link: "",
-
     gallery: ["LOC1", "LOC2"],
   },
 
@@ -34,25 +36,25 @@ export default {
     name: "MCL Scholar Website",
     logo: mclLogo,
 
-    date: "February - March 2019",
     description:
       "A web application for MCL students and scholarship admins to improve certain scholarship areas.",
+    longDescription:
+      "The project aims to disseminate information about scholarships and to speed up the process of scholarship validation in MCL. This would benefit the SAO and students who have scholarships. We aim to achieve this by creating a central hub for scholarships where students could view information and access information for scholarships. Additionally students could also process their scholarship validations. The SAO could also post more information and announcements about scholarships and could also manage scholarship validation requests.",
+
+    date: "February - March 2019",
     technologies: [
-      "ASP .NET",
+      "ASP_DOT_NET",
       "MVC",
-      "SQL Server",
-      "Entity Framework",
-      "Identity Framework",
-      "C#",
-      "HTML",
-      "CSS",
-      "Bootstrap",
+      "SQL_SERVER",
+      "IDENTITY_FRAMEWORK",
+      "ENTITY_FRAMEWORK",
+      "C_SHARP",
+      "HTML_5",
+      "CSS_3",
+      "BOOTSTRAP",
     ],
     github: false,
-
     live: false,
-    link: "",
-
     gallery: ["LOC1", "LOC2"],
   },
 
@@ -60,25 +62,26 @@ export default {
     name: "Flores De Mayo Information System",
     logo: floresDeMayoIs,
 
-    date: "February 2018",
     description:
       "An information system website designed to support the management of the Alayan Organization records.",
+    longDescription:
+      "The website aims to provide information to the viewers about flores de mayo in Barangay Sinisian, Calaca, Batangas. Moreover, the website also makes the users able to reserve a slot for alayan. On the other hand, since during the time of Flores de Mayo sagala or santa Cruzan is always done, the website can accept application to participate in the Sagala.",
+
+    date: "February 2018",
+
     technologies: [
-      "ASP .NET",
+      "ASP_DOT_NET",
       "MVC",
-      "SQL Server",
-      "Entity Framework",
-      "Identity Framework",
-      "C#",
-      "HTML",
-      "CSS",
-      "Bootstrap",
+      "SQL_SERVER",
+      "IDENTITY_FRAMEWORK",
+      "ENTITY_FRAMEWORK",
+      "C_SHARP",
+      "HTML_5",
+      "CSS_3",
+      "BOOTSTRAP",
     ],
     github: "https://github.com/Gene-Garcia/Flores-De-Mayo-IS",
-
     live: false,
-    link: "",
-
     gallery: ["LOC1", "LOC2"],
   },
 
@@ -86,21 +89,21 @@ export default {
     name: "TutoQuizzer",
     logo: tutoQuizzer,
 
-    date: "March 2018",
     description:
       "An android application that aims to assist students in reviewing and retaining learning concepts.",
+    longDescription:
+      "TutoQuizzer is an android-based application. The app assists students review and prepare for assessments or examinations. Moreover, TutoQuizzer generates a multiple-choice question to test the knowledge of its user. The information used are customized by the user; The app accepts topics and its meaning that are categorized by school year and course.",
+
+    date: "March 2018",
     technologies: [
-      "Android",
-      "Room Database",
-      "SQLite",
-      "Java",
-      "Local Storage",
+      "ANDROID",
+      "ROOM_DATABASE",
+      "SQL_LITE",
+      "JAVA",
+      "LOCAL_STORAGE",
     ],
     github: "https://github.com/Gene-Garcia/TutoQuizzer",
-
     live: false,
-    link: "",
-
     gallery: ["LOC1", "LOC2"],
   },
 
@@ -108,25 +111,26 @@ export default {
     name: "Sinisian Barangay Management Information System",
     logo: sinisianBMIS,
 
-    date: "May 2017",
     description:
       "A web-based information system for Barangay Sinisian that digitilizes the record management of residents.",
+    longDescription:
+      "The barangay management information system is a web-based system. It intends to manage the information of the residents residing in Barangay Sinisian, Calaca, Batangas. On the other hand, the system can visualize the data of the residents into graphs and charts. The system allows the admins to create an incident report, such as blotter and summon; moreover, it enables the users to generate digital forms, such as barangay clearance.",
+
+    date: "May 2017",
     technologies: [
-      "ASP .NET",
+      "ASP_DOT_NET",
       "MVC",
-      "SQL Server",
-      "Entity Framework",
-      "Identity Framework",
-      "C#",
-      "HTML",
-      "CSS",
-      "Bootstrap",
+      "SQL_SERVER",
+      "IDENTITY_FRAMEWORK",
+      "ENTITY_FRAMEWORK",
+      "C_SHARP",
+      "HTML_5",
+      "CSS_3",
+      "BOOTSTRAP",
     ],
-    github: "",
-
+    github:
+      "https://github.com/Gene-Garcia/Barangay-Management-Information-System",
     live: false,
-    link: "",
-
     gallery: ["LOC1", "LOC2"],
   },
 };
