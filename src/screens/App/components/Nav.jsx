@@ -19,7 +19,7 @@ function Nav() {
     <div className="flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
       {/* logo */}
       <div className="flex flex-row flex-shrink items-center">
-        <img src={imageLogo} className="w-10 h-10" />
+        <img src={imageLogo} className="w-10 h-11" />
         {/* <img src={textLogo} className="h-8 w-auto" /> */}
       </div>
 
