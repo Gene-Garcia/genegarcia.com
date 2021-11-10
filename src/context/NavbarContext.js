@@ -13,7 +13,7 @@ const init = {
 };
 
 function NavbarProvider({ children }) {
-  const [linksState, setLinkState] = useState(init);
+  const [linksState, setLinkState] = useState({ ...init });
 
   // wrapper
   const activateThisLink = (name) => {
