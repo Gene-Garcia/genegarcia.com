@@ -1,17 +1,13 @@
-import React from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect } from "react";
 import useNavbar from "../../../../../context/useNavbar";
 
 function TechStack() {
   // navbar context
-  const { setLinkState } = useNavbar();
+  const { activateThisLink } = useNavbar();
 
   //
-  useEffect(() => {
-    setLinkState((prev) => {
-      Object.keys(prev).forEach((k) => (prev[k] = false));
-      return { ...prev, TECH_STACK: true };
-    });
+  useEffectect(() => {
+    activateThisLink("TECH_STACK");
   }, []);
 
   return (

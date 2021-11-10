@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect } from "react/cjs/react.development";
+import React, { useEffect } from "react";
 import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
@@ -10,14 +9,11 @@ import data from "../utils/data";
 
 function Portfolio() {
   // navbar context
-  const { setLinkState } = useNavbar();
+  const { activateThisLink } = useNavbar();
 
   //
   useEffect(() => {
-    setLinkState((prev) => {
-      Object.keys(prev).forEach((k) => (prev[k] = false));
-      return { ...prev, PORTFOLIO: true };
-    });
+    activateThisLink("PORTFOLIO");
   }, []);
 
   return (
