@@ -11,14 +11,14 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-row items-center justify-center h-full">
-      <div className="w-2/5 flex justify-center items-center">
+    <div className="flex flex-col lg:flex-row items-center justify-center py-8 lg:py-0 gap-y-8 sm:gap-y-10 lg:gap-y-0 lg:h-full">
+      <div className="lg:w-1/2 xl:w-2/5 flex justify-center items-center">
         <div className="relative">
-          <div className="h-96 w-96 rounded-full border-8 border-accent flex items-center justify-center">
+          <div className="w-72 h-72 sm:w-80 sm:h-80 lg:h-86 lg:w-86 xl:w-96 xl:h-96 rounded-full border-4 border-accent flex items-center justify-center">
             {/* image */}
           </div>
 
-          <button className="absolute right-12 bottom-7 h-12 w-12 rounded-full bg-accent shadow-xl text-white">
+          <button className="absolute right-4 sm:right-6 lg:right-9 bottom-7 h-12 w-12 rounded-full bg-accent shadow-xl text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 h-full m-auto"
@@ -37,8 +37,8 @@ function Home() {
         </div>
       </div>
 
-      <div className="w-2/5 flex flex-col">
-        <h1 className="font-serif text-5xl font-bold text-black">
+      <div className="lg:w-1/2 xl:w-2/5 flex flex-col px-8 sm:px-20 md:px-32 lg:px-0">
+        <h1 className="font-serif text-4xl sm:text-5xl font-bold text-black">
           Hey, I'm Gene
         </h1>
         <p className="font-sans font-light text-xl text-gray-400 mt-2">
@@ -47,7 +47,7 @@ function Home() {
 
         <div className="border-b-4 rounded border-accent my-8 w-24"></div>
 
-        <p className="font-sans text-gray-600 text-2xl w-9/12">
+        <p className="font-sans text-gray-600 text-xl sm:text-2xl w-11/12 lg:w-9/12">
           a <span className="font-semibold text-black">student</span>, and an
           aspiring{" "}
           <span className="font-semibold text-black">full stack developer</span>
@@ -55,8 +55,8 @@ function Home() {
           <span className="font-semibold text-black">data analyst</span>
         </p>
 
-        <div className="my-10 flex flex-row align-center gap-10">
-          <button className="font-bold bg-accent text-md text-white px-7 py-2.5 rounded-md shadow-xl inline-flex items-center">
+        <div className="my-10 flex flex-row align-center gap-5">
+          <button className="font-bold bg-accent text-md text-white px-5 lg:px-7 py-2 lg:py-2.5 rounded-md shadow-xl inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 transform rotate-90 mr-1.5"
@@ -68,7 +68,7 @@ function Home() {
             EMAIL ME
           </button>
 
-          <button className="font-bold text-md text-black px-3 py-2.5 inline-flex items-center">
+          <button className="font-bold text-md text-black px-5 py-2 lg:py-2.5 inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 mr-1.5"

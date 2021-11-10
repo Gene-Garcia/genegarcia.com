@@ -19,6 +19,12 @@ module.exports = {
 
       width: { ninety: "90%", ten: "10%" },
       height: { ninety: "90%", ten: "10%" },
+
+      spacing: {
+        // 83: "21rem",
+        86: "22rem",
+        // 90: "23rem",
+      },
     },
   },
   variants: {
@@ -26,3 +32,11 @@ module.exports = {
   },
   plugins: [],
 };
+
+/*
+ * 'sm': '640px'
+ * 'md': '768px'
+ * 'lg': '1024px'
+ * 'xl': '1280px'
+ * '2xl': '1536px'
+ */
