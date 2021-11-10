@@ -4,11 +4,14 @@ import useNavbar from "../../../../../context/useNavbar";
 
 function TechStack() {
   // navbar context
-  const { activateThisLink } = useNavbar();
+  const { setLinkState } = useNavbar();
 
   //
   useEffect(() => {
-    activateThisLink("TECH_STACK");
+    setLinkState((prev) => {
+      Object.keys(prev).forEach((k) => (prev[k] = false));
+      return { ...prev, TECH_STACK: true };
+    });
   }, []);
 
   return (

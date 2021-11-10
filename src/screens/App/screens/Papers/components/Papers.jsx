@@ -3,11 +3,14 @@ import useNavbar from "../../../../../context/useNavbar";
 
 function Papers() {
   // navbar context
-  const { activateThisLink } = useNavbar();
+  const { setLinkState } = useNavbar();
 
   //
   useEffect(() => {
-    activateThisLink("PAPERS");
+    setLinkState((prev) => {
+      Object.keys(prev).forEach((k) => (prev[k] = false));
+      return { ...prev, PAPERS: true };
+    });
   }, []);
 
   return (
