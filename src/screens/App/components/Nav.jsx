@@ -16,15 +16,15 @@ function Nav() {
   const { linksState } = useNavbar();
 
   return (
-    <div className="flex flex-row justify-between items-center px-6 h-ten">
+    <div className="flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
       {/* logo */}
-      <div className="flex flex-row items-center">
-        <img src={imageLogo} className="w-1/6 h-1/6" />
+      <div className="flex flex-row flex-shrink items-center">
+        <img src={imageLogo} className="w-10 h-10" />
         {/* <img src={textLogo} className="h-8 w-auto" /> */}
       </div>
 
       {/* links */}
-      <div className="flex-grow-0 flex-shrink space-x-9">
+      <div className="flex-shrink-0 space-x-5 md:space-x-9">
         {Object.entries(routes).map(([k, v]) => (
           <Link
             key={k}
