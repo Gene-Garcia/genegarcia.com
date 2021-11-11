@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   buildTechnologyGallery,
   buildProjectGallery,
@@ -33,12 +34,12 @@ function ProjectCard({
       {/* card */}
       <div className="shadow-lg rounded p-5 flex flex-col lg:flex-row gap-4 lg:gap-8">
         {/* logo */}
-        <div className="w-2/5 lg:w-thirty m-auto">
-          <img src={logo} className="w-full object-contain m-auto" />
+        <div className="w-auto m-auto">
+          <img src={logo} className="w-1/2 lg:w-auto object-contain m-auto" />
         </div>
 
         {/* contents */}
-        <div className="lg:w-seventy space-y-5">
+        <div className="lg:w-3/4 space-y-5">
           <div>
             <h3 className="text-2xl font-semibold text-black">{name}</h3>
             <p className="font-light italic text-gray-500">{date}</p>
@@ -49,53 +50,53 @@ function ProjectCard({
           </p>
 
           <div className="flex flex-wrap flex-row gap-4">
-            <a
-              href={live.toString()}
-              target="_blank"
-              className={`${
-                live === false && "cursor-not-allowed opacity-75"
-              } bg-accent text-white font-semibold px-5 py-1.5 rounded shadow inline-flex items-center`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 h-full mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <Link to={live.toString()} target="_blank">
+              <button
+                className={`${
+                  live === false && "cursor-not-allowed opacity-75"
+                } bg-accent text-white font-semibold px-5 py-1.5 rounded shadow inline-flex items-center`}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                />
-              </svg>{" "}
-              LIVE
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 h-full mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                  />
+                </svg>{" "}
+                LIVE
+              </button>
+            </Link>
 
-            <a
-              href={github.toString()}
-              target="_blank"
-              className={`${
-                github === false && "cursor-not-allowed opacity-50"
-              } border border-black rounded text-black font-semibold px-5 py-1.5 rounded inline-flex items-center`}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 h-full my-auto mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            <Link href={github.toString()} target="_blank">
+              <button
+                className={`${
+                  github === false && "cursor-not-allowed opacity-50"
+                } border border-black rounded text-black font-semibold px-5 py-1.5 rounded inline-flex items-center`}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
-                />
-              </svg>{" "}
-              GITHUB REPO
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 h-full my-auto mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+                  />
+                </svg>{" "}
+                GITHUB REPO
+              </button>
+            </Link>
 
             <button
               onClick={() => setToggled((prev) => !prev)}
