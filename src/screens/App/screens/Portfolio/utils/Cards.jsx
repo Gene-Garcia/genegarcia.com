@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
-import buildGallery from "../../../../../shared/utils/buildGalleryPhotos";
+import {
+  buildTechnologyGallery,
+  buildProjectGallery,
+} from "../../../../../shared/utils/buildProjectPhotos";
 
 function ProjectCard({
+  id,
   data: {
     name,
     logo,
@@ -14,10 +18,15 @@ function ProjectCard({
   },
 }) {
   // initialize gallery photos
-  const [photos, setPhotos] = useState([]);
+  const [techPhotos, setTechPhotos] = useState([]);
+  const [galleryPhotos, setGalleryPhotos] = useState([]);
   useEffect(() => {
-    setPhotos(buildGallery(technologies));
+    setTechPhotos(buildTechnologyGallery(technologies));
+    setGalleryPhotos(buildProjectGallery(id));
   }, []);
+
+  // hook state to hold the toggle of the gallery
+  const [toggled, setToggled] = useState(false);
 
   return (
     <>
@@ -88,7 +97,10 @@ function ProjectCard({
               GITHUB REPO
             </a>
 
-            <button className="text-black font-semibold px-3 py-1.5">
+            <button
+              onClick={() => setToggled((prev) => !prev)}
+              className="text-black font-semibold px-3 py-1.5"
+            >
               GALLERY
             </button>
           </div>
@@ -97,7 +109,7 @@ function ProjectCard({
 
           {/* languages & technologies */}
           <div className="flex flex-row gap-8 justify-center items-center">
-            {photos.map((e, i) => (
+            {techPhotos.map((e, i) => (
               <img
                 key={i}
                 src={e}
@@ -109,11 +121,35 @@ function ProjectCard({
       </div>
 
       {/* gallery */}
-      <></>
+      <div
+        className={`${toggled ? "block" : "hidden"}  py-5 shadow-lg rounded`}
+      >
+        <Gallery
+          images={galleryPhotos}
+          orientation={`${id === "TUTOQUIZZER" ? "VERTI" : "HORI"}`}
+        />
+      </div>
     </>
   );
 }
 
-function Gallery() {}
+/*
+ * The orientation is implemented because a project (TutoQuizzer) is a smartphone application,
+ * hence, its screenshot is vertical. Setting it as the same width width with the vertical
+ * images will make it much larger
+ */
+function Gallery({ images, orientation }) {
+  return (
+    <div className="transition duration-200 flex flex-row gap-4 overflow-x-scroll pb-4">
+      {images.map((image, i) => (
+        <img
+          src={image}
+          key={i}
+          className={`${orientation === "HORI" ? "w-1/3" : "w-2/12"} shadow`}
+        />
+      ))}
+    </div>
+  );
+}
 
 export { ProjectCard, Gallery };

@@ -117,4 +117,4 @@ function buildProjectGallery(projectKey) {
   return [];
 }
 
-export { buildTechnologyGallery };
+export { buildTechnologyGallery, buildProjectGallery };
