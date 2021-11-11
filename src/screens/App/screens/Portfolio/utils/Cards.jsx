@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useEffect } from "react/cjs/react.development";
-import lokalLogo from "../../../../../shared/images/project_logos/lokal.png";
+import React, { useEffect, useState } from "react";
 import buildGallery from "../../../../../shared/utils/buildGalleryPhotos";
 
 function ProjectCard({
