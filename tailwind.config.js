@@ -17,8 +17,8 @@ module.exports = {
         "my-purple": "#A82FFC",
       },
 
-      width: { ninety: "90%", ten: "10%" },
-      height: { ninety: "90%", ten: "10%" },
+      width: { ninety: "90%", ten: "10%", thirty: "30%", seventy: "70%" },
+      height: { ninety: "90%", ten: "10%", thirty: "30%", seventy: "70%" },
 
       spacing: {
         // 83: "21rem",

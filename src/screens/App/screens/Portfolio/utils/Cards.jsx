@@ -31,24 +31,24 @@ function ProjectCard({
   return (
     <>
       {/* card */}
-      <div className="shadow-lg rounded p-5 flex flex-row gap-8">
+      <div className="shadow-lg rounded p-5 flex flex-col lg:flex-row gap-4 lg:gap-8">
         {/* logo */}
-        <div className="w-ten m-auto">
+        <div className="w-2/5 lg:w-thirty m-auto">
           <img src={logo} className="w-full object-contain m-auto" />
         </div>
 
         {/* contents */}
-        <div className="w-ninety space-y-5">
+        <div className="lg:w-seventy space-y-5">
           <div>
             <h3 className="text-2xl font-semibold text-black">{name}</h3>
             <p className="font-light italic text-gray-500">{date}</p>
           </div>
 
-          <p className="text-body-color w-11/12 leading-relaxed">
+          <p className="text-body-color xl:w-11/12 leading-relaxed">
             {longDescription}
           </p>
 
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-wrap flex-row gap-4">
             <a
               href={live.toString()}
               target="_blank"
@@ -108,7 +108,7 @@ function ProjectCard({
           <div className="border-b border-gray-300 rounded w-1/2 mx-auto"></div>
 
           {/* languages & technologies */}
-          <div className="flex flex-row gap-8 justify-center items-center">
+          <div className="flex flex-wrap flex-row gap-8 justify-center items-center">
             {techPhotos.map((e, i) => (
               <img
                 key={i}
