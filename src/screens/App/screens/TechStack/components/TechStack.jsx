@@ -6,7 +6,7 @@ function TechStack() {
   const { activateThisLink } = useNavbar();
 
   //
-  useEffectect(() => {
+  useEffect(() => {
     activateThisLink("TECH_STACK");
   }, []);
 
