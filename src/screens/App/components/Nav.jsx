@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import useWindow from "../../../hooks/useWindow";
 
 // route constants
 import routes from "../../../shared/routes";
@@ -12,6 +13,13 @@ import textLogo from "../../../shared/images/logonamev1.png";
 import useNavbar from "../../../context/useNavbar";
 
 function Nav() {
+  const { width } = useWindow();
+
+  return <>{width >= 600 ? <Responsive /> : <Collapsible />}</>;
+}
+export default Nav;
+
+function Responsive() {
   // navbar context
   const { linksState } = useNavbar();
 
@@ -40,4 +48,7 @@ function Nav() {
     </div>
   );
 }
-export default Nav;
+
+function Collapsible() {
+  return <p>You are using a device with a width less than 768</p>;
+}
