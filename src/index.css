@@ -2,3 +2,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom css */
+@layer utilities {
+  .fade {
+    opacity: 0;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+  }
+  /* .fade {
+    -webkit-animation: fadein 4s linear;
+    animation: fadein 4s linear;
+    opacity: 0;
+  }
+
+  @-webkit-keyframes fadein {
+    50% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadein {
+    50% {
+      opacity: 1;
+    }
+  } */
+}
