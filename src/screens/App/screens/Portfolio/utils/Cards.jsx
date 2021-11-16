@@ -34,8 +34,8 @@ function ProjectCard({
       {/* card */}
       <div className="shadow-lg rounded p-5 flex flex-col lg:flex-row gap-4 lg:gap-8">
         {/* logo */}
-        <div className="w-auto m-auto">
-          <img src={logo} className="w-1/2 lg:w-auto object-contain m-auto" />
+        <div className="w-48 sm:w-1/2 md:w-2/5 lg:w-thirty m-auto">
+          <img src={logo} className="w-full object-contain m-auto" />
         </div>
 
         {/* contents */}
@@ -49,6 +49,7 @@ function ProjectCard({
             {longDescription}
           </p>
 
+          {/* buttons */}
           <div className="flex flex-wrap flex-row gap-4">
             <Link to={live.toString()} target="_blank">
               <button
