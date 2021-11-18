@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  buildTechnologyGallery,
-  buildProjectGallery,
-} from "../../../../../shared/utils/buildProjectPhotos";
+import { buildProjectGallery } from "../../../../../shared/utils/buildProjectPhotos";
+import { GetImage } from "../../../../../shared/utils/buildTechnologyPhotos";
 
 function ProjectCard({
   id,
@@ -19,10 +17,8 @@ function ProjectCard({
   },
 }) {
   // initialize gallery photos
-  const [techPhotos, setTechPhotos] = useState([]);
   const [galleryPhotos, setGalleryPhotos] = useState([]);
   useEffect(() => {
-    setTechPhotos(buildTechnologyGallery(technologies));
     setGalleryPhotos(buildProjectGallery(id));
   }, []);
 
@@ -111,10 +107,10 @@ function ProjectCard({
 
           {/* languages & technologies */}
           <div className="flex flex-wrap flex-row gap-8 justify-center items-center">
-            {techPhotos.map((e, i) => (
+            {technologies.map((e, i) => (
               <img
                 key={i}
-                src={e}
+                src={GetImage(e)}
                 className="w-11 filter grayscale transition duration-100 hover:filter-none"
               />
             ))}
