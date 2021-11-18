@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
+import { GetImage } from "../../../../../shared/utils/buildTechnologyPhotos";
+
+// techonology stack data
+import techStackData from "../utils/data";
 
 function TechStack() {
   // navbar context
@@ -10,16 +14,17 @@ function TechStack() {
   //
   useEffect(() => {
     activateThisLink("TECH_STACK");
+    setData(techStackData.WEB_APPLICATION);
   }, []);
 
   // state variable to hold the current toggled tech stack card button
-  const [data, setData] = useState({});
+  const [data, setData] = useState(null);
 
   return (
     <Container>
       <Heading head="Technology Stack" />
 
-      <div className="mt-10">
+      <div className="mt-10 flex flex-row gap-16">
         {/* buttons */}
         <div className="w-2/5 grid grid-cols-2 gap-5">
           <CardButton name="Web Application" color="blue" />
@@ -29,12 +34,43 @@ function TechStack() {
         </div>
 
         {/* content */}
-        <div className="w-3/5"></div>
+        <div className="w-3/5">
+          {/* check first if data is not null, as it is populate in useEffect. */}
+          {data != null && <TechnologyContainer data={data} />}
+        </div>
       </div>
     </Container>
   );
 }
 export default TechStack;
+
+function TechnologyContainer({ data: { title, groups } }) {
+  return (
+    <div>
+      <h3 className="mb-9 text-black text-2xl font-semibold">{title}</h3>
+
+      <div className="space-y-8">
+        {groups.map((e, i) => (
+          <GroupContainer group={e} key={i} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function GroupContainer({ group: { title, technology } }) {
+  return (
+    <div>
+      <h4 className="text-blue-400 text-lg">{title}</h4>
+
+      <div className="flex flex-row gap-5 rounded shadow-md py-2 px-3">
+        {technology.map((e, i) => (
+          <img src={GetImage(e)} className="w-16 object-contain" />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function CardButton({ name, color }) {
   const theme = {
