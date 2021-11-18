@@ -29,9 +29,9 @@ function TechStack() {
     <Container>
       <Heading head="Technology Stack" />
 
-      <div className="mt-10 flex flex-row gap-10">
+      <div className="mt-10 flex flex-col sm:flex-row gap-12 sm:gap-8 md:gap-16 xl:gap-8">
         {/* buttons */}
-        <div className="w-2/5 grid grid-cols-2 justify-start gap-7 h-min">
+        <div className="sm:w-2/5 grid grid-cols-1 xl:grid-cols-2 justify-start gap-4 sm:gap-6 xl:gap-8 h-min">
           <CardButton
             id="WEB_APPLICATION"
             name="Web Application"
@@ -59,7 +59,7 @@ function TechStack() {
         </div>
 
         {/* content */}
-        <div className="w-3/5">
+        <div className="sm:w-3/5">
           {/* check first if data is not null, as it is populate in useEffect. */}
           {data != null && <TechnologyContainer data={data} />}
         </div>
@@ -72,9 +72,11 @@ export default TechStack;
 function TechnologyContainer({ data: { title, groups } }) {
   return (
     <div>
-      <h3 className="mb-8 text-black text-2xl font-semibold">{title}</h3>
+      <h3 className="mb-4 sm:mb-6 xl:mb-8 text-black text-2xl font-semibold">
+        {title}
+      </h3>
 
-      <div className="space-y-8">
+      <div className="space-y-4 sm:space-y-6 xl:space-y-8">
         {groups.map((e, i) => (
           <GroupContainer group={e} key={i} />
         ))}
@@ -88,7 +90,7 @@ function GroupContainer({ group: { title, technology } }) {
     <div>
       <h4 className="text-blue-400 text-lg">{title}</h4>
 
-      <div className="flex flex-row gap-5 rounded shadow-md py-2 px-3">
+      <div className="flex flex-wrap gap-5 rounded shadow-md py-2 px-3">
         {technology.map((e, i) => (
           <img src={GetImage(e)} className="w-16 object-contain" />
         ))}
@@ -120,13 +122,13 @@ function CardButton({ id, name, color, onClick }) {
 
   return (
     <div
-      className={`group transition duration-300 shadow border-l-4 ${theme.root} rounded p-4 space-y-2 h-40 hover:border-black`}
+      className={`flex flex-row sm:flex-col items-center sm:items-start group transition duration-300 shadow border-l-4 ${theme.root} rounded p-3 md:p-4 gap-3 sm:gap-1 md:gap-2 sm:h-24 md:h-32 xl:h-40 hover:border-black`}
       onClick={() => onClick(id)}
     >
       <div
-        className={`h-10 w-10 rounded-full transition duration-300 ${theme.circle} group-hover:bg-black`}
+        className={`h-8 w-8 md:h-10 md:w-10 rounded-full transition duration-300 ${theme.circle} group-hover:bg-black`}
       ></div>
-      <p className="font-medium text-gray-900 text-xl ">{name}</p>
+      <p className="font-medium text-gray-800 text-lg md:text-xl ">{name}</p>
     </div>
   );
 }
