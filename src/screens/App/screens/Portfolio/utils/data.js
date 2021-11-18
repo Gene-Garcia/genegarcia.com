@@ -17,7 +17,7 @@ export default {
     date: "November 2020 - February 2021",
     technologies: [
       "ASP_DOT_NET",
-      "WINDOWS_FORM",
+      "WINDOWS_FORMS",
       "SQL_SERVER",
       "SQL",
       "JAVASCRIPT",
@@ -29,7 +29,6 @@ export default {
     ],
     github: false,
     live: false,
-    gallery: ["LOC1", "LOC2"],
   },
 
   MCL_SCHOLAR_WEBSITE: {
@@ -44,10 +43,10 @@ export default {
     date: "February - March 2019",
     technologies: [
       "ASP_DOT_NET",
-      "MVC",
+      "MVC_ARCH",
       "SQL_SERVER",
-      "IDENTITY_FRAMEWORK",
-      "ENTITY_FRAMEWORK",
+      "IDENTITY",
+      "ENTITY",
       "C_SHARP",
       "HTML_5",
       "CSS_3",
@@ -55,7 +54,6 @@ export default {
     ],
     github: false,
     live: false,
-    gallery: ["LOC1", "LOC2"],
   },
 
   FLORES_DE_MAYO_IS: {
@@ -71,10 +69,10 @@ export default {
 
     technologies: [
       "ASP_DOT_NET",
-      "MVC",
+      "MVC_ARCH",
       "SQL_SERVER",
-      "IDENTITY_FRAMEWORK",
-      "ENTITY_FRAMEWORK",
+      "IDENTITY",
+      "ENTITY",
       "C_SHARP",
       "HTML_5",
       "CSS_3",
@@ -82,7 +80,6 @@ export default {
     ],
     github: "https://github.com/Gene-Garcia/Flores-De-Mayo-IS",
     live: false,
-    gallery: ["LOC1", "LOC2"],
   },
 
   TUTOQUIZZER: {
@@ -95,16 +92,9 @@ export default {
       "TutoQuizzer is an android-based application. The app assists students review and prepare for assessments or examinations. Moreover, TutoQuizzer generates a multiple-choice question to test the knowledge of its user. The information used are customized by the user; The app accepts topics and its meaning that are categorized by school year and course.",
 
     date: "March 2018",
-    technologies: [
-      "ANDROID",
-      "ROOM_DATABASE",
-      "SQL_LITE",
-      "JAVA",
-      "LOCAL_STORAGE",
-    ],
+    technologies: ["ANDROID", "ROOM_DB", "SQL_LITE", "JAVA", "LOCAL_STORAGE"],
     github: "https://github.com/Gene-Garcia/TutoQuizzer",
     live: false,
-    gallery: ["LOC1", "LOC2"],
   },
 
   SINISIAN_BARANGAY_MIS: {
@@ -119,10 +109,10 @@ export default {
     date: "May 2017",
     technologies: [
       "ASP_DOT_NET",
-      "MVC",
+      "MVC_ARCH",
       "SQL_SERVER",
-      "IDENTITY_FRAMEWORK",
-      "ENTITY_FRAMEWORK",
+      "IDENTITY",
+      "ENTITY",
       "C_SHARP",
       "HTML_5",
       "CSS_3",
@@ -131,7 +121,6 @@ export default {
     github:
       "https://github.com/Gene-Garcia/Barangay-Management-Information-System",
     live: false,
-    gallery: ["LOC1", "LOC2"],
   },
 };
 
