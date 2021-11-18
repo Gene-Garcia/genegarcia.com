@@ -32,6 +32,9 @@ import identity from "../images/technologies/identity.webp";
 import mvc from "../images/technologies/mvc.webp";
 import figma from "../images/technologies/figma.webp";
 
+// 404
+import notFound from "../images/404.png";
+
 // data object to hold the image object of a technology based on a key
 const techObject = {
   ANDROID: android,
@@ -52,7 +55,6 @@ const techObject = {
   SQL_SERVER: sqlServer,
   SQL: sql,
   SQL_LITE: sqlLite,
-
   ENTITY: entity,
   MVC_ARCH: mvc,
   IDENTITY: identity,
@@ -70,4 +72,12 @@ const techObject = {
   AZURE: azure,
 };
 
-export { techObject };
+/*
+ * a utility function that only wraps the access to image object in order to
+ * return a '404' image whenever the image key is not found
+ */
+function GetImage(key) {
+  return key in techObject ? techObject[key] : notFound;
+}
+
+export { GetImage };
