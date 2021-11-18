@@ -29,9 +29,9 @@ function TechStack() {
     <Container>
       <Heading head="Technology Stack" />
 
-      <div className="mt-10 flex flex-row gap-16">
+      <div className="mt-10 flex flex-row gap-10">
         {/* buttons */}
-        <div className="w-2/5 grid grid-cols-2 gap-5">
+        <div className="w-2/5 grid grid-cols-2 justify-start gap-7 h-min">
           <CardButton
             id="WEB_APPLICATION"
             name="Web Application"
@@ -72,7 +72,7 @@ export default TechStack;
 function TechnologyContainer({ data: { title, groups } }) {
   return (
     <div>
-      <h3 className="mb-9 text-black text-2xl font-semibold">{title}</h3>
+      <h3 className="mb-8 text-black text-2xl font-semibold">{title}</h3>
 
       <div className="space-y-8">
         {groups.map((e, i) => (

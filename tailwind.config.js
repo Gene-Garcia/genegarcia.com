@@ -33,6 +33,7 @@ module.exports = {
         twenty: "20%",
         eightfive: "85%",
         fifteen: "15%",
+        min: "min-content",
       },
 
       spacing: {
