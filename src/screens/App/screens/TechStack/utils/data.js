@@ -47,7 +47,7 @@ export default {
       },
       {
         title: "Frameworks",
-        technology: ["ROOM_DB", "MVVP_ARCH"],
+        technology: ["ROOM_DB", "MVVM_ARCH"],
       },
     ],
   },
@@ -81,12 +81,12 @@ export default {
       },
       {
         title: "Database",
-        technology: ["MONGO_DB", "AZURE_DB"],
+        technology: ["MONGO_DB", "AZURE"],
       },
       {
         title: "Deployment",
         technology: [
-          "GITHUB_PAGES",
+          "GITHUB",
           "AZURE",
           "HEROKU",
           "NETLIFY",
