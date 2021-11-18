@@ -20,6 +20,11 @@ function TechStack() {
   // state variable to hold the current toggled tech stack card button
   const [data, setData] = useState(null);
 
+  // drilled onclick function to change toggled data. maybe use a context?
+  const updateData = (id) => {
+    setData(techStackData[id]);
+  };
+
   return (
     <Container>
       <Heading head="Technology Stack" />
@@ -27,10 +32,30 @@ function TechStack() {
       <div className="mt-10 flex flex-row gap-16">
         {/* buttons */}
         <div className="w-2/5 grid grid-cols-2 gap-5">
-          <CardButton name="Web Application" color="blue" />
-          <CardButton name="Smartphone" color="orange" />
-          <CardButton name="Desktop" color="green" />
-          <CardButton name="Services" color="purple" />
+          <CardButton
+            id="WEB_APPLICATION"
+            name="Web Application"
+            color="blue"
+            onClick={updateData}
+          />
+          <CardButton
+            id="SMARTPHONE"
+            name="Smartphone"
+            color="orange"
+            onClick={updateData}
+          />
+          <CardButton
+            id="DESKTOP"
+            name="Desktop"
+            color="green"
+            onClick={updateData}
+          />
+          <CardButton
+            id="SERVICES"
+            name="Services"
+            color="purple"
+            onClick={updateData}
+          />
         </div>
 
         {/* content */}
@@ -72,7 +97,7 @@ function GroupContainer({ group: { title, technology } }) {
   );
 }
 
-function CardButton({ name, color }) {
+function CardButton({ id, name, color, onClick }) {
   const theme = {
     root: "",
     circle: "",
@@ -96,6 +121,7 @@ function CardButton({ name, color }) {
   return (
     <div
       className={`group transition duration-300 shadow border-l-4 ${theme.root} rounded p-4 space-y-2 h-40 hover:border-black`}
+      onClick={() => onClick(id)}
     >
       <div
         className={`h-10 w-10 rounded-full transition duration-300 ${theme.circle} group-hover:bg-black`}

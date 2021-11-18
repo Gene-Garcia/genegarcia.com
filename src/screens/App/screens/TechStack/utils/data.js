@@ -85,14 +85,7 @@ export default {
       },
       {
         title: "Deployment",
-        technology: [
-          "GITHUB",
-          "AZURE",
-          "HEROKU",
-          "NETLIFY",
-          "HEROKU",
-          "NAMECHEAP",
-        ],
+        technology: ["GITHUB", "AZURE", "HEROKU", "NETLIFY", "NAMECHEAP"],
       },
       {
         title: "Design",
