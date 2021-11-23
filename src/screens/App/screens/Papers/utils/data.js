@@ -1,5 +1,6 @@
 export default {
   CLOUD_COMPUTING: {
+    id: "CLOUD_COMPUTING",
     date: "June 2021",
     title:
       "Past, Present, and Future of Cloud Computing: An Innovation Case Study",
@@ -13,6 +14,7 @@ export default {
   },
 
   INCIDENT_REPORTING: {
+    id: "INCIDENT_REPORTING",
     date: "June 2021",
     title:
       "Designing an Incident Reporting Web Application for Sinisian, Calaca, Batangas",
@@ -26,6 +28,7 @@ export default {
   },
 
   COVID_FMIS: {
+    id: "COVID_FMIS",
     date: "April 2021",
     title:
       "Impact of the COVID-19 pandemic to Financial Management Information System and Crisis Management",
@@ -40,6 +43,7 @@ export default {
   },
 
   BURGER_KING: {
+    id: "BURGER_KING",
     date: "July 2020",
     title:
       "An Analysis of the Major Business Process of an Organization: The Case of Burger King Corporation",
@@ -53,6 +57,7 @@ export default {
   },
 
   WALMART: {
+    id: "WALMART",
     date: "February 2020",
     title:
       "Information Systems Utilization of an Organization: The Case of Walmart Inc.",
@@ -66,6 +71,7 @@ export default {
   },
 
   EMERGENCY_HOTLINES: {
+    id: "EMERGENCY_HOTLINES",
     date: "February 2019",
     title:
       "Use of Smartphone Application for the Selected Emergency Hotlines: A Study on Perception of Residence of Mamatid and Uniform Personnel",

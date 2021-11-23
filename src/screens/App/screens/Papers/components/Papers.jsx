@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
@@ -10,10 +10,19 @@ function Papers() {
   // navbar context
   const { activateThisLink } = useNavbar();
 
+  // toggled paper
+  const [paper, setPaper] = useState({});
+
   //
   useEffect(() => {
     activateThisLink("PAPERS");
+    setPaper({ ...paperData.COVID_FMIS });
   }, []);
+
+  // function to toggle active paper
+  const togglePaper = (id) => {
+    setPaper({ ...paperData[id] });
+  };
 
   return (
     <Container>
@@ -24,15 +33,17 @@ function Papers() {
           {Object.entries(paperData).map(([k, v], i) => (
             <PaperButtons
               key={k}
+              id={k}
               {...v}
-              status={k == "INCIDENT_REPORTING" ? "active" : "idle"}
+              status={k === paper.id ? "active" : "idle"}
               first={i === 0}
+              onClick={togglePaper}
             />
           ))}
         </div>
 
         <div className="lg:w-3/5 ">
-          <PaperContainer data={paperData.COVID_FMIS} />
+          <PaperContainer data={paper} />
         </div>
       </div>
     </Container>
@@ -40,7 +51,7 @@ function Papers() {
 }
 export default Papers;
 
-function PaperButtons({ date, title, status, first }) {
+function PaperButtons({ id, date, title, status, first, onClick }) {
   const theme = {
     idle: {
       circle: "bg-gray-200 ring-transparent",
@@ -53,7 +64,10 @@ function PaperButtons({ date, title, status, first }) {
   };
 
   return (
-    <button className="w-full flex flex-row px-7 gap-6 transition duration-300 ease-linear hover:bg-gray-100">
+    <button
+      onClick={() => onClick(id)}
+      className="w-full flex flex-row px-7 gap-6 transition duration-300 ease-linear hover:bg-gray-100"
+    >
       <div className="flex flex-col items-center">
         <div
           className={`${
@@ -107,7 +121,7 @@ function PaperContainer({
       {/* abstract */}
       <div>
         <p className="text-sm font-semibold text-gray-500 mb-1">ABSTRACT</p>
-        <p className="leading-loose bg-gray-100 p-2 lg:p-2.5 rounded-md border">
+        <p className="leading-loose bg-gray-50 text-body-color p-2 lg:p-2.5 rounded-md border">
           {abstract}
         </p>
       </div>
