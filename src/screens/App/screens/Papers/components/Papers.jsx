@@ -19,8 +19,8 @@ function Papers() {
     <Container>
       <Heading head="Papers" />
 
-      <div className="mt-10 flex flex-row gap-10">
-        <div className="w-2/5 h-min shadow-md rounded-md py-7">
+      <div className="mt-10 flex flex-col lg:flex-row gap-10">
+        <div className="lg:w-2/5 h-min shadow-md rounded-md py-2 lg:py-7">
           {Object.entries(paperData).map(([k, v], i) => (
             <PaperButtons
               key={k}
@@ -31,7 +31,7 @@ function Papers() {
           ))}
         </div>
 
-        <div className="w-3/5">
+        <div className="lg:w-3/5 ">
           <PaperContainer data={paperData.COVID_FMIS} />
         </div>
       </div>
@@ -53,17 +53,19 @@ function PaperButtons({ date, title, status, first }) {
   };
 
   return (
-    <button className="flex flex-row px-7 gap-6 transition duration-300 ease-linear hover:bg-gray-100">
+    <button className="w-full flex flex-row px-7 gap-6 transition duration-300 ease-linear hover:bg-gray-100">
       <div className="flex flex-col items-center">
         <div
-          className={`${first ? "border-0" : "border-l-2"} h-2  mb-1 ${
-            theme[status].line
-          } `}
+          className={`${
+            first ? "border-0" : "border-l-2"
+          } h-2 mb-1 lg:mb-1.5 border-gray-200 `}
         ></div>
         <div
-          className={`rounded-full h-4 w-4 ring-2 ring-offset-2 ${theme[status].circle}`}
+          className={`rounded-full h-3 w-3 ring-2 ring-offset-2 ${theme[status].circle}`}
         ></div>
-        <div className={`h-28 border-l-2 mt-1 ${theme[status].line}`}></div>
+        <div
+          className={`h-16 lg:h-36 xl:h-28 border-l-2 mt-1 ${theme[status].line}`}
+        ></div>
       </div>
 
       <div className="py-2.5">
@@ -78,7 +80,7 @@ function PaperContainer({
   data: { paperType, title, date, doi, link, location, abstract },
 }) {
   return (
-    <div className="space-y-10">
+    <div className="space-y-6 lg:space-y-10">
       <div className="space-y-2.5">
         <p className="border border-accent rounded text-accent hover:text-white hover:bg-accent transition duration-200 ease-linear uppercase px-4 py-1.5 w-max text-sm font-semibold ">
           {paperType}
@@ -104,8 +106,10 @@ function PaperContainer({
 
       {/* abstract */}
       <div>
-        <p className="text-sm font-semibold text-gray-500 mb-2.5">ABSTRACT</p>
-        <p className="leading-loose">{abstract}</p>
+        <p className="text-sm font-semibold text-gray-500 mb-1">ABSTRACT</p>
+        <p className="leading-loose bg-gray-100 p-2 lg:p-2.5 rounded-md border">
+          {abstract}
+        </p>
       </div>
     </div>
   );
