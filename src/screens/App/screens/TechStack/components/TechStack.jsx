@@ -122,11 +122,11 @@ function CardButton({ id, name, color, onClick }) {
 
   return (
     <div
-      className={`flex flex-row sm:flex-col items-center sm:items-start group transition duration-300 shadow border-l-4 ${theme.root} rounded p-3 md:p-4 gap-3 sm:gap-1 md:gap-2 sm:h-24 md:h-32 xl:h-40 hover:border-black`}
+      className={`flex flex-row sm:flex-col items-center sm:items-start transition duration-500 ease-linear shadow hover:shadow-2xl border-l-4 ${theme.root} rounded p-3 md:p-4 gap-3 sm:gap-1 md:gap-2 sm:h-24 md:h-32 xl:h-40`}
       onClick={() => onClick(id)}
     >
       <div
-        className={`h-8 w-8 md:h-10 md:w-10 rounded-full transition duration-300 ${theme.circle} group-hover:bg-black`}
+        className={`h-8 w-8 md:h-10 md:w-10 rounded-full ${theme.circle}`}
       ></div>
       <p className="font-medium text-gray-800 text-lg md:text-xl ">{name}</p>
     </div>

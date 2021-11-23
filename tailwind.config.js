@@ -46,6 +46,7 @@ module.exports = {
   variants: {
     extend: {
       filter: ["hover"],
+      boxShadow: ["hover"],
     },
   },
   plugins: [],
