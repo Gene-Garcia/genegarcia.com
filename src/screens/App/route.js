@@ -4,6 +4,7 @@ import HomeRoute from "./screens/Home/route";
 import PapersRoute from "./screens/Papers/route";
 import PortfolioRoute from "./screens/Portfolio/route";
 import TechStackRoute from "./screens/TechStack/route";
+import ExperienceRoute from "./screens/Experience/route";
 
 export default {
   EDUCATION: EducationRoute,
@@ -11,4 +12,5 @@ export default {
   PAPERS: PapersRoute,
   PORTFOLIO: PortfolioRoute,
   TECH_STACK: TechStackRoute,
+  EXPERIENCE: ExperienceRoute,
 };

@@ -10,6 +10,7 @@ const init = {
   PAPERS: false,
   PORTFOLIO: false,
   TECH_STACK: false,
+  EXPERIENCE: false,
 };
 
 function NavbarProvider({ children }) {

@@ -19,8 +19,8 @@ export default {
     NAME: "Education",
     PATH: "/education",
   },
-  EXPERIENCES: {
-    NAME: "Experiences",
-    PATH: "/experiences",
+  EXPERIENCE: {
+    NAME: "Experience",
+    PATH: "/experience",
   },
 };
