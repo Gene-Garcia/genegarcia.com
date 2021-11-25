@@ -2,7 +2,7 @@ import React from "react";
 
 function SubtleContainer({ children }) {
   return (
-    <div className="p-10 shadow-md w-thirty rounded-md flex items-stretch border-l border-t border-gray-300">
+    <div className="p-7 sm:p-10 shadow-md w-full lg:w-5/12 xl:w-thirty rounded-md flex items-stretch ">
       {children}
     </div>
   );
@@ -10,7 +10,7 @@ function SubtleContainer({ children }) {
 
 function FocusedContainer({ children }) {
   return (
-    <div className="p-10 shadow-2xl w-2/5 rounded-md flex items-stretch border-t border-l border-gray-300">
+    <div className="order-first xl:order-none p-7 sm:p-10 shadow-lg xl:shadow-2xl w-full lg:w-5/12 xl:w-2/5 rounded-md flex items-stretch ">
       {children}
     </div>
   );

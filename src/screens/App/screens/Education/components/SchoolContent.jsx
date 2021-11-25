@@ -4,15 +4,15 @@ function SchoolContent({
   data: { school, specialization, logo, awards, linkName, link },
 }) {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-3 lg:gap-6">
       <img
         src={logo}
-        className="w-28 filter drop-shadow-xl grayscale transition duration-200 ease-linear hover:filter-none"
+        className="w-28 2xl:w-36 filter drop-shadow-xl grayscale transition duration-200 ease-linear hover:filter-none"
         alt={school}
       />
 
       {/* details */}
-      <div className="flex flex-col gap-9 justify-between flex-grow">
+      <div className="flex flex-col gap-6 lg:gap-9 justify-between flex-grow">
         <div className="space-y-1">
           <h3 className="text-xl font-semibold text-black">{school}</h3>
           <p className="text-md font-medium text-gray-600">{specialization}</p>
