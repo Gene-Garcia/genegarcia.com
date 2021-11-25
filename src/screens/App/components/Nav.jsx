@@ -47,7 +47,7 @@ function Responsive({ context: linksState }) {
             to={v.PATH}
             className={`${
               linksState[k] ? "text-accent" : "text-black"
-            } font-sans font-semibold text-sm transition duration-200 hover:text-accent border-b border-transparent hover:border-accent`}
+            } font-sans font-semibold text-sm transition duration-300 ease-linear hover:text-accent border-b border-transparent hover:border-accent`}
           >
             {v.NAME.toUpperCase()}
           </Link>
