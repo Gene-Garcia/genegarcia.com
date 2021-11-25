@@ -52,6 +52,6 @@ export default {
     },
 
     linkName: "cms.edu.ph",
-    link: "https://mcl.edu.ph",
+    link: "https://cms.edu.ph",
   },
 };
