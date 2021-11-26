@@ -46,6 +46,8 @@ module.exports = {
   variants: {
     extend: {
       filter: ["hover"],
+      ringColor: ["hover"],
+      ringOpacity: ["hover"],
       boxShadow: ["hover"],
     },
   },

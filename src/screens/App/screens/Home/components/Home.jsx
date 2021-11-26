@@ -18,7 +18,7 @@ function Home() {
             {/* image */}
           </div>
 
-          <button className="absolute right-4 sm:right-6 lg:right-9 bottom-7 h-12 w-12 rounded-full bg-accent shadow-xl text-white">
+          <button className="absolute right-4 sm:right-6 lg:right-9 bottom-7 h-12 w-12 rounded-full bg-accent shadow-xl text-white transition duration-200 ease-linear ring-4 ring-transparent hover:ring-accent hover:ring-opacity-40">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7 h-full m-auto"
@@ -30,7 +30,7 @@ function Home() {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
               />
             </svg>
           </button>
@@ -56,7 +56,7 @@ function Home() {
         </p>
 
         <div className="my-10 flex flex-row align-center gap-5">
-          <button className="font-bold bg-accent text-md text-white px-5 lg:px-7 py-2 lg:py-2.5 rounded-md shadow-xl inline-flex items-center">
+          <button className="font-bold bg-accent text-md text-white px-5 lg:px-7 py-2 lg:py-2.5 shadow-xl inline-flex items-center transition duration-200 ease-linear ring-4 ring-transparent hover:ring-accent hover:ring-opacity-40 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 transform rotate-90 mr-1.5"
@@ -68,7 +68,7 @@ function Home() {
             EMAIL ME
           </button>
 
-          <button className="font-bold text-md text-black px-5 py-2 lg:py-2.5 inline-flex items-center">
+          <button className="font-bold text-md text-black px-5 py-2 lg:py-2.5 inline-flex items-center border border-transparent hover:border-gray-300 transition duration-200 ease-linear">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1.5"
