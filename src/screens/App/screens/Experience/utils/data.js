@@ -8,83 +8,87 @@ export default {
   ACADEMIC: {
     name: "Academic Experience",
 
-    IMMERSION: {
-      title: "Work Immersion",
-      date: "October 22, 2020",
+    sections: {
+      IMMERSION: {
+        title: "Work Immersion",
+        date: "October 22, 2020",
 
-      organization: "Malayan Colleges Laguna",
-      location: "Cabuyao, PH",
-      organizationLogo: mclLogoOnly,
+        organization: "Malayan Colleges Laguna",
+        location: "Cabuyao, PH",
+        organizationLogo: mclLogoOnly,
 
-      description:
-        "Planned and developed a website for MCL's Students Affairs Office (SAO) using C# ASP .NET. Student scholars can apply for scholarship validation. Moreover, the website allows SAO to posts announcements and upload the scholars information. Admin users are provided with a dashboard to track the data.",
+        description:
+          "Planned and developed a website for MCL's Students Affairs Office (SAO) using C# ASP .NET. Student scholars can apply for scholarship validation. Moreover, the website allows SAO to posts announcements and upload the scholars information. Admin users are provided with a dashboard to track the data.",
 
-      outputs: ["Working Web Application", "Project Presentation"],
-      achievements: ["Best in Work Immersion"],
-    },
+        outputs: ["Working Web Application", "Project Presentation"],
+        achievements: ["Best in Work Immersion"],
+      },
 
-    RESEARCH_FMIS_COVID: {
-      title: "International Research Conference",
-      date: "April 30, 2021",
+      RESEARCH_FMIS_COVID: {
+        title: "International Research Conference",
+        date: "April 30, 2021",
 
-      organization: "Rangsit University, ",
-      location: "Virtual Conference from Pathum Thani, Thailand",
-      organizationLogo: rangsit,
+        organization: "Rangsit University",
+        location: "Virtual Conference from Pathum Thani, Thailand",
+        organizationLogo: rangsit,
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-      outputs: ["Published Research Paper", "Conference Presentation"],
-      achievements: [],
+        outputs: ["Published Research Paper", "Conference Presentation"],
+        achievements: [],
+      },
     },
   },
 
   COMPETITION: {
     name: "Competition Experience",
 
-    CODE_MASTERS: {
-      title: "ACM Code Masters",
-      date: "October 22, 2020",
+    sections: {
+      CODE_MASTERS: {
+        title: "ACM Code Masters",
+        date: "October 22, 2020",
 
-      organization: "MCL-ACM Student Chapter",
-      location: "MCL ACM Discord Server",
-      organizationLogo: acm,
+        organization: "MCL-ACM Student Chapter",
+        location: "MCL ACM Discord Server",
+        organizationLogo: acm,
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-      outputs: [],
-      achievements: ["First Place"],
-    },
+        outputs: [],
+        achievements: ["First Place"],
+      },
 
-    SYNTAX_ERROR: {
-      title: "Syntax Error V2",
-      date: "March 15, 2019",
+      SYNTAX_ERROR: {
+        title: "Syntax Error V2",
+        date: "March 15, 2019",
 
-      organization: "Junior MCL ACM",
-      location: "Cabuyao, Laguna, PH",
-      organizationLogo: acm,
+        organization: "Junior MCL ACM",
+        location: "Cabuyao, Laguna, PH",
+        organizationLogo: acm,
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-      outputs: [],
-      achievements: ["First Place"],
-    },
+        outputs: [],
+        achievements: ["First Place"],
+      },
 
-    CODEX: {
-      title: "codeX Programming Challenge",
-      date: "October 19, 201",
+      CODEX: {
+        title: "codeX Programming Challenge",
+        date: "October 19, 201",
 
-      organization: "MCL ACM Student Chapter",
-      location: "Jose Rizal Bldg., MCL, Cabuyao, Laguna, PH",
-      organizationLogo: acm,
+        organization: "MCL ACM Student Chapter",
+        location: "Jose Rizal Bldg., MCL, Cabuyao, Laguna, PH",
+        organizationLogo: acm,
 
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
-      outputs: [],
-      achievements: ["First Place"],
+        outputs: [],
+        achievements: ["First Place"],
+      },
     },
   },
 };
