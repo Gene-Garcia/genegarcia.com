@@ -10,7 +10,7 @@ function Group({ name, data }) {
         </div>
       </div>
 
-      <div className="space-y-8 shadow-xl z-10 rounded-b-lg p-8">
+      <div className="shadow-xl z-10 rounded-b-lg px-8 divide-y divide-gray-300">
         {Object.entries(data).map(([k, v]) => (
           <ExperienceDetails key={k} content={v} />
         ))}

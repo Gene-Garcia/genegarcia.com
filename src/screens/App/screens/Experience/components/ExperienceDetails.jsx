@@ -28,7 +28,7 @@ function ExperienceDetails({
   };
 
   return (
-    <div className="relative z-50 flex flex-col sm:flex-row gap-10">
+    <div className="relative z-20 flex flex-col sm:flex-row gap-3 sm:gap-10 py-8">
       <div className="w-20 h-20 rounded-full p-3 shadow bg-gray-100 flex justify-center items-center flex-shrink-0">
         <img src={organizationLogo} alt={title} className="w-full h-full" />
       </div>
