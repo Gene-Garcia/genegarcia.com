@@ -3,7 +3,7 @@ import acm from "../../../../../shared/images/schools/acm.png";
 import rangsit from "../../../../../shared/images/schools/rangsit.png";
 
 export default {
-  WORK: null,
+  // WORK: null,
 
   ACADEMIC: {
     name: "Academic Experience",
