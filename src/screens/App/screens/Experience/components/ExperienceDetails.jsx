@@ -28,12 +28,12 @@ function ExperienceDetails({
   };
 
   return (
-    <div className="relative z-50 flex flex-row gap-10">
+    <div className="relative z-50 flex flex-col sm:flex-row gap-10">
       <div className="w-20 h-20 rounded-full p-3 shadow bg-gray-100 flex justify-center items-center flex-shrink-0">
         <img src={organizationLogo} alt={title} className="w-full h-full" />
       </div>
 
-      <div className="w-3/4 space-y-5 flex-grow">
+      <div className="w-full sm:w-3/4 space-y-5 flex-grow">
         <div className="">
           <h3 className="text-2xl font-semibold text-black uppercase">
             {title}
