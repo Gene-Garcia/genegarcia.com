@@ -28,14 +28,17 @@ function ProjectCard({
   return (
     <>
       {/* card */}
-      <div className="shadow-lg rounded p-5 flex flex-col lg:flex-row gap-4 lg:gap-8">
+      <div className="shadow-lg rounded flex flex-col lg:flex-row">
         {/* logo */}
-        <div className="w-48 sm:w-1/2 md:w-2/5 lg:w-thirty m-auto">
-          <img src={logo} className="w-full object-contain m-auto" />
+        <div className="bg-gray-100 w-full lg:w-thirty xl:w-1/5 flex justify-center items-center p-0 md:p-5">
+          <img
+            src={logo}
+            className="w-thirty lg:w-full object-contain filter drop-shadow-xl"
+          />
         </div>
 
         {/* contents */}
-        <div className="lg:w-3/4 space-y-5">
+        <div className="space-y-5 p-5 lg:w-seventy xl:w-4/5">
           <div>
             <h3 className="text-2xl font-semibold text-black">{name}</h3>
             <p className="font-light italic text-gray-500">{date}</p>
@@ -111,7 +114,7 @@ function ProjectCard({
               <img
                 key={i}
                 src={GetImage(e)}
-                className="w-11 filter grayscale transition duration-100 hover:filter-none"
+                className="w-10 sm:w-11 filter grayscale transition duration-100 hover:filter-none"
               />
             ))}
           </div>
