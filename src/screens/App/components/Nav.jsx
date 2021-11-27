@@ -75,7 +75,7 @@ function Collapsible({ context: linksState }) {
       <div
         className={`${
           toggled ? "fixed" : "hidden"
-        } z-20 p-3 bg-gray-200 w-48 left-0 inset-y-0 h-screen`}
+        } z-50 p-3 bg-gray-200 w-48 left-0 inset-y-0 h-screen`}
       >
         <button onClick={toggleNav}>
           <img src={imageLogo} className="w-10 h-11" alt="G" />
