@@ -49,6 +49,7 @@ module.exports = {
       ringColor: ["hover"],
       ringOpacity: ["hover"],
       boxShadow: ["hover"],
+      display: ["group-hover"],
     },
   },
   plugins: [],

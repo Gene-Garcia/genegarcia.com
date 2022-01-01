@@ -30,16 +30,21 @@ function Papers() {
 
       <div className="mt-10 flex flex-col lg:flex-row gap-10">
         <div className="lg:w-2/5 h-min shadow-md rounded-md py-2 lg:py-7">
-          {Object.entries(paperData).map(([k, v], i) => (
-            <PaperButtons
-              key={k}
-              id={k}
-              {...v}
-              status={k === paper.id ? "active" : "idle"}
-              first={i === 0}
-              onClick={togglePaper}
-            />
-          ))}
+          <div className="hidden md:block">
+            {Object.entries(paperData).map(([k, v], i) => (
+              <PaperButtons
+                key={k}
+                id={k}
+                {...v}
+                status={k === paper.id ? "active" : "idle"}
+                first={i === 0}
+                onClick={togglePaper}
+              />
+            ))}
+          </div>
+          <div className="block md:hidden">
+            <PaperDropdown />
+          </div>
         </div>
 
         <div className="lg:w-3/5 ">
@@ -50,6 +55,68 @@ function Papers() {
   );
 }
 export default Papers;
+
+function PaperDropdown({ current, selection }) {
+  return (
+    <div className="w-full group inline-block relative py-2 px-4">
+      {/* username and the arrow */}
+      <button className={`w-full inline-flex items-center gap-2 text-gray-700`}>
+        <div className=" text-left">
+          <p className="text-sm font-medium text-gray-400">June 2021</p>
+          <span className="font-semibold text-md">
+            Impact of the COVID-19 pandemic to Financial Management Information
+            System and Crisis Management
+          </span>
+        </div>
+
+        <svg
+          className="fill-current h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+        </svg>
+      </button>
+
+      {/* the menu */}
+      <div
+        className="w-full absolute z-30 hidden 
+      transition duration-300 ease-linear 
+      group-hover:block"
+      >
+        <div
+          className="w-full mt-1 bg-white shadow-lg rounded 
+        border border-gray-200 
+        px-4 py-3 space-y-4"
+        >
+          <button className="text-left">
+            <p className="text-sm font-medium text-gray-400">June 2021</p>
+            <p className="text-md font-semibold text-gray-600">
+              Past, Present, and Future of Cloud Computing: An Innovation Case
+              Study
+            </p>
+          </button>
+
+          <button className="text-left">
+            <p className="text-sm font-medium text-gray-400">June 2021</p>
+            <p className="text-md font-semibold text-gray-600">
+              Past, Present, and Future of Cloud Computing: An Innovation Case
+              Study
+            </p>
+          </button>
+
+          <button className="text-left">
+            <p className="text-sm font-medium text-gray-400">June 2021</p>
+            <p className="text-md font-semibold text-gray-600">
+              Past, Present, and Future of Cloud Computing: An Innovation Case
+              Study
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function PaperButtons({ id, date, title, status, first, onClick }) {
   const theme = {
