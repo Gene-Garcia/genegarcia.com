@@ -43,7 +43,7 @@ function Papers() {
             ))}
           </div>
           <div className="block md:hidden">
-            <PaperDropdown />
+            <PaperDropdown current={paper} togglePaper={togglePaper} />
           </div>
         </div>
 
@@ -56,17 +56,14 @@ function Papers() {
 }
 export default Papers;
 
-function PaperDropdown({ current, selection }) {
+function PaperDropdown({ current, togglePaper }) {
   return (
     <div className="w-full group inline-block relative py-2 px-4">
       {/* username and the arrow */}
       <button className={`w-full inline-flex items-center gap-2 text-gray-700`}>
         <div className=" text-left">
-          <p className="text-sm font-medium text-gray-400">June 2021</p>
-          <span className="font-semibold text-md">
-            Impact of the COVID-19 pandemic to Financial Management Information
-            System and Crisis Management
-          </span>
+          <p className="text-sm font-medium text-gray-400">{current.date}</p>
+          <span className="font-semibold text-md">{current.title}</span>
         </div>
 
         <svg
@@ -86,35 +83,42 @@ function PaperDropdown({ current, selection }) {
       >
         <div
           className="w-full mt-1 bg-white shadow-lg rounded 
-        border border-gray-200 
-        px-4 py-3 space-y-4"
+        border border-gray-200"
         >
-          <button className="text-left">
-            <p className="text-sm font-medium text-gray-400">June 2021</p>
-            <p className="text-md font-semibold text-gray-600">
-              Past, Present, and Future of Cloud Computing: An Innovation Case
-              Study
-            </p>
-          </button>
-
-          <button className="text-left">
-            <p className="text-sm font-medium text-gray-400">June 2021</p>
-            <p className="text-md font-semibold text-gray-600">
-              Past, Present, and Future of Cloud Computing: An Innovation Case
-              Study
-            </p>
-          </button>
-
-          <button className="text-left">
-            <p className="text-sm font-medium text-gray-400">June 2021</p>
-            <p className="text-md font-semibold text-gray-600">
-              Past, Present, and Future of Cloud Computing: An Innovation Case
-              Study
-            </p>
-          </button>
+          {Object.entries(paperData).map(([k, v]) => (
+            <DropdownButton
+              key={k}
+              date={v.date}
+              title={v.title}
+              id={v.id}
+              togglePaper={togglePaper}
+            />
+          ))}
         </div>
       </div>
     </div>
+  );
+}
+
+function DropdownButton({ date, title, id, togglePaper }) {
+  return (
+    <button
+      className="px-4 py-3 w-full 
+      inline-flex gap-3 items-center items-stretch
+    transition ease-linear 
+    duration-200 hover:bg-gray-100"
+      onClick={() => togglePaper(id)}
+    >
+      <div className="flex flex-col items-center gap-0.5">
+        <div className="mt-1 rounded-full h-4 w-3 bg-gray-300"></div>
+        <div className="h-full border-l-2 border-gray-200"></div>
+      </div>
+
+      <div className="text-left">
+        <p className="text-sm font-medium text-gray-400">{date}</p>
+        <p className="text-md font-semibold text-gray-600">{title}</p>
+      </div>
+    </button>
   );
 }
 
