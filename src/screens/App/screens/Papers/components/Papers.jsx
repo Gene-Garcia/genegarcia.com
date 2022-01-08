@@ -85,15 +85,19 @@ function PaperDropdown({ current, togglePaper }) {
           className="w-full mt-1 bg-white shadow-lg rounded 
         border border-gray-200"
         >
-          {Object.entries(paperData).map(([k, v]) => (
-            <DropdownButton
-              key={k}
-              date={v.date}
-              title={v.title}
-              id={v.id}
-              togglePaper={togglePaper}
-            />
-          ))}
+          {Object.entries(paperData).map(([k, v]) =>
+            v.id !== current.id ? (
+              <DropdownButton
+                key={k}
+                date={v.date}
+                title={v.title}
+                id={v.id}
+                togglePaper={togglePaper}
+              />
+            ) : (
+              <></>
+            )
+          )}
         </div>
       </div>
     </div>
