@@ -49,16 +49,23 @@ function ProjectCard({
           </p>
 
           {/* buttons */}
-          <div className="flex flex-wrap flex-row gap-4">
-            <Link to={live.toString()} target="_blank">
+          <div className="flex flex-wrap flex-row gap-3">
+            <Link
+              to={live.toString()}
+              target="_blank"
+              className={`${!live && "hidden"}`}
+            >
               <button
-                className={`${
-                  live === false && "cursor-not-allowed opacity-75"
-                } bg-accent text-white font-semibold px-5 py-1.5 rounded shadow inline-flex items-center`}
+                className={`bg-accent px-4 py-1.5 rounded shadow 
+                inline-flex items-center
+                text-white font-medium text-base tracking-wide
+                transition duration-200 ease-linear
+                hover:ring-2 hover:ring-accent hover:ring-offset-2 hover:ring-opacity-90
+                active:ring active:ring-accent active:ring-opacity-25 active:ring-offset-0`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 h-full mr-1"
+                  className="h-4 w-4 h-full my-auto mr-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -74,15 +81,22 @@ function ProjectCard({
               </button>
             </Link>
 
-            <Link href={github.toString()} target="_blank">
+            <Link
+              to={github.toString()}
+              target="_blank"
+              className={`${!github && "hidden"}`}
+            >
               <button
-                className={`${
-                  github === false && "cursor-not-allowed opacity-50"
-                } border border-black rounded text-black font-semibold px-5 py-1.5 rounded inline-flex items-center`}
+                className={`border border-gray-400 rounded px-4 py-1.5 rounded 
+                inline-flex items-center
+                text-gray-700 font-medium tracking-wide
+                transition duration-200 ease-linear
+                hover:ring-2 hover:ring-gray-400 hover:ring-opacity-40 hover:ring-offset-2
+                acitve:ring-4 active:ring-gray-400 active:ring-opacity-40 active:ring-offset-0`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 h-full my-auto mr-1"
+                  className="h-4 w-4 h-full my-auto mr-1.5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -94,13 +108,16 @@ function ProjectCard({
                     d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
                   />
                 </svg>{" "}
-                GITHUB REPO
+                GITHUB
               </button>
             </Link>
 
             <button
               onClick={() => setToggled((prev) => !prev)}
-              className="text-black font-semibold px-3 py-1.5"
+              className={`text-gray-800 font-medium px-2 py-1.5
+              border-b border-transparent
+              transition duration-200 ease-linear
+              hover:text-accent hover:border-accent`}
             >
               GALLERY
             </button>
@@ -114,7 +131,7 @@ function ProjectCard({
               <img
                 key={i}
                 src={GetImage(e)}
-                className="w-10 sm:w-11 filter grayscale transition duration-100 hover:filter-none"
+                className="w-10 sm:w-11 filter grayscale transition duration-150 ease-linear hover:filter-none"
               />
             ))}
           </div>

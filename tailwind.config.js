@@ -46,9 +46,10 @@ module.exports = {
   variants: {
     extend: {
       filter: ["hover"],
-      ringWidth: ["group-hover"],
-      ringColor: ["hover", "group-hover"],
-      ringOpacity: ["hover", "group-hover"],
+      ringWidth: ["group-hover", "hover", "active"],
+      ringColor: ["hover", "group-hover", "active"],
+      ringOpacity: ["hover", "group-hover", "active"],
+      ringOffsetWidth: ["hover", "active"],
       boxShadow: ["hover"],
       display: ["group-hover"],
     },
