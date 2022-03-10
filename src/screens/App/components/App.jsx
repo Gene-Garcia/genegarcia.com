@@ -16,7 +16,9 @@ function Router() {
     <>
       <Nav />
 
-      <FloatingActionButton />
+      <div className="block md:hidden">
+        <FloatingActionButton />
+      </div>
 
       <div className="h-ninety">
         <Switch>
