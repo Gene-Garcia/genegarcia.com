@@ -16,46 +16,57 @@ function Nav() {
   // navbar context
   const { linksState } = useNavbar();
 
-  const { width } = useWindow();
+  // const { width } = useWindow();
 
   return (
     <>
-      {width >= 600 ? (
-        <Responsive context={linksState} />
-      ) : (
-        <Collapsible context={linksState} />
-      )}
+      <Responsive context={linksState} />
     </>
   );
+
+  // return (
+  //   <>
+  //     {width >= 600 ? (
+  //       <Responsive context={linksState} />
+  //     ) : (
+  //       <Collapsible context={linksState} />
+  //     )}
+  //   </>
+  // );
 }
 export default Nav;
 
 function Responsive({ context: linksState }) {
   return (
-    <div className="flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
-      {/* logo */}
-      <div className="flex flex-row flex-shrink items-center">
-        <img src={imageLogo} className="w-8" alt="G" />
-        {/* <img src={textLogo} className="h-8 w-auto" /> */}
+    <>
+      <div className="block md:hidden">
+        <img src={imageLogo} className="w-10 m-auto pt-6 pb-1" />
       </div>
+      <div className="hidden md:flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
+        {/* logo */}
+        <div className="flex flex-row flex-shrink items-center">
+          <img src={imageLogo} className="w-8" alt="G" />
+          {/* <img src={textLogo} className="h-8 w-auto" /> */}
+        </div>
 
-      {/* links */}
-      <div className="flex-shrink-0 space-x-5 md:space-x-9">
-        {Object.entries(routes).map(([k, v]) => (
-          <Link
-            key={k}
-            to={v.PATH}
-            className={`${
-              linksState[k]
-                ? "text-accent font-semibold"
-                : "text-gray-800 font-medium"
-            } font-sans text-sm transition duration-200 ease-linear hover:text-accent border-b border-transparent hover:border-accent`}
-          >
-            {v.NAME.toUpperCase()}
-          </Link>
-        ))}
+        {/* links */}
+        <div className="flex-shrink-0 space-x-5 md:space-x-9">
+          {Object.entries(routes).map(([k, v]) => (
+            <Link
+              key={k}
+              to={v.PATH}
+              className={`${
+                linksState[k]
+                  ? "text-accent font-semibold"
+                  : "text-gray-800 font-medium"
+              } font-sans text-sm transition duration-200 ease-linear hover:text-accent border-b border-transparent hover:border-accent`}
+            >
+              {v.NAME.toUpperCase()}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
