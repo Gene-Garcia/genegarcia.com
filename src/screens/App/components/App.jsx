@@ -3,6 +3,7 @@ import React from "react";
 // react router
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { NavbarProvider } from "../../../context/NavbarContext";
+import FloatingActionButton from "../../../shared/components/FloatingActionButton";
 
 // navbar context to handle active state
 
@@ -14,6 +15,8 @@ function Router() {
   return (
     <>
       <Nav />
+
+      <FloatingActionButton />
 
       <div className="h-ninety">
         <Switch>

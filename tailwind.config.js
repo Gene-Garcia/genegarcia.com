@@ -50,6 +50,7 @@ module.exports = {
       ringColor: ["hover", "group-hover", "active"],
       ringOpacity: ["hover", "group-hover", "active"],
       ringOffsetWidth: ["hover", "active"],
+      groupHover: ["display"],
       boxShadow: ["hover"],
       display: ["group-hover"],
     },
