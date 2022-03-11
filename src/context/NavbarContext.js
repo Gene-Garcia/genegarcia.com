@@ -11,6 +11,7 @@ const init = {
   PORTFOLIO: false,
   TECH_STACK: false,
   EXPERIENCE: false,
+  ACADEMIC_PORTFOLIO: false,
 };
 
 function NavbarProvider({ children }) {
