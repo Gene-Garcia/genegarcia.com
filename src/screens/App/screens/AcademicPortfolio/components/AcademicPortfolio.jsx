@@ -5,6 +5,7 @@ import Heading from "../../../../../shared/components/Heading";
 
 // portfolio data
 import data from "../utils/data";
+import Pagination from "./utils/Pagination";
 
 const AcademicPortfolio = () => {
   // navbar context
@@ -16,15 +17,20 @@ const AcademicPortfolio = () => {
 
   return (
     <Container>
-      <Heading head="Academic Portfolio" />
+      <div className="flex flex-row justify-between items-center">
+        <Heading head="Academic Portfolio" />
+        <Pagination />
+      </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
-        <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
         <PortfolioCard data={data.FRESHMAN.TERM1[1]} />
         <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
         <PortfolioCard data={data.FRESHMAN.TERM1[1]} />
         <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
-        <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
+      </div>
+
+      <div className="mt-10 w-max m-auto">
+        <Pagination />
       </div>
     </Container>
   );
