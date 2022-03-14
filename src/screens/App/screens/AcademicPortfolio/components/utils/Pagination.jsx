@@ -91,39 +91,35 @@ const Arrows = ({ children }) => {
 };
 
 const TermPagination = () => {
-  const { term, TERMS, paginateTerm } = useAcademicPortfolioContext();
-
   return (
     <>
-      <Button
-        term="T1"
-        active={TERMS[term] === "T1"}
-        onClick={() => paginateTerm(0)}
-      />
-      <Button
-        term="T2"
-        active={TERMS[term] === "T2"}
-        onClick={() => paginateTerm(1)}
-      />
-      <Button
-        term="T3"
-        active={TERMS[term] === "T3"}
-        onClick={() => paginateTerm(2)}
-      />
+      <Button term="T1" index={0} />
+      <Button term="T2" index={1} />
+      <Button term="T3" index={2} />
     </>
   );
 };
 
-const Button = ({ term, active, onClick }) => {
+const Button = ({ term, index }) => {
+  const {
+    term: activeTerm,
+    TERMS,
+    thisYear,
+    all,
+    paginateTerm,
+  } = useAcademicPortfolioContext();
+
+  const active = term === TERMS[activeTerm] ? true : false;
   return (
     <button
-      onClick={onClick}
+      onClick={() => paginateTerm(index)}
       className={` ${active ? "bg-accent text-white" : "bg-white text-accent"}
       bg-opacity-90 font-medium 
       border border-accent
       text-sm text-center rounded-sm w-7 h-7
       transition duration-100 ease-linear
-      hover:ring-1 hover:ring-accent hover:ring-offset-1`}
+      hover:ring-1 hover:ring-accent hover:ring-offset-1
+      ${(thisYear || all) && "ring-1 ring-accent ring-offset-1"}`}
     >
       {term}
     </button>
