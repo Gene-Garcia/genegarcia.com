@@ -37,13 +37,17 @@ module.exports = {
       },
 
       minHeight: {
-        98: "26rem",
+        98: "29rem",
       },
 
       spacing: {
         // 83: "21rem",
         86: "22rem",
         // 90: "23rem",
+      },
+
+      outline: {
+        accent: "0.5px solid #2196F3",
       },
     },
   },

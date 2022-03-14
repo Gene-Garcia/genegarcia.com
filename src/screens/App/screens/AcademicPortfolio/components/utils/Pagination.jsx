@@ -2,26 +2,42 @@ import React from "react";
 import { useAcademicPortfolioContext } from "../../../../../../context/AcademicPortfolioContext";
 
 const Pagination = () => {
+  const { year, YEARS } = useAcademicPortfolioContext();
+
   return (
-    <div className="space-y-1">
-      <YearPagination />
-      <TermPagination />
-    </div>
+    <>
+      <Arrows>
+        <button
+          className={`bg-white w-32 h-7
+          rounded outline outline-accent
+          text-sm font-medium text-accent
+          transition duration-150 ease-linear
+          hover:bg-accent hover:text-white`}
+        >
+          {YEARS[year]}
+        </button>
+
+        <TermPagination />
+      </Arrows>
+    </>
   );
 };
 
-const YearPagination = () => {
-  const { paginateYear, year, YEARS } = useAcademicPortfolioContext();
+const Arrows = ({ children }) => {
+  const { paginateYear } = useAcademicPortfolioContext();
 
   return (
-    <div className="flex flex-row items-center justify-between">
+    <div className="flex flex-row gap-2">
       <button
         onClick={() => paginateYear(false)}
-        className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5"
+        className={`bg-accent bg-opacity-90 text-white
+          w-7 h-7 rounded
+          transition duration-100 ease-linear
+          hover:ring-1 hover:ring-accent hover:ring-offset-1`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="h-5 w-5 m-auto"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -35,15 +51,18 @@ const YearPagination = () => {
         </svg>
       </button>
 
-      <p className="w-28 text-center text-sm">{YEARS[year]}</p>
+      <div className="flex flex-row gap-2">{children}</div>
 
       <button
         onClick={() => paginateYear(true)}
-        className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5"
+        className={`bg-accent bg-opacity-90 text-white
+          w-7 h-7 rounded
+          transition duration-100 ease-linear
+          hover:ring-1 hover:ring-accent hover:ring-offset-1`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="h-5 w-5 m-auto"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -60,7 +79,7 @@ const TermPagination = () => {
   const { term, TERMS, paginateTerm } = useAcademicPortfolioContext();
 
   return (
-    <div className="flex flex-row justify-between gap-1.5">
+    <>
       <Button
         term="T1"
         active={TERMS[term] === "T1"}
@@ -76,7 +95,7 @@ const TermPagination = () => {
         active={TERMS[term] === "T3"}
         onClick={() => paginateTerm(2)}
       />
-    </div>
+    </>
   );
 };
 
@@ -84,11 +103,12 @@ const Button = ({ term, active, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className={` ${active ? "bg-gray-600" : "bg-gray-400"}
-      bg-opacity-70 text-white font-medium 
-    text-sm w-10 rounded-tl rounded-br
-    transition duration-100 ease-linear
-    hover:bg-gray-200 hover:text-gray-700`}
+      className={` ${active ? "bg-accent text-white" : "bg-white text-accent"}
+      bg-opacity-90 font-medium 
+      border border-accent
+      text-sm text-center rounded-sm w-7 h-7
+      transition duration-100 ease-linear
+      hover:ring-1 hover:ring-accent hover:ring-offset-1`}
     >
       {term}
     </button>
