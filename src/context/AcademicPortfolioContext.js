@@ -15,9 +15,21 @@ const AcademicPortfolioProvider = ({ children }) => {
   // wrapper
   const paginateYear = (forward) => {
     if (forward) {
-      setYear((prev) => (prev + 1 > YEARS.length - 1 ? 0 : prev + 1));
+      setTerm((prev) => (prev + 1 > TERMS.length - 1 ? 0 : prev + 1));
+
+      // if the current term has reached the max, paginate the YEAR
+      if (TERMS[term] === "T3") {
+        // if the next year will be out of bounds, logically, it should restart from the start; the lowest year.
+        setYear((prev) => (prev + 1 > YEARS.length - 1 ? 0 : prev + 1));
+      }
     } else {
-      setYear((prev) => (prev - 1 < 0 ? YEARS.length - 1 : prev - 1));
+      setTerm((prev) => (prev - 1 < 0 ? TERMS.length - 1 : prev - 1));
+
+      // if the current TERM has reached the minimum, also paginate the YEAR
+      if (TERMS[term] === "T1") {
+        // if the previous year will be out of bounds, logically, it should rotate back to the highest year
+        setYear((prev) => (prev - 1 < 0 ? YEARS.length - 1 : prev - 1));
+      }
     }
   };
 

@@ -37,7 +37,7 @@ module.exports = {
       },
 
       minHeight: {
-        98: "25rem",
+        98: "26rem",
       },
 
       spacing: {
