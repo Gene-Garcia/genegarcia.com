@@ -2,7 +2,7 @@ import React from "react";
 import { useAcademicPortfolioContext } from "../../../../../../context/AcademicPortfolioContext";
 
 const Pagination = () => {
-  const { year, YEARS, toggleThisYear, toggleAll } =
+  const { year, YEARS, toggleThisYear, toggleAll, thisYear, all } =
     useAcademicPortfolioContext();
 
   return (
@@ -14,7 +14,8 @@ const Pagination = () => {
           rounded outline outline-accent
           text-sm font-medium text-accent
           transition duration-150 ease-linear
-          hover:bg-accent hover:text-white`}
+          hover:bg-accent hover:text-white
+          ${thisYear && "ring-1 ring-accent ring-offset-2"}`}
         >
           {YEARS[year]}
         </button>
@@ -28,7 +29,8 @@ const Pagination = () => {
         h-7 px-2
         rounded border border-accent border-opacity-10
         transition duration-150 ease-linear
-        hover:border-accent`}
+        hover:border-accent
+        ${all && "ring-1 ring-accent ring-offset-2"}`}
       >
         ALL
       </button>
