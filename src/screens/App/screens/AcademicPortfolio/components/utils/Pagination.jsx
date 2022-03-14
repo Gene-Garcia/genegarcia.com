@@ -1,4 +1,5 @@
 import React from "react";
+import { useAcademicPortfolioContext } from "../../../../../../context/AcademicPortfolioContext";
 
 const Pagination = () => {
   return (
@@ -10,9 +11,14 @@ const Pagination = () => {
 };
 
 const YearPagination = () => {
+  const { paginateYear, year, YEARS } = useAcademicPortfolioContext();
+
   return (
     <div className="flex flex-row items-center justify-between">
-      <button className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5">
+      <button
+        onClick={() => paginateYear(false)}
+        className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -29,9 +35,12 @@ const YearPagination = () => {
         </svg>
       </button>
 
-      <p className="w-28 text-center text-sm">Sophomore</p>
+      <p className="w-28 text-center text-sm">{YEARS[year]}</p>
 
-      <button className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5">
+      <button
+        onClick={() => paginateYear(true)}
+        className="text-gray-700 transition duration-150 ease-linear hover:text-accent p-0.5"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -48,18 +57,39 @@ const YearPagination = () => {
 };
 
 const TermPagination = () => {
+  const { term, TERMS, paginateTerm } = useAcademicPortfolioContext();
+
   return (
     <div className="flex flex-row justify-between gap-1.5">
-      <Button term="T1" />
-      <Button term="T2" />
-      <Button term="T3" />
+      <Button
+        term="T1"
+        active={TERMS[term] === "T1"}
+        onClick={() => paginateTerm(0)}
+      />
+      <Button
+        term="T2"
+        active={TERMS[term] === "T2"}
+        onClick={() => paginateTerm(1)}
+      />
+      <Button
+        term="T3"
+        active={TERMS[term] === "T3"}
+        onClick={() => paginateTerm(2)}
+      />
     </div>
   );
 };
 
-const Button = ({ term }) => {
+const Button = ({ term, active, onClick }) => {
   return (
-    <button className="bg-accent bg-opacity-80 text-white font-medium text-sm w-10 rounded-tl rounded-br">
+    <button
+      onClick={onClick}
+      className={` ${active ? "bg-gray-600" : "bg-gray-400"}
+      bg-opacity-70 text-white font-medium 
+    text-sm w-10 rounded-tl rounded-br
+    transition duration-100 ease-linear
+    hover:bg-gray-200 hover:text-gray-700`}
+    >
       {term}
     </button>
   );

@@ -1,4 +1,8 @@
 import React, { useEffect } from "react";
+import {
+  AcademicPortfolioProvider,
+  useAcademicPortfolioContext,
+} from "../../../../../context/AcademicPortfolioContext";
 import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
@@ -17,25 +21,35 @@ const AcademicPortfolio = () => {
 
   return (
     <Container>
+      <AcademicPortfolioProvider>
+        <AcademicPortfolioContainer />
+      </AcademicPortfolioProvider>
+    </Container>
+  );
+};
+export default AcademicPortfolio;
+
+const AcademicPortfolioContainer = () => {
+  return (
+    <>
       <div className="flex flex-row justify-between items-center">
         <Heading head="Academic Portfolio" />
         <Pagination />
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
-        <PortfolioCard data={data.FRESHMAN.TERM1[1]} />
-        <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
-        <PortfolioCard data={data.FRESHMAN.TERM1[1]} />
-        <PortfolioCard data={data.FRESHMAN.TERM1[0]} />
+        <PortfolioCard data={data.FRESHMAN.T1[1]} />
+        <PortfolioCard data={data.FRESHMAN.T1[0]} />
+        <PortfolioCard data={data.FRESHMAN.T1[1]} />
+        <PortfolioCard data={data.FRESHMAN.T1[0]} />
       </div>
 
       <div className="mt-10 w-max m-auto">
         <Pagination />
       </div>
-    </Container>
+    </>
   );
 };
-export default AcademicPortfolio;
 
 const PortfolioCard = ({ data }) => {
   const {

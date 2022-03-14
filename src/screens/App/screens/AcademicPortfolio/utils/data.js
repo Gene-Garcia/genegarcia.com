@@ -1,7 +1,7 @@
 const academicPortData = {
   FRESHMAN: {
     NAME: "Freshman",
-    TERM1: [
+    T1: [
       {
         COURSE_NAME: "Lorem Ipsum",
         COURSE_CODE: "LI1-12",
@@ -30,21 +30,21 @@ const academicPortData = {
         FILE_LINK: false,
       },
     ],
-    TERM2: [],
-    TERM3: [],
+    T2: [],
+    T3: [],
   },
 
   SOPHOMORE: {
     NAME: "Sophomore",
-    TERM1: [],
-    TERM2: [],
-    TERM3: [],
+    T1: [],
+    T2: [],
+    T3: [],
   },
 
   JUNIOR: {
     NAME: "Junior",
-    TERM1: [],
-    TERM2: [],
+    T1: [],
+    T2: [],
     // TERM3: [],
   },
 
