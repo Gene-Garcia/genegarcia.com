@@ -1,6 +1,5 @@
 const academicPortData = {
   FRESHMAN: {
-    NAME: "Freshman",
     T1: [
       {
         COURSE_NAME: "Introduction to Computer Systems",
@@ -61,7 +60,6 @@ const academicPortData = {
   },
 
   SOPHOMORE: {
-    NAME: "Sophomore",
     T1: [
       {
         COURSE_NAME: "Data Structures and Algorithms",
@@ -201,7 +199,6 @@ const academicPortData = {
   },
 
   JUNIOR: {
-    NAME: "Junior",
     T1: [
       {
         COURSE_NAME: "Information Systems Project Management 1",
@@ -247,6 +244,8 @@ const academicPortData = {
     ],
     // TERM3: [],
   },
+
+  SENIOR: {},
 
   //   SENIOR: {
   //     NAME: "SENIOR",

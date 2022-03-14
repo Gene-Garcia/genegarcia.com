@@ -36,7 +36,7 @@ const AcademicPortfolioContainer = () => {
     <>
       <div className="flex flex-row justify-between items-center">
         <Heading head="Academic Portfolio" />
-        {/* <Pagination /> */}
+        <Pagination />
       </div>
 
       <p>All {all ? "True" : "False"}</p>
@@ -54,16 +54,34 @@ const AcademicPortfolioContainer = () => {
 };
 
 const RenderPortfolio = () => {
-  const { YEARS, year, TERMS, term } = useAcademicPortfolioContext();
-  let renderData = data[YEARS[year].toUpperCase()];
+  const { YEARS, year, TERMS, term, all, thisYear } =
+    useAcademicPortfolioContext();
 
-  if (renderData) renderData = renderData[TERMS[term]];
+  let renderData = [];
 
-  console.log(renderData);
+  if (!all && !thisYear) {
+    renderData = data[YEARS[year].toUpperCase()];
+    if (renderData) renderData = renderData[TERMS[term]];
+  } else if (all) {
+    Object.entries(data).forEach(([, yearValue]) => {
+      Object.entries(yearValue).forEach(([, termArray]) => {
+        renderData = [...renderData, ...termArray];
+      });
+    });
+  } else if (thisYear) {
+    Object.entries(data[YEARS[year].toUpperCase()]).forEach(([, termArray]) => {
+      renderData = [...renderData, ...termArray];
+    });
+  }
+
   return (
     <>
       {renderData ? (
-        renderData.map((d) => <PortfolioCard key={d.COURSE_CODE} data={d} />)
+        renderData.length > 0 ? (
+          renderData.map((d) => <PortfolioCard key={d.COURSE_CODE} data={d} />)
+        ) : (
+          <h1>No outputs for this year and term yet</h1>
+        )
       ) : (
         <h1>No outputs for this year and term yet</h1>
       )}
