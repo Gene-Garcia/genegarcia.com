@@ -100,6 +100,7 @@ const PortfolioCard = ({ data }) => {
     RESEARCH: "bg-my-green text-white",
     PROGRAMMING: "bg-my-orange text-white",
     "CASE STUDY": "bg-my-purple text-white",
+    PRACTICAL: "bg-gray-400 text-white",
   };
 
   return (
