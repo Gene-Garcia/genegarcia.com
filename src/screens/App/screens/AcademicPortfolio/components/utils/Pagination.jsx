@@ -2,12 +2,14 @@ import React from "react";
 import { useAcademicPortfolioContext } from "../../../../../../context/AcademicPortfolioContext";
 
 const Pagination = () => {
-  const { year, YEARS } = useAcademicPortfolioContext();
+  const { year, YEARS, toggleThisYear, toggleAll } =
+    useAcademicPortfolioContext();
 
   return (
-    <>
+    <div className="flex flex-row gap-2">
       <Arrows>
         <button
+          onClick={toggleThisYear}
           className={`bg-white w-32 h-7
           rounded outline outline-accent
           text-sm font-medium text-accent
@@ -19,7 +21,18 @@ const Pagination = () => {
 
         <TermPagination />
       </Arrows>
-    </>
+
+      <button
+        onClick={toggleAll}
+        className={`bg-accent bg-opacity-20 text-accent font-medium text-sm
+        h-7 px-2
+        rounded border border-accent border-opacity-10
+        transition duration-150 ease-linear
+        hover:border-accent`}
+      >
+        ALL
+      </button>
+    </div>
   );
 };
 

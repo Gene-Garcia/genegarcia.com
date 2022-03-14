@@ -30,12 +30,17 @@ const AcademicPortfolio = () => {
 export default AcademicPortfolio;
 
 const AcademicPortfolioContainer = () => {
+  const { all, thisYear } = useAcademicPortfolioContext();
+
   return (
     <>
       <div className="flex flex-row justify-between items-center">
         <Heading head="Academic Portfolio" />
         {/* <Pagination /> */}
       </div>
+
+      <p>All {all ? "True" : "False"}</p>
+      <p>This Year {thisYear ? "True" : "False"}</p>
 
       <div className="mt-10 min-h-98 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
         <RenderPortfolio />

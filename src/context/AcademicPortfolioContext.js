@@ -11,6 +11,8 @@ const AcademicPortfolioProvider = ({ children }) => {
 
   const [year, setYear] = useState(0);
   const [term, setTerm] = useState(0);
+  const [all, setAll] = useState(false); // shows all outputs
+  const [thisYear, setThisYear] = useState(false); // shows all outputs for current year
 
   // wrapper
   const paginateYear = (forward) => {
@@ -37,6 +39,16 @@ const AcademicPortfolioProvider = ({ children }) => {
     setTerm(termIndex);
   };
 
+  const toggleAll = () => {
+    setThisYear(false);
+    setAll((prev) => !prev);
+  };
+
+  const toggleThisYear = () => {
+    setAll(false);
+    setThisYear((prev) => !prev);
+  };
+
   return (
     <AcademicPortfolioContext.Provider
       value={{
@@ -48,6 +60,12 @@ const AcademicPortfolioProvider = ({ children }) => {
         setTerm,
         paginateYear,
         paginateTerm,
+        all,
+        setAll,
+        toggleAll,
+        thisYear,
+        setThisYear,
+        toggleThisYear,
       }}
     >
       {children}
@@ -65,6 +83,12 @@ const useAcademicPortfolioContext = () => {
     setTerm,
     paginateYear,
     paginateTerm,
+    all,
+    setAll,
+    toggleAll,
+    thisYear,
+    setThisYear,
+    toggleThisYear,
   } = useContext(AcademicPortfolioContext);
   return {
     YEARS,
@@ -75,6 +99,12 @@ const useAcademicPortfolioContext = () => {
     setTerm,
     paginateYear,
     paginateTerm,
+    all,
+    setAll,
+    toggleAll,
+    thisYear,
+    setThisYear,
+    toggleThisYear,
   };
 };
 
