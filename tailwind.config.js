@@ -36,6 +36,10 @@ module.exports = {
         min: "min-content",
       },
 
+      minHeight: {
+        98: "25rem",
+      },
+
       spacing: {
         // 83: "21rem",
         86: "22rem",
