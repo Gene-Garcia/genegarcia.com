@@ -103,7 +103,13 @@ const PortfolioCard = ({ data }) => {
   };
 
   return (
-    <div className="h-full shadow rounded-md p-5 flex flex-col justify-between gap-y-5">
+    <div
+      className={`h-full shadow rounded-bl-3xl rounded-tr-3xl rounded-md p-5
+     flex flex-col justify-between gap-y-5
+     transition duration-200 ease-linear
+     border border-transparent
+     hover:shadow-2xl hover:border-gray-400 hover:border-opacity-50`}
+    >
       <div className="flex flex-col sm:flex-row justify-between gap-x-2 gap-y-3">
         <div className="">
           <p className="font-semibold">{NAME}</p>
