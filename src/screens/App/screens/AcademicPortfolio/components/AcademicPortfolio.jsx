@@ -34,19 +34,34 @@ const AcademicPortfolioContainer = () => {
     <>
       <div className="flex flex-row justify-between items-center">
         <Heading head="Academic Portfolio" />
-        <Pagination />
+        {/* <Pagination /> */}
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
-        <PortfolioCard data={data.FRESHMAN.T1[1]} />
-        <PortfolioCard data={data.FRESHMAN.T1[0]} />
-        <PortfolioCard data={data.FRESHMAN.T1[1]} />
-        <PortfolioCard data={data.FRESHMAN.T1[0]} />
+        <RenderPortfolio />
       </div>
 
       <div className="mt-10 w-max m-auto">
         <Pagination />
       </div>
+    </>
+  );
+};
+
+const RenderPortfolio = () => {
+  const { YEARS, year, TERMS, term } = useAcademicPortfolioContext();
+  let renderData = data[YEARS[year].toUpperCase()];
+
+  if (renderData) renderData = renderData[TERMS[term]];
+
+  console.log(renderData);
+  return (
+    <>
+      {renderData ? (
+        renderData.map((d) => <PortfolioCard key={d.COURSE_CODE} data={d} />)
+      ) : (
+        <h1>No outputs for this year and term yet</h1>
+      )}
     </>
   );
 };
