@@ -34,7 +34,9 @@ const AcademicPortfolioContainer = () => {
     <>
       <div className="flex flex-row justify-between items-center">
         <Heading head="Academic Portfolio" />
-        <Pagination />
+        <div className={`hidden md:block`}>
+          <Pagination />
+        </div>
       </div>
 
       <div className="mt-10 min-h-98 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
