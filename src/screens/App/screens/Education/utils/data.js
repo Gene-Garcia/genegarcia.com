@@ -8,6 +8,8 @@ export default {
     specialization: "BS Information Systems",
     logo: mcl,
 
+    state: "Present",
+
     awards: {
       FRESH_SOPH: {
         name: "Freshman & Sophomore",
@@ -23,6 +25,8 @@ export default {
     school: "Malayan Colleges Laguna",
     specialization: "Information & Communications Technology - Programming",
     logo: mcl,
+
+    state: "Graduated",
 
     awards: {
       YEAR: {
@@ -43,6 +47,8 @@ export default {
     school: "Creative Middle School",
     specialization: "Junior High School",
     logo: cms,
+
+    state: "Graduated",
 
     awards: {
       YEAR: {

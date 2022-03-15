@@ -1,13 +1,13 @@
 import React from "react";
 
 function SchoolContent({
-  data: { school, specialization, logo, awards, linkName, link },
+  data: { school, specialization, logo, awards, linkName, link, state },
 }) {
   return (
     <div className="flex flex-col gap-3 lg:gap-6">
       <img
         src={logo}
-        className="w-28 2xl:w-36 filter drop-shadow-xl grayscale transition duration-200 ease-linear hover:filter-none"
+        className="w-min h-24 filter drop-shadow-xl"
         alt={school}
       />
 
@@ -15,7 +15,12 @@ function SchoolContent({
       <div className="flex flex-col gap-6 lg:gap-9 justify-between flex-grow">
         <div className="space-y-1">
           <h3 className="text-xl font-semibold text-black">{school}</h3>
-          <p className="text-md font-medium text-gray-600">{specialization}</p>
+          <p className="text-base font-medium text-gray-500 leading-tight">
+            {specialization}
+          </p>
+          <span className="mt-0.5 text-sm font-medium text-gray-400 italic">
+            {state}
+          </span>
         </div>
 
         <div className="space-y-3">
@@ -28,14 +33,14 @@ function SchoolContent({
           <a
             target="_blank"
             href={link}
-            className="text-accent font-semibold border-b border-transparent transition duration-200 ease-linear group-hover:border-gray-400 "
+            className="text-accent text-opacity-85 font-medium border-b border-transparent transition duration-200 ease-linear group-hover:border-gray-400 "
           >
             {linkName}
           </a>
           {/* arrow */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 transition duration-200 ease-linear group-hover:text-accent"
+            className="h-5 w-5 transition duration-200 ease-linear text-gray-600 group-hover:text-accent"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -61,7 +66,7 @@ function Awards({ title, lists }) {
 
       <ol className="space-y-0.5">
         {lists.map((e, i) => (
-          <li key={i}>
+          <li className="text-sm" key={i}>
             {i + 1}. {e}
           </li>
         ))}

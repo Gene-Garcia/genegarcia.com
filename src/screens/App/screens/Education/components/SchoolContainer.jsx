@@ -10,7 +10,7 @@ function SubtleContainer({ children }) {
 
 function FocusedContainer({ children }) {
   return (
-    <div className="order-first xl:order-none p-7 sm:p-10 shadow-lg xl:shadow-2xl w-full lg:w-5/12 xl:w-2/5 rounded-md flex items-stretch ">
+    <div className="order-first xl:order-none p-7 sm:p-10 shadow-lg xl:shadow-xl w-full lg:w-5/12 xl:w-2/5 rounded-md flex items-stretch ">
       {children}
     </div>
   );
