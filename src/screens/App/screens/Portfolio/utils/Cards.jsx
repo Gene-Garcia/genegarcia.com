@@ -163,7 +163,11 @@ function Gallery({ images, orientation }) {
         <img
           src={image}
           key={i}
-          className={`${orientation === "HORI" ? "w-26rem" : "w-2/12"} shadow`}
+          className={`${
+            orientation === "HORI"
+              ? "w-4/5 lg:w-4/6 xl:w-3/5 2xl:w-1/2"
+              : "w-thirty sm:w-2/5 md:w-thirty lg:w-1/5 xl:w-2/12"
+          } shadow`}
         />
       ))}
     </div>

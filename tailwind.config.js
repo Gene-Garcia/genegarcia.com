@@ -24,8 +24,6 @@ module.exports = {
         seventy: "70%",
         eightfive: "85%",
         fifteen: "15%",
-
-        "26rem": "26rem",
       },
 
       height: {
@@ -44,9 +42,7 @@ module.exports = {
       },
 
       spacing: {
-        // 83: "21rem",
         86: "22rem",
-        // 90: "23rem",
       },
 
       outline: {
