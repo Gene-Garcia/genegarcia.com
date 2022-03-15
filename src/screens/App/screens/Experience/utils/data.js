@@ -9,6 +9,21 @@ export default {
     name: "Academic Experience",
 
     sections: {
+      RESEARCH_FMIS_COVID: {
+        title: "International Research Conference",
+        date: "April 30, 2021",
+
+        organization: "Rangsit University",
+        location: "Virtual Conference from Pathum Thani, Thailand",
+        organizationLogo: rangsit,
+
+        description:
+          "Written and presented a paper on financial managemenet informations, its state during the COVID-19 pandemic, and crisis management of organizations to handle challenges.",
+
+        outputs: ["Published Research Paper", "Conference Presentation"],
+        achievements: [],
+      },
+
       IMMERSION: {
         title: "Work Immersion",
         date: "October 22, 2020",
@@ -22,21 +37,6 @@ export default {
 
         outputs: ["Working Web Application", "Project Presentation"],
         achievements: ["Best in Work Immersion"],
-      },
-
-      RESEARCH_FMIS_COVID: {
-        title: "International Research Conference",
-        date: "April 30, 2021",
-
-        organization: "Rangsit University",
-        location: "Virtual Conference from Pathum Thani, Thailand",
-        organizationLogo: rangsit,
-
-        description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-
-        outputs: ["Published Research Paper", "Conference Presentation"],
-        achievements: [],
       },
     },
   },
@@ -54,7 +54,7 @@ export default {
         organizationLogo: acm,
 
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Championed the competition on C# programming language and data structure & algorithms",
 
         outputs: [],
         achievements: ["First Place"],
@@ -69,7 +69,7 @@ export default {
         organizationLogo: acm,
 
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Solved intermediate to complex programming questions with a team through the use of efficient Java solutions.",
 
         outputs: [],
         achievements: ["First Place"],
@@ -84,7 +84,7 @@ export default {
         organizationLogo: acm,
 
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Won first place on solving various difficult programming logical question with the use if C# programming solutions.",
 
         outputs: [],
         achievements: ["First Place"],
