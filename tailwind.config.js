@@ -27,6 +27,7 @@ module.exports = {
 
         "26rem": "26rem",
       },
+
       height: {
         ninety: "90%",
         ten: "10%",
@@ -50,6 +51,10 @@ module.exports = {
 
       outline: {
         accent: "0.5px solid #2196F3",
+      },
+
+      fontSize: {
+        "2xs": ".5rem",
       },
     },
   },

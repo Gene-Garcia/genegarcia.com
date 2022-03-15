@@ -117,7 +117,7 @@ const PortfolioCard = ({ data }) => {
         <div className="">
           <p className="font-semibold">{NAME}</p>
           <p className="text-sm font-medium text-accent">{CODE}</p>
-          <p className="text-base text-gray-700">
+          <p className="text-sm text-gray-700">
             {PROF}
             <span className="text-xs italic text-gray-700">, professor</span>
           </p>
@@ -127,7 +127,7 @@ const PortfolioCard = ({ data }) => {
           {TYPES.map((type) => (
             <span
               key={type}
-              className={`${typesThemes[type]} text-xs w-max font-regular px-2 rounded-full`}
+              className={`${typesThemes[type]} text-2xs w-max font-regular px-2 rounded-full`}
             >
               {type}
             </span>
@@ -137,8 +137,10 @@ const PortfolioCard = ({ data }) => {
 
       <div>
         <div>
-          <h3 className="font-medium">{PROJECT}</h3>
-          <p className="text-gray-800 text-base">{DESC}</p>
+          <h3 className="font-semibold text-gray-500 mb-1 tracking-tight leading-tight">
+            {PROJECT}
+          </h3>
+          <p className="text-black text-base">{DESC}</p>
         </div>
 
         {(LIVE || FILE) && (
