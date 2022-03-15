@@ -30,108 +30,106 @@ function ProjectCard({
       {/* card */}
       <div className="shadow-lg rounded flex flex-col lg:flex-row">
         {/* logo */}
-        <div className="bg-gray-100 w-full lg:w-thirty xl:w-1/5 flex justify-center items-center p-0 md:p-5">
+        <div className="flex-shrink-0 bg-gray-100 lg:h-auto w-full lg:w-thirty xl:w-1/5 flex justify-center items-center">
           <img
             src={logo}
-            className="w-thirty lg:w-full object-contain filter drop-shadow-xl"
+            className="min-w-44 w-thirty sm:w-2/6 md:w-thirty lg:w-full object-contain filter drop-shadow-xl lg:p-5 2xl:p-10"
           />
         </div>
 
         {/* contents */}
-        <div className="space-y-5 p-5 lg:w-seventy xl:w-4/5">
-          <div>
-            <h3 className="text-2xl font-semibold text-black">{name}</h3>
-            <p className="font-light italic text-gray-500">{date}</p>
-          </div>
+        <div className="flex-grow flex flex-col justify-between">
+          <div className="p-5 flex-grow flex-shrink flex flex-col justify-around gap-4">
+            <div>
+              <h3 className="text-xl font-semibold text-black">{name}</h3>
+              <p className="text-sm font-light italic text-gray-500">{date}</p>
+            </div>
 
-          <p className="text-body-color xl:w-11/12 leading-relaxed">
-            {longDescription}
-          </p>
+            <p className="text-body-color leading-relaxed">{longDescription}</p>
 
-          {/* buttons */}
-          <div className="flex flex-wrap flex-row gap-3">
-            <Link
-              to={live.toString()}
-              target="_blank"
-              className={`${!live && "hidden"}`}
-            >
-              <button
-                className={`bg-accent px-4 py-1.5 rounded shadow 
+            {/* buttons */}
+            <div className="flex flex-wrap flex-row gap-3">
+              <Link
+                to={live.toString()}
+                target="_blank"
+                className={`${!live && "hidden"}`}
+              >
+                <button
+                  className={`bg-accent px-4 py-1.5 rounded shadow 
                 inline-flex items-center
                 text-white font-medium text-sm tracking-wide
                 transition duration-200 ease-linear
                 hover:ring-1 hover:ring-accent hover:ring-offset-2 hover:ring-opacity-90
                 active:ring active:ring-accent active:ring-opacity-25 active:ring-offset-0`}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 h-full my-auto mr-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                  />
-                </svg>{" "}
-                LIVE
-              </button>
-            </Link>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 h-full my-auto mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    />
+                  </svg>{" "}
+                  LIVE
+                </button>
+              </Link>
 
-            <Link
-              to={github.toString()}
-              target="_blank"
-              className={`${!github && "hidden"}`}
-            >
-              <button
-                className={`border border-gray-400 rounded px-4 py-1.5 rounded 
+              <Link
+                to={github.toString()}
+                target="_blank"
+                className={`${!github && "hidden"}`}
+              >
+                <button
+                  className={`border border-gray-400 rounded px-4 py-1.5 rounded 
                 inline-flex items-center
                 text-gray-700 text-sm font-medium tracking-wide
                 transition duration-200 ease-linear
                 hover:ring-1 hover:ring-gray-400 hover:ring-opacity-90 hover:ring-offset-2
                 active:bg-gray-100 `}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 h-full my-auto mr-1.5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
-                  />
-                </svg>{" "}
-                GITHUB
-              </button>
-            </Link>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4 h-full my-auto mr-1.5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z"
+                    />
+                  </svg>{" "}
+                  GITHUB
+                </button>
+              </Link>
 
-            <button
-              onClick={() => setToggled((prev) => !prev)}
-              className={`text-gray-600 text-sm font-medium px-2 py-1.5
+              <button
+                onClick={() => setToggled((prev) => !prev)}
+                className={`text-gray-600 text-sm font-medium px-2 py-1.5
               border border-transparent rounded
               transition duration-200 ease-linear
               hover:text-accent hover:border-accent hover:border-opacity-60`}
-            >
-              GALLERY
-            </button>
+              >
+                GALLERY
+              </button>
+            </div>
           </div>
 
-          <div className="border-b border-gray-300 rounded w-1/2 mx-auto"></div>
-
           {/* languages & technologies */}
-          <div className="flex flex-wrap flex-row gap-8 justify-center items-center">
+          <div className=" py-2 px-4 flex flex-wrap row gap-4 2xl:gap-5 items-center justify-end">
             {technologies.map((e, i) => (
               <img
                 key={i}
                 src={GetImage(e)}
-                className="w-10 sm:w-11 filter grayscale transition duration-150 ease-linear hover:filter-none"
+                className="h-auto w-9 2xl:w-10 filter grayscale transition duration-150 ease-linear hover:filter-none"
               />
             ))}
           </div>

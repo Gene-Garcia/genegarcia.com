@@ -41,6 +41,10 @@ module.exports = {
         98: "29rem",
       },
 
+      minWidth: {
+        44: "11rem",
+      },
+
       spacing: {
         86: "22rem",
       },
