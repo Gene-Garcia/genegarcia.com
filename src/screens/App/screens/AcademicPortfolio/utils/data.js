@@ -8,7 +8,8 @@ const academicPortData = {
 
         TYPES: ["CASE STUDY"],
         PROJECT_NAME: "Denz & Spices' Incorporated",
-        PROJECT_DESCRIPTION: "Suspendisse maximus pharetra augue id porta.",
+        PROJECT_DESCRIPTION:
+          "Identified the software, hardware, and networking technology requirements needed by a multi-branch restaurant in order to efficiently connect each branch, and provide an effective access to restaurant data.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -25,7 +26,7 @@ const academicPortData = {
         PROJECT_NAME:
           "Information Systems Utilization of an Organization: The Case of Walmart Inc.",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Analysis of Walmart Incorporated use and utilization of technology in delivery service to customers. Identified the applied innovative technologies the improves business process efficiency and company value of Walmart.",
 
         LIVE_LINK:
           "https://www.researchgate.net/publication/339948634_Information_Systems_Utilization_of_an_Organization_The_Case_of_Walmart_Inc",
@@ -39,7 +40,7 @@ const academicPortData = {
         TYPES: ["PROGRAMMING"],
         PROJECT_NAME: "MyFriends",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Introductory use of basic programming language logic using Python. Developed a command-line and text-based, for storage, program.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -56,7 +57,7 @@ const academicPortData = {
         PROJECT_NAME:
           "An Analysis of the Major Business Process of an Organization: The Case of Burger King Corporation",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "The study of Burger King Corporation's business processes and its utilized technologies and information systems which aids in the improvement of their business processes and business operations.",
 
         LIVE_LINK:
           "https://www.researchgate.net/publication/342588044_An_Analysis_of_the_Major_Business_Process_of_an_Organization_The_Case_of_Burger_King_Corporation",
@@ -70,7 +71,7 @@ const academicPortData = {
         TYPES: ["PROGRAMMING"],
         PROJECT_NAME: "4 Pics 1 Word",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Used python and GUI library to developed an interactive game similar to a 4 Pics 1 word. An application of computer programming language core concepts, including OOP.",
 
         LIVE_LINK: "https://github.com/Gene-Garcia/4-Pics-1-Word",
         FILE_LINK: "",
@@ -88,7 +89,7 @@ const academicPortData = {
         TYPES: ["RESEARCH", "PROGRAMMING", "CASE STUDY"],
         PROJECT_NAME: "Sales Order Processing",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Developed a command-line based sales order processing with the application of efficient data structures to better store, access, and sort data.",
 
         LIVE_LINK: "https://github.com/Gene-Garcia/Sales_Order_Processing",
         FILE_LINK: "",
@@ -101,7 +102,7 @@ const academicPortData = {
         TYPES: ["CASE STUDY"],
         PROJECT_NAME: "Analysis of Hershey ERP Implementation",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Reviewed and analyzed the history of the Hershey Company's ERP implementation to better understand the implications and requirements of an ERP.",
 
         LIVE_LINK:
           "https://drive.google.com/file/d/1lNNGnaLx3f_MAwWL5YgQWGTmL6Bs1Nh-/view?usp=sharing",
@@ -115,7 +116,7 @@ const academicPortData = {
         TYPES: ["RESEARCH", "PROGRAMMING"],
         PROJECT_NAME: "Barangay Management Information System",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "A development of a windows form-based information system that handles the resident records and transaction of a barangay. The application is also capable of communicating and storing data in a database.",
 
         LIVE_LINK:
           "https://github.com/Gene-Garcia/Winforms-Barangay-Management-Information-System",
@@ -239,7 +240,7 @@ const academicPortData = {
         TYPES: ["RESEARCH"],
         PROJECT_NAME: "Fly Apparel Proposal and Feasibility Study",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Created and conducted a study on a company that experience problems with present business processes. The study included the identification of the most appropriate investment and optimal technology-enabled solution.",
 
         LIVE_LINK: "https://youtu.be/4Ed5VYLx8jY",
         FILE_LINK:
@@ -253,7 +254,7 @@ const academicPortData = {
         TYPES: ["PRACTICAL"],
         PROJECT_NAME: "SAP B1 Cloud Practical",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Interacted with SAP's ERP designed for SMEs and performed the key business processes of a company, specifically, purchasing, conversion, and revenue cycle.",
 
         LIVE_LINK:
           "https://www.youtube.com/watch?v=9zHDAwhri5k&ab_channel=GeneGarcia",
@@ -269,7 +270,7 @@ const academicPortData = {
         TYPES: ["RESEARCH"],
         PROJECT_NAME: "FlySSystem Project Planning",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "A further development of company's study of improving a problematic business process through an IT project, specifically, the creation of standard project management plan used for project execution.",
 
         LIVE_LINK: "https://youtu.be/2Od6DriGt_4",
         FILE_LINK:
@@ -287,20 +288,6 @@ const academicPortData = {
   //     TERM2: [],
   //     TERM3: [],
   //   },
-};
-
-const a = {
-  COURSE_NAME: "",
-  COURSE_CODE: "",
-  PROFESSOR: "",
-
-  TYPES: ["RESEARCH", "PROGRAMMING", "CASE STUDY"],
-  PROJECT_NAME: "Lorem ipsum",
-  PROJECT_DESCRIPTION:
-    "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
-
-  LIVE_LINK: "",
-  FILE_LINK: "",
 };
 
 export default academicPortData;
