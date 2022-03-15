@@ -42,6 +42,7 @@ function Responsive({ context: linksState }) {
       <div className="block md:hidden">
         <img src={imageLogo} className="w-10 m-auto pt-6 pb-1" />
       </div>
+
       <div className="hidden md:flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
         {/* logo */}
         <div className=" flex-shrink-0 flex flex-row flex-shrink items-center">
