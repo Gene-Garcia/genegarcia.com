@@ -20,7 +20,7 @@ function Portfolio() {
     <Container>
       <Heading head="Portfolio" />
 
-      <div className="my-10 flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         {Object.entries(data).map(([k, v]) => (
           <ProjectCard key={k} id={k} data={v} />
         ))}

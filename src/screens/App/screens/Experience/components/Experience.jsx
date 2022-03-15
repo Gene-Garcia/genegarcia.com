@@ -19,7 +19,7 @@ function Experience() {
     <Container>
       <Heading head="Experience" />
 
-      <div className="mt-10 space-y-12">
+      <div className="space-y-12">
         {Object.entries(experienceData).map(([k, v]) => (
           <Group key={k} name={v.name} data={v.sections} />
         ))}

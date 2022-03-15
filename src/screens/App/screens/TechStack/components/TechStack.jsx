@@ -29,7 +29,7 @@ function TechStack() {
     <Container>
       <Heading head="Technology Stack" />
 
-      <div className="mt-10 flex flex-col sm:flex-row gap-12 sm:gap-8 md:gap-16 xl:gap-8">
+      <div className="flex flex-col sm:flex-row gap-12 sm:gap-8 md:gap-16 xl:gap-8">
         {/* buttons */}
         <div className="sm:w-2/5 grid grid-cols-1 xl:grid-cols-2 justify-start gap-4 sm:gap-6 xl:gap-8 h-min">
           <CardButton

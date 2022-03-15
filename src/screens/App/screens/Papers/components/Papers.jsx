@@ -28,7 +28,7 @@ function Papers() {
     <Container>
       <Heading head="Papers" />
 
-      <div className="mt-10 flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-2/5 h-min shadow-md rounded-md py-2 lg:py-7">
           <div className="hidden md:block">
             {Object.entries(paperData).map(([k, v], i) => (

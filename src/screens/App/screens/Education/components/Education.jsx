@@ -20,7 +20,7 @@ function Education() {
     <Container>
       <Heading head="Education" />
 
-      <div className="mt-10 flex flex-row flex-wrap justify-evenly xl:flex-nowrap items-stretch gap-4 lg:gap-10 xl:gap-6 2xl:gap-10">
+      <div className="flex flex-row flex-wrap justify-evenly xl:flex-nowrap items-stretch gap-4 lg:gap-10 xl:gap-6 2xl:gap-10">
         <SubtleContainer>
           <SchoolContent data={schoolData.SHS} />
         </SubtleContainer>
