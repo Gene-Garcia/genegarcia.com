@@ -44,13 +44,13 @@ function Responsive({ context: linksState }) {
       </div>
       <div className="hidden md:flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
         {/* logo */}
-        <div className="flex flex-row flex-shrink items-center">
+        <div className=" flex-shrink-0 flex flex-row flex-shrink items-center">
           <img src={imageLogo} className="w-8" alt="G" />
           {/* <img src={textLogo} className="h-8 w-auto" /> */}
         </div>
 
         {/* links */}
-        <div className="flex-shrink-0 space-x-5 md:space-x-9">
+        <div className="flex-grow flex flex-row flex-wrap justify-end items-center gap-y-1.5 gap-x-5 md:gap-x-6 lg:gap-x-9">
           {Object.entries(routes).map(([k, v]) => (
             <Link
               key={k}
