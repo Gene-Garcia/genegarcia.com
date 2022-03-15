@@ -94,7 +94,7 @@ export default {
     date: "March 2018",
     technologies: ["ANDROID", "ROOM_DB", "SQL_LITE", "JAVA", "LOCAL_STORAGE"],
     github: "https://github.com/Gene-Garcia/TutoQuizzer",
-    live: false,
+    live: "https://drive.google.com/file/d/1oil5Nzh-21VwjRIGQYWg8prJOGy5MeyA/view?usp=sharing",
   },
 
   SINISIAN_BARANGAY_MIS: {

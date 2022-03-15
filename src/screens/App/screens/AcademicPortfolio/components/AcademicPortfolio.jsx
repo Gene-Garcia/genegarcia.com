@@ -141,28 +141,39 @@ const PortfolioCard = ({ data }) => {
           <p className="text-gray-800 text-base">{DESC}</p>
         </div>
 
-        <div className="border-t border-gray-300 flex flex-row gap-3 pt-3">
-          <button
-            className={`bg-accent rounded px-5 py-1.5 
+        {(LIVE || FILE) && (
+          <div className="border-t border-gray-300 flex flex-row gap-3 pt-3">
+            {LIVE && (
+              <a
+                target="_blank"
+                href={LIVE}
+                className={`bg-accent rounded px-5 py-1.5 
           text-sm text-white font-semibold
           transition duration-150 ease-linear
           hover:bg-opacity-85
           hover:ring-2 hover:ring-accent hover:ring-offset-2 hover:ring-opacity-50
           active:ring active:ring-accent active:ring-offset-0`}
-          >
-            LIVE
-          </button>
-          <button
-            className={`bg-white rounded px-5 py-1.5
+              >
+                LIVE
+              </a>
+            )}
+
+            {FILE && (
+              <a
+                target="_blank"
+                href={FILE}
+                className={`bg-white rounded px-5 py-1.5
             border border-accent
           text-accent text-sm font-semibold
           transition duration-150 ease-linear
           hover:ring-1 hover:ring-accent hover:ring-offset-2
           active:bg-accent active:text-white`}
-          >
-            FILE
-          </button>
-        </div>
+              >
+                FILE
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

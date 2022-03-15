@@ -58,9 +58,9 @@ function ProjectCard({
               <button
                 className={`bg-accent px-4 py-1.5 rounded shadow 
                 inline-flex items-center
-                text-white font-medium text-base tracking-wide
+                text-white font-medium text-sm tracking-wide
                 transition duration-200 ease-linear
-                hover:ring-2 hover:ring-accent hover:ring-offset-2 hover:ring-opacity-90
+                hover:ring-1 hover:ring-accent hover:ring-offset-2 hover:ring-opacity-90
                 active:ring active:ring-accent active:ring-opacity-25 active:ring-offset-0`}
               >
                 <svg
@@ -89,10 +89,10 @@ function ProjectCard({
               <button
                 className={`border border-gray-400 rounded px-4 py-1.5 rounded 
                 inline-flex items-center
-                text-gray-700 font-medium tracking-wide
+                text-gray-700 text-sm font-medium tracking-wide
                 transition duration-200 ease-linear
-                hover:ring-2 hover:ring-gray-400 hover:ring-opacity-40 hover:ring-offset-2
-                acitve:ring-4 active:ring-gray-400 active:ring-opacity-40 active:ring-offset-0`}
+                hover:ring-1 hover:ring-gray-400 hover:ring-opacity-90 hover:ring-offset-2
+                active:bg-gray-100 `}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -114,10 +114,10 @@ function ProjectCard({
 
             <button
               onClick={() => setToggled((prev) => !prev)}
-              className={`text-gray-800 font-medium px-2 py-1.5
-              border-b border-transparent
+              className={`text-gray-600 text-sm font-medium px-2 py-1.5
+              border border-transparent rounded
               transition duration-200 ease-linear
-              hover:text-accent hover:border-accent`}
+              hover:text-accent hover:border-accent hover:border-opacity-60`}
             >
               GALLERY
             </button>
@@ -163,7 +163,7 @@ function Gallery({ images, orientation }) {
         <img
           src={image}
           key={i}
-          className={`${orientation === "HORI" ? "w-1/3" : "w-2/12"} shadow`}
+          className={`${orientation === "HORI" ? "w-26rem" : "w-2/12"} shadow`}
         />
       ))}
     </div>

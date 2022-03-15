@@ -24,6 +24,8 @@ module.exports = {
         seventy: "70%",
         eightfive: "85%",
         fifteen: "15%",
+
+        "26rem": "26rem",
       },
       height: {
         ninety: "90%",
@@ -63,6 +65,9 @@ module.exports = {
       textColor: ["active"],
       boxShadow: ["hover"],
       display: ["group-hover"],
+      borderColor: ["hover"],
+      borderWidth: ["hover"],
+      borderOpacity: ["hover"],
     },
   },
   plugins: [],
