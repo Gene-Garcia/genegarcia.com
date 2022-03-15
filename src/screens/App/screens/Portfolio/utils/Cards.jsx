@@ -49,8 +49,8 @@ function ProjectCard({
 
             {/* buttons */}
             <div className="flex flex-wrap flex-row gap-3">
-              <Link
-                to={live.toString()}
+              <a
+                href={live.toString()}
                 target="_blank"
                 className={`${!live && "hidden"}`}
               >
@@ -78,10 +78,10 @@ function ProjectCard({
                   </svg>{" "}
                   LIVE
                 </button>
-              </Link>
+              </a>
 
-              <Link
-                to={github.toString()}
+              <a
+                href={github.toString()}
                 target="_blank"
                 className={`${!github && "hidden"}`}
               >
@@ -109,7 +109,7 @@ function ProjectCard({
                   </svg>{" "}
                   GITHUB
                 </button>
-              </Link>
+              </a>
 
               <button
                 onClick={() => setToggled((prev) => !prev)}
