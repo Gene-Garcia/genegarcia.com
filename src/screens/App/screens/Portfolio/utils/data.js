@@ -3,8 +3,35 @@ import mclLogo from "../../../../../shared/images/project_logos/mcl.png";
 import floresDeMayoIs from "../../../../../shared/images/project_logos/floresdemayo-mis.png";
 import tutoQuizzer from "../../../../../shared/images/project_logos/tutoquizzer.png";
 import sinisianBMIS from "../../../../../shared/images/project_logos/sinisian-bmis.png";
+import imbentaryo from "../../../../../shared/images/project_logos/imbentaryo.png";
 
 export default {
+  IMBENTARYO: {
+    name: "imbentaryo",
+    logo: imbentaryo,
+
+    description:
+      "An android-based lightweight inventory monitoring application.",
+    longDescription:
+      "Technology-driven operations have been growing with the continued exponential growth of technology in today's 21st century. One of the applications of technology in business operations is the management of its physical inventory. The traditional and legacy processes of inventory management require the use of physical papers. However, with technology comes the digitalization of inventory data. imbentaryo is an android-based and lightweight solution for the digitalization of inventory. The focus of this application is directed toward startup businesses, households, and even selected students. In technicals, the application is built on the client-server communication setup.",
+
+    date: "May 2022 - June 2022",
+    technologies: [
+      "C_SHARP",
+      "XAMARIN",
+      "RESTFUL_API",
+      "JAVASCRIPT",
+      "NODE_JS",
+      "EXPRESS",
+      "SQL",
+      "SQL_LITE",
+      "HEROKU",
+      "VISUAL_STUDIO",
+    ],
+    github: "https://github.com/Gene-Garcia/imbentaryo_client",
+    live: "https://drive.google.com/file/d/1JSnIyIq-FKRY2wQELj_Zoj6ewDUqKTE8/view?usp=sharing",
+  },
+
   LOKAL: {
     name: "Lokal Music",
     logo: lokalLogo,

@@ -25,6 +25,9 @@ function ProjectCard({
   // hook state to hold the toggle of the gallery
   const [toggled, setToggled] = useState(false);
 
+  // vertical gallery
+  const verticalGallery = ["IMBENTARYO", "TUTOQUIZZER"];
+
   return (
     <>
       {/* card */}
@@ -142,7 +145,7 @@ function ProjectCard({
       >
         <Gallery
           images={galleryPhotos}
-          orientation={`${id === "TUTOQUIZZER" ? "VERTI" : "HORI"}`}
+          orientation={`${verticalGallery.includes(id) ? "VERTI" : "HORI"}`}
         />
       </div>
     </>
