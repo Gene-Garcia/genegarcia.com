@@ -31,9 +31,15 @@ import tq7 from "../images/project_images/tutoquizzer/tq-7.webp";
 import tq8 from "../images/project_images/tutoquizzer/tq-8.webp";
 import tq9 from "../images/project_images/tutoquizzer/tq-9.webp";
 import tq10 from "../images/project_images/tutoquizzer/tq-10.webp";
+import imb1 from "../images/project_images/imbentaryo/imb-1.webp";
+import imb2 from "../images/project_images/imbentaryo/imb-2.webp";
+import imb3 from "../images/project_images/imbentaryo/imb-3.webp";
+import imb4 from "../images/project_images/imbentaryo/imb-4.webp";
+import imb5 from "../images/project_images/imbentaryo/imb-5.webp";
 
 // data object to hold the array of the project screenshot image objects
 const projectGallery = {
+  IMBENTARYO: [imb1, imb2, imb3, imb4, imb5],
   LOKAL: [lm1, lm2, lm3, lm4, lm5, lm6, lm7, lm8],
   MCL_SCHOLAR_WEBSITE: [mcl1, mcl2],
   FLORES_DE_MAYO_IS: [fdmis1, fdmis2, fdmis3],

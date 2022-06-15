@@ -31,6 +31,8 @@ import namecheap from "../images/technologies/namecheap.webp";
 import identity from "../images/technologies/identity.webp";
 import mvc from "../images/technologies/mvc.webp";
 import figma from "../images/technologies/figma.webp";
+import xamarin from "../images/technologies/xamarin.webp";
+import restfulapi from "../images/technologies/restfulapi.webp";
 
 // 404
 import notFound from "../images/404.png";
@@ -70,6 +72,8 @@ const techObject = {
   VISUAL_STUDIO: vsStudio,
   VS_CODE: vsCode,
   AZURE: azure,
+  XAMARIN: xamarin,
+  RESTFUL_API: restfulapi,
 };
 
 /*
