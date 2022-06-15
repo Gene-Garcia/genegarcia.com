@@ -1,4 +1,17 @@
 export default {
+  SHAKEYS: {
+    id: "SHAKEYS",
+    date: "June 2022",
+    title: "Shakey's Business Evaluation of Business Performance",
+
+    paperType: "Research",
+    doi: "10.13140/RG.2.2.27016.90885",
+    link: "http://dx.doi.org/10.13140/RG.2.2.27016.90885",
+    location: "",
+    abstract:
+      "Shakey's operates in both the fast-food and the restaurant industry, where the company achieved having the highest market share in both industries. Shakey's Philippines is only a franchise of Shakey's from Sacramento, California, that initially aimed to promote beers. Today, its brand is well known to provide excellent quality of both food and service to Filipino families and groups. The purpose of this case study is to evaluate the performance of Shakey's through a business plan review and performing a SWOT analysis. Notably, the advent of information technology has reshaped how businesses worldwide operate, especially during and after this COVID-19 pandemic. The area of artificial intelligence and its application to business operations has also been a trend in identifying and creating improved or re-engineered overall business operations. Informed decision-making is critical for Shakey's Philippines to maintain both its brand and customer base, acquire a competitive advantage against the competitive food market, and overall better decision-making in improving its operations. This case study has proposed 2 business analytics solutions for improving Shakey's customer monitoring and intervention and human resource management. Business analytics solutions come with both functional and non-functional requirements that Shakey's must handle. The case study recommended following the de facto standard for data mining, CRISP-DM, and integrating with project management life cycles, such as waterfall and agile methodology.",
+  },
+
   CLOUD_COMPUTING: {
     id: "CLOUD_COMPUTING",
     date: "June 2021",
