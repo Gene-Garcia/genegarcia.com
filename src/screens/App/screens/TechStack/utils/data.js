@@ -39,7 +39,7 @@ export default {
     groups: [
       {
         title: "Programming Language",
-        technology: ["ANDROID", "JAVA"],
+        technology: ["ANDROID", "JAVA", "C_SHARP"],
       },
       {
         title: "Database",
@@ -47,7 +47,7 @@ export default {
       },
       {
         title: "Frameworks",
-        technology: ["ROOM_DB", "MVVM_ARCH"],
+        technology: ["ROOM_DB", "MVVM_ARCH", "XAMARIN", "RESTFUL_API"],
       },
     ],
   },
