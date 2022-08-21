@@ -33,6 +33,10 @@ import mvc from "../images/technologies/mvc.webp";
 import figma from "../images/technologies/figma.webp";
 import xamarin from "../images/technologies/xamarin.webp";
 import restfulapi from "../images/technologies/restfulapi.webp";
+import seaborn from "../images/technologies/seaborn.webp";
+import pandas from "../images/technologies/pandas.webp";
+import matplotlib from "../images/technologies/matplotlib.webp";
+import jupyter from "../images/technologies/jupyter.webp";
 
 // 404
 import notFound from "../images/404.png";
@@ -74,6 +78,10 @@ const techObject = {
   AZURE: azure,
   XAMARIN: xamarin,
   RESTFUL_API: restfulapi,
+  SEABORN: seaborn,
+  PANDAS: pandas,
+  MATPLOTLIB: matplotlib,
+  JUPYTER: jupyter,
 };
 
 /*
