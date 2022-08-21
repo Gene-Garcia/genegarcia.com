@@ -1,4 +1,23 @@
 export default {
+  DATA_ANALYTICS: {
+    title: "Data Analytics",
+
+    groups: [
+      {
+        title: "Programming Languages",
+        technology: ["PYTHON", "SQL"],
+      },
+      {
+        title: "Libraries",
+        technology: ["PANDAS", "MATPLOTLIB", "SEABORN"],
+      },
+      {
+        title: "Tools",
+        technology: ["JUPYTER", "EXCEL"],
+      },
+    ],
+  },
+
   WEB_APPLICATION: {
     title: "Web Application",
 

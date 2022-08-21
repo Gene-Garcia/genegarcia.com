@@ -32,30 +32,19 @@ function TechStack() {
       <div className="flex flex-col sm:flex-row gap-12 sm:gap-8 md:gap-16 xl:gap-8">
         {/* buttons */}
         <div className="sm:w-2/5 grid grid-cols-1 xl:grid-cols-2 justify-start gap-4 sm:gap-6 xl:gap-8 h-min">
-          <CardButton
-            id="WEB_APPLICATION"
-            name="Web Application"
-            color="blue"
-            onClick={updateData}
-          />
-          <CardButton
-            id="SMARTPHONE"
-            name="Smartphone"
-            color="orange"
-            onClick={updateData}
-          />
-          <CardButton
-            id="DESKTOP"
-            name="Desktop"
-            color="green"
-            onClick={updateData}
-          />
-          <CardButton
-            id="SERVICES"
-            name="Services"
-            color="purple"
-            onClick={updateData}
-          />
+          {Object.entries(techStackData).map(([k, v], i) => {
+            console.log(i);
+
+            return (
+              <CardButton
+                key={k}
+                id={k}
+                name={v.title}
+                color={i}
+                onClick={updateData}
+              />
+            );
+          })}
         </div>
 
         {/* content */}
@@ -106,18 +95,21 @@ function CardButton({ id, name, color, onClick }) {
   };
 
   // set theme of card button
-  if (color === "blue") {
-    theme.root = "border-accent ";
-    theme.circle = "bg-accent";
-  } else if (color === "orange") {
-    theme.root = "border-my-orange";
-    theme.circle = "bg-my-orange";
-  } else if (color === "green") {
-    theme.root = "border-my-green";
-    theme.circle = "bg-my-green";
-  } else if (color === "purple") {
-    theme.root = "border-my-purple";
-    theme.circle = "bg-my-purple";
+  if (color === 0) {
+    theme.root = "border-blue-900 ";
+    theme.circle = "bg-blue-800";
+  } else if (color === 1) {
+    theme.root = "border-blue-700";
+    theme.circle = "bg-blue-700";
+  } else if (color === 2) {
+    theme.root = "border-blue-600";
+    theme.circle = "bg-blue-600";
+  } else if (color === 3) {
+    theme.root = "border-blue-500";
+    theme.circle = "bg-blue-500";
+  } else if (color === 4) {
+    theme.root = "border-blue-400";
+    theme.circle = "bg-blue-400";
   }
 
   return (
