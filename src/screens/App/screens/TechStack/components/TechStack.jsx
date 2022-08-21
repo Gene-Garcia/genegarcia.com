@@ -40,6 +40,7 @@ function TechStack() {
                 key={k}
                 id={k}
                 name={v.title}
+                svg={v.svg}
                 color={i}
                 onClick={updateData}
               />
@@ -88,7 +89,7 @@ function GroupContainer({ group: { title, technology } }) {
   );
 }
 
-function CardButton({ id, name, color, onClick }) {
+function CardButton({ id, name, color, svg, onClick }) {
   const theme = {
     root: "",
     circle: "",
@@ -118,8 +119,11 @@ function CardButton({ id, name, color, onClick }) {
       onClick={() => onClick(id)}
     >
       <div
-        className={`h-8 w-8 md:h-10 md:w-10 rounded-full ${theme.circle}`}
-      ></div>
+        className={`h-8 w-8 md:h-10 md:w-10 rounded-full ${theme.circle}
+                    flex items-center justify-center text-center text-white`}
+      >
+        {svg}
+      </div>
       <p className="font-medium text-gray-800 text-lg md:text-xl ">{name}</p>
     </div>
   );
