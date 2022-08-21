@@ -48,11 +48,9 @@ function Home() {
         <div className="border-b-4 rounded border-accent my-8 w-24"></div>
 
         <p className="font-sans text-gray-600 text-xl sm:text-2xl w-11/12 lg:w-9/12">
-          a <span className="font-semibold text-black">student</span>, and an
-          aspiring{" "}
-          <span className="font-semibold text-black">full stack developer</span>
-          , <span>business analyst</span>, or{" "}
-          <span className="font-semibold text-black">data analyst</span>
+          an aspiring{" "}
+          <span className="font-semibold text-black">full stack developer</span>{" "}
+          and <span className="font-semibold text-black">data analyst</span>.
         </p>
 
         <div className="my-10 flex flex-row align-center gap-5">
@@ -72,7 +70,12 @@ function Home() {
             EMAIL ME
           </a>
 
-          <button className="font-bold text-md text-black px-5 py-2 lg:py-2.5 inline-flex items-center border border-transparent hover:border-gray-300 transition duration-200 ease-linear">
+          <a
+            href="https://drive.google.com/file/d/1xj4L0_QsXSxpjBWOzuV_a9AxMd-8dvu5/view?usp=sharing"
+            download
+            target="_blank"
+            className="font-bold text-md text-black px-5 py-2 lg:py-2.5 inline-flex items-center border border-transparent hover:border-gray-300 transition duration-200 ease-linear"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 mr-1.5"
@@ -88,7 +91,7 @@ function Home() {
               />
             </svg>
             MY RÉSUMÉ
-          </button>
+          </a>
         </div>
       </div>
     </div>
