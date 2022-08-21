@@ -51,16 +51,20 @@ function Responsive({ context: linksState }) {
         </div>
 
         {/* links */}
-        <div className="flex-grow flex flex-row flex-wrap justify-end items-center gap-y-1.5 gap-x-5 md:gap-x-6 lg:gap-x-9">
+        <div className="flex-grow flex flex-row flex-wrap justify-end items-center gap-y-1.5 gap-x-3">
           {Object.entries(routes).map(([k, v]) => (
             <Link
               key={k}
               to={v.PATH}
               className={`${
                 linksState[k]
-                  ? "text-accent font-semibold"
+                  ? "text-accent font-semibold bg-gray-50"
                   : "text-gray-800 font-medium"
-              } font-sans text-sm transition duration-200 ease-linear hover:text-accent border-b border-transparent hover:border-accent`}
+              } px-3 py-1.5 bg-gray-0 rounded-md
+              font-sans text-sm 
+              transition duration-200 ease-linear 
+              hover:text-accent hover:bg-gray-100
+              active:text-my-purple`}
             >
               {v.NAME.toUpperCase()}
             </Link>
