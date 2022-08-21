@@ -15,7 +15,7 @@ const FloatingActionButton = () => {
   const { linksState } = useNavbar();
 
   return (
-    <div className="fixed right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
+    <div className="z-50 fixed right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
       <div className={`flex flex-col items-end gap-2 mr-1`}>
         {toggled &&
           Object.entries(fabData).map(([k, v]) => (
@@ -50,7 +50,7 @@ const FloatingActionButton = () => {
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M4 6h16M4 12h16M4 18h16"
+            d="M4 6h16M4 12h16m-7 6h7"
           />
         </svg>
       </button>
@@ -67,9 +67,9 @@ const SubButton = ({ name, link, svg, active, listener }) => {
       className="group flex flex-row items-center w-max gap-2"
     >
       <div
-        className={`font-medium text-xs text-white
+        className={`font-regular text-xs text-white
         tracking-normal
-      bg-gray-500 bg-opacity-80 px-3 rounded py-0.5
+      bg-gray-400 px-3 rounded py-0.5
       transition duration-150 ease-linear
       group-hover:bg-gray-500`}
       >
@@ -78,7 +78,7 @@ const SubButton = ({ name, link, svg, active, listener }) => {
 
       <button
         className={`h-9 w-9 rounded-full 
-    ${active ? "text-white bg-accent" : "text-gray-600 bg-gray-200"}
+    ${active ? "text-white bg-accent" : "text-gray-600 bg-gray-100"}
     flex items-center justify-center
     transition duration-150 ease-linear
     group-hover:bg-gray-300    `}
