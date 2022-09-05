@@ -6,6 +6,7 @@ import PortfolioRoute from "./screens/Portfolio/route";
 import TechStackRoute from "./screens/TechStack/route";
 import ExperienceRoute from "./screens/Experience/route";
 import AcademicPortfolioRoute from "./screens/AcademicPortfolio/route";
+import CertificationsRoute from "./screens/Certifications/route";
 
 export default {
   EDUCATION: EducationRoute,
@@ -15,4 +16,5 @@ export default {
   TECH_STACK: TechStackRoute,
   EXPERIENCE: ExperienceRoute,
   ACADEMIC_PORTFOLIO: AcademicPortfolioRoute,
+  CERTIFICATIONS: CertificationsRoute,
 };
