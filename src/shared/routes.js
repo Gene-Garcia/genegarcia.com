@@ -19,6 +19,10 @@ export default {
     NAME: "Education",
     PATH: "/education",
   },
+  CERTIFICATIONS: {
+    NAME: "Certifications",
+    PATH: "/certifications",
+  },
   ACADEMIC_PORTFOLIO: {
     NAME: "Academic Portfolio",
     PATH: "/portfolio/academic",
