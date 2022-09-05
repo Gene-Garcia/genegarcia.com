@@ -37,6 +37,8 @@ import seaborn from "../images/technologies/seaborn.webp";
 import pandas from "../images/technologies/pandas.webp";
 import matplotlib from "../images/technologies/matplotlib.webp";
 import jupyter from "../images/technologies/jupyter.webp";
+import localStorage from "../images/technologies/local-storage.webp";
+import excel from "../images/technologies/excel.webp";
 
 // 404
 import notFound from "../images/404.png";
@@ -44,44 +46,46 @@ import notFound from "../images/404.png";
 // data object to hold the image object of a technology based on a key
 const techObject = {
   ANDROID: android,
+  ASP_DOT_NET: dotNet,
+  AZURE: azure,
   BOOTSTRAP: bootstrap,
   C_SHARP: cSharp,
   CSS_3: css3,
-  ASP_DOT_NET: dotNet,
   EXPRESS: express,
+  ENTITY: entity,
+  EXCEL: excel,
   FLASK: flask,
+  FIGMA: figma,
+  GITHUB: github,
+  IDENTITY: identity,
   HTML_5: html5,
+  HEROKU: heroku,
   JAVA: java,
   JAVASCRIPT: javascript,
+  JUPYTER: jupyter,
+  LOCAL_STORAGE: localStorage,
+  MATPLOTLIB: matplotlib,
   MONGO_DB: mongoDb,
   MONGOOSE: mongoose,
+  MVC_ARCH: mvc,
+  MVP_ARCH: mvp,
+  MVVM_ARCH: mvvm,
   NODE_JS: nodeJs,
+  NAMECHEAP: namecheap,
+  NETLIFY: netlify,
   PYTHON: python,
+  PANDAS: pandas,
   REACT: react,
+  ROOM_DB: room,
+  RESTFUL_API: restfulapi,
   SQL_SERVER: sqlServer,
   SQL: sql,
   SQL_LITE: sqlLite,
-  ENTITY: entity,
-  MVC_ARCH: mvc,
-  IDENTITY: identity,
-  ROOM_DB: room,
-  MVP_ARCH: mvp,
-  MVVM_ARCH: mvvm,
-  WINDOWS_FORMS: winforms,
-  NAMECHEAP: namecheap,
-  NETLIFY: netlify,
-  HEROKU: heroku,
-  GITHUB: github,
-  FIGMA: figma,
+  SEABORN: seaborn,
   VISUAL_STUDIO: vsStudio,
   VS_CODE: vsCode,
-  AZURE: azure,
+  WINDOWS_FORMS: winforms,
   XAMARIN: xamarin,
-  RESTFUL_API: restfulapi,
-  SEABORN: seaborn,
-  PANDAS: pandas,
-  MATPLOTLIB: matplotlib,
-  JUPYTER: jupyter,
 };
 
 /*
