@@ -1,7 +1,24 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./public/index.html",
+
+    // Shared folder
+    "./src/shared/**/*.{jsx,js}",
+    "./src/shared/**/**/*.{jsx,js}",
+    "./src/shared/**/**/**/*.{jsx,js}",
+
+    // App directories
+    "./src/screens/App/components/*.{jsx,js}",
+    "./src/screens/App/components/**/*.{jsx,js}",
+
+    "./src/screens/App/screens/**/*.{js,jsx,ts,tsx}",
+    "./src/screens/App/screens/**/components/*.{js,jsx,ts,tsx}",
+    "./src/screens/App/screens/**/components/**/*.{js,jsx,ts,tsx}",
+    "./src/screens/App/screens/**/utils/*.{js,jsx,ts,tsx}",
+    "./src/screens/App/screens/**/utils/**/*.{js,jsx,ts,tsx}",
+  ],
+  mode: "jit",
   theme: {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
@@ -58,30 +75,8 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      filter: ["hover"],
-      ringWidth: ["group-hover", "hover", "active"],
-      ringColor: ["hover", "group-hover", "active"],
-      ringOpacity: ["hover", "group-hover", "active"],
-      ringOffsetWidth: ["hover", "active"],
-      groupHover: ["display"],
-      backgroundColor: ["active"],
-      textColor: ["active"],
-      boxShadow: ["hover"],
-      display: ["group-hover"],
-      borderColor: ["hover"],
-      borderWidth: ["hover"],
-      borderOpacity: ["hover"],
-    },
-  },
-  plugins: [],
+  plugins: [
+    // must always be at the end
+    // require("autoprefixer"),
+  ],
 };
-
-/*
- * 'sm': '640px'
- * 'md': '768px'
- * 'lg': '1024px'
- * 'xl': '1280px'
- * '2xl': '1536px'
- */
