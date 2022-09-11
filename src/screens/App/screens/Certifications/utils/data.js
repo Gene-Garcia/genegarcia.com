@@ -8,7 +8,7 @@ export default {
     NAME: "Pirple",
     LOGO: pirple,
 
-    GRID_SPAN: "col-span-2 row-span-1",
+    GRID_SPAN: "col-span-2 row-auto lg:row-span-1",
 
     CERTS: {
       FSWDwF: {
@@ -28,7 +28,7 @@ export default {
     NAME: "Udemy",
     LOGO: udemy,
 
-    GRID_SPAN: "col-span-2 row-span-1",
+    GRID_SPAN: "col-span-2 row-auto lg:row-span-1",
 
     CERTS: {
       CWDB: {
@@ -49,7 +49,7 @@ export default {
     NAME: "Department of Information and Communications Technology",
     LOGO: dict,
 
-    GRID_SPAN: "col-span-2 row-span-2",
+    GRID_SPAN: "col-span-2 row-auto lg:row-span-2 xl:row-span-2",
 
     CERTS: {
       VDwP: {
@@ -92,7 +92,7 @@ export default {
     NAME: "Coursera",
     LOGO: coursera,
 
-    GRID_SPAN: "col-span-2 row-span-2",
+    GRID_SPAN: "col-span-2 row-auto lg:row-span-2 xl:row-span-2",
 
     CERTS: {
       OoDA: {
