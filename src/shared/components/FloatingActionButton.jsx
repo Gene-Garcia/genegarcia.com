@@ -67,21 +67,28 @@ const SubButton = ({ name, link, svg, active, listener }) => {
       className="group flex flex-row items-center w-max gap-2"
     >
       <div
-        className={`font-regular text-xs text-white
-        tracking-normal
-      bg-gray-400 px-3 rounded py-0.5
-      transition duration-150 ease-linear
-      group-hover:bg-gray-500`}
+        className={`font-medium text-xs 
+                    text-stone-600
+                    tracking-normal
+                    bg-neutral-100 px-3 rounded py-0.5
+                    transition duration-150 ease-linear
+                    shadow-md
+                    group-hover:bg-slate-200 group-hover:text-stone-800`}
       >
         {name}
       </div>
 
       <button
         className={`h-9 w-9 rounded-full 
-    ${active ? "text-white bg-accent" : "text-gray-600 bg-gray-100"}
-    flex items-center justify-center
-    transition duration-150 ease-linear
-    group-hover:bg-gray-300    `}
+                  ${
+                    active
+                      ? "text-white bg-accent"
+                      : "text-gray-600 bg-gray-100"
+                  }
+                  shadow-md
+                  flex items-center justify-center
+                  transition duration-150 ease-linear
+                  group-hover:bg-slate-200`}
       >
         {svg}
       </button>
