@@ -43,7 +43,14 @@ function Responsive({ context: linksState }) {
         <img src={imageLogo} className="w-10 m-auto pt-6 pb-1" />
       </div>
 
-      <div className="hidden md:flex flex-row justify-between items-center gap-x-0 px-3 md:px-6 h-ten">
+      <div
+        className="hidden md:flex flex-col xl:flex-row 
+      justify-between items-center 
+      gap-x-0 px-3 md:px-6 
+      gap-y-4 xl:gap-y-0
+      xl:h-ten
+      py-6 xl:py-0"
+      >
         {/* logo */}
         <div className=" flex-shrink-0 flex flex-row flex-shrink items-center">
           <img src={imageLogo} className="w-8" alt="G" />
@@ -51,7 +58,11 @@ function Responsive({ context: linksState }) {
         </div>
 
         {/* links */}
-        <div className="flex-grow flex flex-row flex-wrap justify-end items-center gap-y-1.5 gap-x-3">
+        <div
+          className="flex-grow flex flex-row flex-wrap 
+        justify-center xl:justify-end items-center 
+        gap-y-1.5 gap-x-3"
+        >
           {Object.entries(routes).map(([k, v]) => (
             <Link
               key={k}
