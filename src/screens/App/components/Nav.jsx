@@ -40,7 +40,9 @@ function Responsive({ context: linksState }) {
   return (
     <>
       <div className="block md:hidden">
-        <img src={imageLogo} className="w-10 m-auto pt-6 pb-1" />
+        <Link to="/">
+          <img src={imageLogo} className="w-8 m-auto pt-6 pb-1" />
+        </Link>
       </div>
 
       <div
@@ -72,7 +74,7 @@ function Responsive({ context: linksState }) {
                   ? "text-accent font-semibold bg-gray-50"
                   : "text-gray-800 font-medium"
               } px-3 py-1.5 bg-gray-0 rounded-md
-              font-sans text-sm 
+              font-sans text-xs lg:text-sm
               transition duration-200 ease-linear 
               hover:text-accent hover:bg-gray-100
               active:text-my-purple`}
