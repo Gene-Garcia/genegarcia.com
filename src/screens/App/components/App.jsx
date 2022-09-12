@@ -1,4 +1,5 @@
-import React from "react";
+import { Transition } from "@headlessui/react";
+import React, { Fragment } from "react";
 
 // react router
 import { BrowserRouter, Switch, Route } from "react-router-dom";
@@ -16,9 +17,7 @@ function Router() {
     <>
       <Nav />
 
-      <div className="block md:hidden">
-        <FloatingActionButton />
-      </div>
+      <FloatingActionButton />
 
       <div className="h-ninety">
         <Switch>

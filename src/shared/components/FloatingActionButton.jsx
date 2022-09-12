@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import useNavbar from "../../context/useNavbar";
 import fabData from "./fabData";
@@ -15,18 +16,29 @@ const FloatingActionButton = () => {
   const { linksState } = useNavbar();
 
   return (
-    <div className="z-50 fixed right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
-      <div className={`flex flex-col items-end gap-2 mr-1`}>
-        {toggled &&
-          Object.entries(fabData).map(([k, v]) => (
-            <SubButton
-              key={k}
-              listener={listenToClick}
-              active={linksState[k]}
-              {...v}
-            />
-          ))}
-      </div>
+    <div className="fixed md:hidden z-50  right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
+      <Transition
+        as={Fragment}
+        enter="transition ease-out duration-100"
+        enterFrom="transform opacity-0 scale-95"
+        enterTo="transform opacity-100 scale-100"
+        leave="transition ease-in duration-75"
+        leaveFrom="transform opacity-100 scale-100"
+        leaveTo="transform opacity-0 scale-95"
+        show={toggled}
+      >
+        <div className={`flex flex-col items-end gap-2 mr-1`}>
+          {toggled &&
+            Object.entries(fabData).map(([k, v]) => (
+              <SubButton
+                key={k}
+                listener={listenToClick}
+                active={linksState[k]}
+                {...v}
+              />
+            ))}
+        </div>
+      </Transition>
 
       <button
         onClick={() => {
