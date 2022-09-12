@@ -97,20 +97,20 @@ function CardButton({ id, name, color, svg, onClick }) {
 
   // set theme of card button
   if (color === 0) {
-    theme.root = "border-blue-900 ";
-    theme.circle = "bg-blue-800";
+    theme.root = "border-sky-800 ";
+    theme.circle = "bg-sky-800";
   } else if (color === 1) {
-    theme.root = "border-blue-700";
-    theme.circle = "bg-blue-700";
+    theme.root = "border-sky-600";
+    theme.circle = "bg-sky-600";
   } else if (color === 2) {
-    theme.root = "border-blue-600";
-    theme.circle = "bg-blue-600";
+    theme.root = "border-cyan-600";
+    theme.circle = "bg-cyan-600";
   } else if (color === 3) {
-    theme.root = "border-blue-500";
-    theme.circle = "bg-blue-500";
+    theme.root = "border-cyan-500";
+    theme.circle = "bg-cyan-500";
   } else if (color === 4) {
-    theme.root = "border-blue-400";
-    theme.circle = "bg-blue-400";
+    theme.root = "border-sky-500";
+    theme.circle = "bg-sky-500";
   }
 
   return (
@@ -124,7 +124,7 @@ function CardButton({ id, name, color, svg, onClick }) {
       >
         {svg}
       </div>
-      <p className="font-medium text-gray-800 text-lg md:text-xl ">{name}</p>
+      <p className="font-semibold text-gray-700 text-lg ">{name}</p>
     </div>
   );
 }

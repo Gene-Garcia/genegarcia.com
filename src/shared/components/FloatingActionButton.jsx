@@ -44,9 +44,9 @@ const FloatingActionButton = () => {
         onClick={() => {
           setToggled((prev) => !prev);
         }}
-        className={` h-11 w-11 rounded-full bg-accent
+        className={` h-10 w-10 rounded-full bg-accent shadow-lg
                 filter drop-shadow-2xl
-                hover:ring-2 hover:ring-accent hover:ring-offset-2
+                hover:ring-[1px] hover:ring-accent hover:ring-offset-2
                 hover:ring-opacity-70
                 transition duration-200 ease-linear
                 flex items-center justify-center`}
@@ -82,10 +82,10 @@ const SubButton = ({ name, link, svg, active, listener }) => {
         className={`font-medium text-xs 
                     text-stone-600
                     tracking-normal
-                    bg-neutral-100 px-3 rounded py-0.5
+                    bg-zinc-200 px-3 rounded py-0.5
                     transition duration-150 ease-linear
                     shadow-md
-                    group-hover:bg-slate-200 group-hover:text-stone-800`}
+                    group-hover:bg-gray-200 group-hover:text-stone-800`}
       >
         {name}
       </div>
@@ -100,7 +100,7 @@ const SubButton = ({ name, link, svg, active, listener }) => {
                   shadow-md
                   flex items-center justify-center
                   transition duration-150 ease-linear
-                  group-hover:bg-slate-200`}
+                  group-hover:bg-slate-200 group-hover:text-gray-600`}
       >
         {svg}
       </button>
