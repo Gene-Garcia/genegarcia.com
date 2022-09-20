@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
+
 import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
 
-import experienceData, {
-  sortedData as experienceSortedData,
-} from "../utils/data";
-import Group from "./Group";
+import { sortedData as experienceSortedData } from "../utils/data";
 
 function Experience() {
   // navbar context
@@ -28,11 +26,7 @@ function Experience() {
               i % 2 == 0 ? "justify-start" : "justify-start md:justify-end"
             }`}
           >
-            {i % 2 == 0 ? (
-              <LeftSetup key={k} data={v} />
-            ) : (
-              <RightSetup key={k} data={v} />
-            )}
+            <ContentOrder key={v} data={v} position={i % 2 == 0} />
           </div>
         ))}
       </div>
@@ -41,22 +35,24 @@ function Experience() {
 }
 export default Experience;
 
-const LeftSetup = ({ data }) => {
+const ContentOrder = ({ position, data }) => {
   return (
     <>
-      <Content data={data} reversed={true} />
-      <RoundWithLine />
-      <div className="hidden md:block order-3 w-full h-full"></div>
-    </>
-  );
-};
+      <div
+        className={`hidden md:block w-full h-full
+        ${position ? "order-3" : "order-1"}`}
+      ></div>
 
-const RightSetup = ({ data }) => {
-  return (
-    <>
-      <div className="hidden md:block order-1 w-full h-full"></div>
-      <RoundWithLine />
-      <Content data={data} reversed={false} />
+      <div className="order-0 md:order-2 w-5 shrink-0 grow-0 flex flex-col items-center">
+        <RoundWithLine />
+      </div>
+
+      <div
+        className={`grow shrink w-full h-full self-end pb-10 md:pb-6 pt-1 
+        ${position ? "order-1" : "order-3"}`}
+      >
+        <Content data={data} position={position} />
+      </div>
     </>
   );
 };
@@ -71,40 +67,34 @@ const Content = ({
     outputs,
     achievements,
   },
-  reversed,
+  position,
 }) => {
   return (
     <div
-      className={`grow shrink w-full h-full self-end pb-10 md:pb-6 pt-1 ${
-        reversed ? "order-1" : "order-3"
+      className={`flex flex-col gap-4 md:gap-6 ${
+        position
+          ? "items-start text-left md:items-end md:text-right"
+          : "items-start text-left"
       }`}
     >
+      <p className="font-semibold text-neutral-600">{date}</p>
+
+      <div>
+        <h3 className="text-lg font-bold">{title}</h3>
+        <p className="font-medium text-neutral-800">{organization}</p>
+      </div>
+
+      <p className="break-words">{description}</p>
+
       <div
-        className={`flex flex-col gap-4 md:gap-6 ${
-          reversed ? "items-start text-left md:items-end md:text-right" : ""
+        className={`text-left flex flex-row flex-wrap gap-12 ${
+          position ? "justify-end" : "justify-start"
         }`}
       >
-        <p className="font-semibold text-neutral-600">{date}</p>
-
-        <div>
-          <h3 className="text-lg font-bold">{title}</h3>
-          <p className="font-medium text-neutral-800">{organization}</p>
-        </div>
-
-        <p className="break-words">{description}</p>
-
-        <div
-          className={`text-left flex flex-row flex-wrap gap-12 ${
-            reversed ? "justify-end" : ""
-          }`}
-        >
-          {outputs.length > 0 && (
-            <MilestoneList title="Outputs" list={outputs} />
-          )}
-          {achievements.length > 0 && (
-            <MilestoneList title="Achievements" list={achievements} />
-          )}
-        </div>
+        {outputs.length > 0 && <MilestoneList title="Outputs" list={outputs} />}
+        {achievements.length > 0 && (
+          <MilestoneList title="Achievements" list={achievements} />
+        )}
       </div>
     </div>
   );
@@ -128,14 +118,13 @@ const MilestoneList = ({ title, list }) => {
 
 const RoundWithLine = () => {
   return (
-    <div className="order-0 md:order-2 w-5 shrink-0 grow-0 flex flex-col items-center">
+    <>
+      {" "}
       <div className="w-0.5 h-2 bg-slate-300"></div>
-
       {/* circle */}
       <div className="shrink-0 w-4 h-4 rounded-full bg-accent/80"></div>
-
       {/* line */}
       <div className="grow shrink w-0.5 min-h-[3.5cm] h-full bg-slate-300"></div>
-    </div>
+    </>
   );
 };
