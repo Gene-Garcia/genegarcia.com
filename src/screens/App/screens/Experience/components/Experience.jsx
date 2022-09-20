@@ -21,15 +21,19 @@ function Experience() {
     <Container>
       <Heading head="Experience" />
 
-      {/* <div className="space-y-12">
-        {Object.entries(experienceData).map(([k, v]) => (
-          <Group key={k} name={v.name} data={v.sections} />
-        ))}
-      </div> */}
-
-      <div className="space-y-3">
+      <div className="space-y-2">
         {Object.entries(experienceSortedData).map(([k, v], i) => (
-          <TimelineGroup data={v} key={k} visible={i % 2 == 0} />
+          <div
+            className={`flex flex-row gap-1.5 md:gap-4 ${
+              i % 2 == 0 ? "justify-start" : "justify-start md:justify-end"
+            }`}
+          >
+            {i % 2 == 0 ? (
+              <LeftSetup key={k} data={v} />
+            ) : (
+              <RightSetup key={k} data={v} />
+            )}
+          </div>
         ))}
       </div>
     </Container>
@@ -37,13 +41,23 @@ function Experience() {
 }
 export default Experience;
 
-const TimelineGroup = ({ visible = true, data }) => {
+const LeftSetup = ({ data }) => {
   return (
-    <div className="flex flex-row gap-4">
-      <Content data={data} visible={!visible} reversed={true} />
+    <>
+      <Content data={data} reversed={true} />
       <RoundWithLine />
-      <Content data={data} visible={visible} reversed={false} />
-    </div>
+      <div className="hidden md:block order-3 w-full h-full"></div>
+    </>
+  );
+};
+
+const RightSetup = ({ data }) => {
+  return (
+    <>
+      <div className="hidden md:block order-1 w-full h-full"></div>
+      <RoundWithLine />
+      <Content data={data} reversed={false} />
+    </>
   );
 };
 
@@ -57,35 +71,41 @@ const Content = ({
     outputs,
     achievements,
   },
-  visible,
   reversed,
 }) => {
   return (
-    <div className="grow pb-6 pt-1 w-full h-full">
-      {visible && (
-        <div
-          className={`
-      flex flex-col ${reversed ? "items-end text-right" : "items-start"} gap-6`}
-        >
-          <p className="font-semibold text-neutral-600">{date}</p>
+    <div
+      className={`grow shrink w-full h-full self-end pb-10 md:pb-6 pt-1 ${
+        reversed ? "order-1" : "order-3"
+      }`}
+    >
+      <div
+        className={`flex flex-col gap-4 md:gap-6 ${
+          reversed ? "items-start text-left md:items-end md:text-right" : ""
+        }`}
+      >
+        <p className="font-semibold text-neutral-600">{date}</p>
 
-          <div>
-            <h3 className="text-lg font-bold">{title}</h3>
-            <p className="font-medium text-neutral-800">{organization}</p>
-          </div>
-
-          <p>{description}</p>
-
-          <div className="flex flex-row flex-wrap gap-12 text-left">
-            {outputs.length > 0 && (
-              <MilestoneList title="Outputs" list={outputs} />
-            )}
-            {achievements.length > 0 && (
-              <MilestoneList title="Achievements" list={achievements} />
-            )}
-          </div>
+        <div>
+          <h3 className="text-lg font-bold">{title}</h3>
+          <p className="font-medium text-neutral-800">{organization}</p>
         </div>
-      )}
+
+        <p className="break-words">{description}</p>
+
+        <div
+          className={`text-left flex flex-row flex-wrap gap-12 ${
+            reversed ? "justify-end" : ""
+          }`}
+        >
+          {outputs.length > 0 && (
+            <MilestoneList title="Outputs" list={outputs} />
+          )}
+          {achievements.length > 0 && (
+            <MilestoneList title="Achievements" list={achievements} />
+          )}
+        </div>
+      </div>
     </div>
   );
 };
@@ -108,7 +128,7 @@ const MilestoneList = ({ title, list }) => {
 
 const RoundWithLine = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="order-0 md:order-2 w-5 shrink-0 grow-0 flex flex-col items-center">
       <div className="w-0.5 h-2 bg-slate-300"></div>
 
       {/* circle */}
