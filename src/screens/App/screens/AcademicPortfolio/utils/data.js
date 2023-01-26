@@ -132,7 +132,7 @@ const academicPortData = {
         TYPES: ["RESEARCH", "PROGRAMMING"],
         PROJECT_NAME: "Lokal Music",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Developed a relational database in conjunction with the Lokal Music project. The database structure adhered to Lokal's identified business processes, rules, and constraints.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -146,7 +146,7 @@ const academicPortData = {
         TYPES: ["RESEARCH", "PROGRAMMING"],
         PROJECT_NAME: "Lokal Music",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Programmed an e-commerce web application platform using ASP Web forms. The e-commerce platform aimed to create a digital marketplace for Filipino artists and their audio-based products.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -161,7 +161,7 @@ const academicPortData = {
         PROJECT_NAME:
           "Impact of the COVID-19 Pandemic to a Financial Management Information System and Crisis Management",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Conducted a case study on businesses and covid-19 by reviewing the literature on financial and crisis management and the covid-19 impacts on operations and management. Created a model that suggested constructs for handling the impact of the pandemic on the business landscape based on literature and experiences of businesses and national governments.",
 
         LIVE_LINK: "https://rsucon.rsu.ac.th/proceeding/article/2911",
         FILE_LINK: "",
@@ -174,7 +174,7 @@ const academicPortData = {
         TYPES: ["RESEARCH", "PRACTICAL"],
         PROJECT_NAME: "Keyouse",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Created a hypothetical manufacturing company of computer peripherals to demonstrate the delivery of business processes and cycles, specifically, expenditure, transformation, and revenue cycle. An FMIS application was used to conduct the sales order process, bill of materials, and supplier invoicing.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -191,7 +191,7 @@ const academicPortData = {
         PROJECT_NAME:
           "Designing an Incident Reporting Web Application for Barangay Sinisian, Calaca, Batangas",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Partnered with a local barangay in Batangas to identify and review their internal and community processes. After that, a problem was identified a given a proposed solution, which is, digitizing the barangay incident reporting process. The proposal included detailed system design and planning, such as diagramming and models. Allowing barangay in the Philippines supports the e-government plan of the country to build technology-driven governance.",
 
         LIVE_LINK:
           "https://www.researchgate.net/publication/352150222_Designing_an_Incident_Reporting_Web_Application_for_Barangay_Sinisian_Calaca_Batangas",
@@ -206,7 +206,7 @@ const academicPortData = {
         PROJECT_NAME:
           "Analyzing Sales Data Using Clustering and Classification for Decision-Making",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Used Weka to analyze sales data and created tree models to predict an outcome. Furthermore, descriptive data analysis was conducted to understand what the data was saying before modeling an analytical output.",
 
         LIVE_LINK: "",
         FILE_LINK:
@@ -221,7 +221,7 @@ const academicPortData = {
         PROJECT_NAME:
           "Past, Present, and Future of Cloud Computing: An Innovation Case Study",
         PROJECT_DESCRIPTION:
-          "Suspendisse maximus pharetra augue id porta. Donec eu enim justo. Maecenas nec ante non nibh mattis ornare. Nulla facilisi. Nullam id aliquam eros. Nullam sit amet sapien eget augue semper ornare. Nullam ligula nisi, sollicitudin vitae suscipit a, congue porta dui. Mauris tincidunt metus orci, et ultricies dui blandit id.",
+          "Wrote a case study that focused on the past and foundation of cloud computing, the current state of cloud computing, and the projections and future growth.",
 
         LIVE_LINK:
           "https://www.researchgate.net/publication/352245878_Past_Present_and_Future_of_Cloud_Computing_An_Innovation_Case_Study?_sg%5B0%5D=H2xG5ZdG0FLD2dR1L9Q0Lg20eRog9Iy5wao7lhcTfGUsirJU2VzXXTNMHABBlcGYJkMgELovrnVTv2Z0i68NRnfrMPfTU4ykLRn9xuhV.2u-QlBDZtxbAtljyu2GMpRWnus2m0ux0vGyZEk7hFQetS00frEmfk4U7Cj5rCKrGQiCqVR6Z3JYCGkMBVebd9Q",

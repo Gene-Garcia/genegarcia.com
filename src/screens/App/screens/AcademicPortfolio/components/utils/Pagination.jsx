@@ -11,11 +11,12 @@ const Pagination = () => {
         <button
           onClick={toggleThisYear}
           className={`bg-white w-32 h-7
-          rounded-bl-lg rounded-xs rounded-tr-lg outline outline-accent
+          rounded-bl-lg rounded-xs rounded-tr-lg 
+          border border-accent 
           text-sm font-medium text-accent
           transition duration-150 ease-linear
           hover:bg-accent hover:text-white hover:bg-opacity-70
-          ${thisYear && "ring-1 ring-accent ring-offset-2"}`}
+          ${thisYear && "bg-accent"}`}
         >
           {YEARS[year]}
         </button>

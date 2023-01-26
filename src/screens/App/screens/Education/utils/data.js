@@ -4,7 +4,7 @@ import mcl from "../../../../../shared/images/schools/mcl.webp";
 
 export default {
   COLLEGE: {
-    school: "Malayan Colleges Laguna",
+    school: "Mapúa Malayan Colleges Laguna",
     specialization: "BS Information Systems",
     logo: mcl,
 
@@ -22,7 +22,7 @@ export default {
   },
 
   SHS: {
-    school: "Malayan Colleges Laguna",
+    school: "Mapúa Malayan Colleges Laguna",
     specialization: "Information & Communications Technology - Programming",
     logo: mcl,
 

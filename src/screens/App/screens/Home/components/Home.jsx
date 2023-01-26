@@ -67,7 +67,7 @@ function Home() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1xj4L0_QsXSxpjBWOzuV_a9AxMd-8dvu5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1118h68AsvciOOZoeT7Soc1Uo3buDp9Fu/view?usp=sharing"
               download
               target="_blank"
               className="font-bold text-md text-black 

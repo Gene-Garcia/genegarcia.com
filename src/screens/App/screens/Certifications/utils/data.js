@@ -19,7 +19,7 @@ export default {
         CREDENTIAL_LINK: "https://www.pirple.com/certificates/mgxjl0fp9d",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Learned and explored python in creating a web application through Flask and command line-based server deployment.",
       },
     },
   },
@@ -40,7 +40,7 @@ export default {
           "https://www.udemy.com/certificate/UC-50ffd89e-dc35-48a4-9703-39d64655a0ac/",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Used JavaScrjpt to build a full stack RESTful application where a server API through NodeJS and ExpressJS and a client built on ReactJS. Notably, an object document model (ODM), mongoose, was used to establish and manage communications in a NoSQL database.",
       },
     },
   },
@@ -61,7 +61,7 @@ export default {
           "https://courses.buri.io/view/user/certificate/66384089-1a8c-4a7a-ba8a-d31ff72edac1/pdf",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Visualized data through graphs and charts using Matplotlob and Seaborn.",
       },
       LBSwP: {
         TITLE: "Learn Basic Statistics with Python",
@@ -72,7 +72,7 @@ export default {
           "https://courses.buri.io/view/user/certificate/f1b94a60-eb50-4f4e-887b-132eb7c6e668/pdf",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Reviewed elementary statistics, such as measures of central tendencies and dispersion, and applied them through a mathematical data processing library, Numpy.",
       },
       ADwP: {
         TITLE: "Analyze Data with Python",
@@ -83,7 +83,7 @@ export default {
           "https://courses.buri.io/view/user/certificate/ef435030-414d-453d-a8bc-d4efbf77ff62/pdf",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Explored and used Pandas to read and process datasets from CSV and excel files. Cleaned, summarized, merged, transformed, and computed data through a collection of rows and columns, that is, a data frame.",
       },
     },
   },
@@ -104,7 +104,7 @@ export default {
           "https://www.coursera.org/account/accomplishments/verify/NJJBP3VEKFGH",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Learned the fundamentals of conducting and implementing a data analytics in the general context, and performed basic visualization through Google Sheets.",
       },
       GSiGA: {
         TITLE: "Getting Started in Google Analytics",
@@ -114,7 +114,7 @@ export default {
         CREDENTIAL_LINK: "https://coursera.org/verify/9RVG36ZSMC73",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Explored the Google Analytics platform, specifically, its automated features of showing pre-defined charts and graphs, which only require data filtering.",
       },
       EDAwS: {
         TITLE: "Exploratory Data Analysis with Seaborn",
@@ -124,7 +124,7 @@ export default {
         CREDENTIAL_LINK: "https://coursera.org/verify/Z64JDSNLVZJK",
 
         SHORT_DESCRIPTION:
-          "Pellentesque congue augue sit amet felis posuere dictum.",
+          "Utilized complex Pandas functionalities in exploring a dataset by transforming a DataFrame and visualizations, such as a scatter plot to identify data outliers.",
       },
     },
   },

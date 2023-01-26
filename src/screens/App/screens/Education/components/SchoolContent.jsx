@@ -5,11 +5,7 @@ function SchoolContent({
 }) {
   return (
     <div className="flex flex-col gap-3 lg:gap-6">
-      <img
-        src={logo}
-        className="w-min h-24 filter drop-shadow-xl"
-        alt={school}
-      />
+      <img src={logo} className="w-min h-20" alt={school} />
 
       {/* details */}
       <div className="flex flex-col gap-6 lg:gap-9 justify-between flex-grow">
