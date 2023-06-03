@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import useWindow from "../../../hooks/useWindow";
+import useWindow from "../../hooks/useWindow";
 
 // route constants
-import routes from "../../../shared/routes";
+import routes from "../../shared/routes";
 
 // Icon Logo
 import imageLogo from "../../../shared/images/LogoV3.2.png";
 
 // Text Logo
 import textLogo from "../../../shared/images/logonamev1.png";
-import useNavbar from "../../../context/useNavbar";
+import useNavbar from "../../context/useNavbar";
 
 function Nav() {
   // navbar context
@@ -47,11 +47,11 @@ function Responsive({ context: linksState }) {
 
       <div
         className="hidden md:flex flex-col xl:flex-row 
-      justify-between items-center 
-      gap-x-0 px-3 md:px-6 
-      gap-y-4 xl:gap-y-0
-      xl:h-ten
-      py-6 xl:py-0"
+                  justify-between items-center 
+                  gap-x-0 px-3 md:px-6 
+                  gap-y-4 xl:gap-y-0
+                  xl:h-ten
+                  py-6 xl:py-0"
       >
         {/* logo */}
         <div className=" flex-shrink-0 flex flex-row flex-shrink items-center">

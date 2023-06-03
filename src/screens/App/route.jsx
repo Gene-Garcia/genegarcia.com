@@ -9,8 +9,8 @@ import AcademicPortfolioRoute from "./screens/AcademicPortfolio/route";
 import CertificationsRoute from "./screens/Certifications/route";
 
 export default {
-  EDUCATION: EducationRoute,
   HOME: HomeRoute,
+  EDUCATION: EducationRoute,
   PAPERS: PapersRoute,
   PORTFOLIO: PortfolioRoute,
   TECH_STACK: TechStackRoute,

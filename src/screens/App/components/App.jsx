@@ -1,45 +1,30 @@
-import { Transition } from "@headlessui/react";
-import React, { Fragment } from "react";
-
 // react router
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavbarProvider } from "../../../context/NavbarContext";
 import FloatingActionButton from "../../../shared/components/FloatingActionButton";
 
-// navbar context to handle active state
-
 // index route
 import routes from "../route";
-import Nav from "./Nav";
-
-function Router() {
-  return (
-    <>
-      <Nav />
-
-      <FloatingActionButton />
-
-      <div className="h-ninety">
-        <Switch>
-          {/* iteratively & dynamically create routes */}
-          {Object.entries(routes).map(([k, v]) => (
-            <Route key={k} {...v} />
-          ))}
-        </Switch>
-      </div>
-    </>
-  );
-}
+import Home from "../screens/Home";
+import Layout from "../../layout/Layout";
 
 function App() {
+  console.log(routes);
+
   return (
-    <>
-      <BrowserRouter>
-        <NavbarProvider>
-          <Router />
-        </NavbarProvider>
-      </BrowserRouter>
-    </>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          {Object.entries(routes).map(([k, { path, component: Element }]) =>
+            path === "" ? (
+              <Route key={k} index element={<Element />} />
+            ) : (
+              <Route key={k} path={path} element={<Element />} />
+            )
+          )}
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 export default App;

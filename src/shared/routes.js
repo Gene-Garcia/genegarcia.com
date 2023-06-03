@@ -1,34 +1,34 @@
 export default {
   HOME: {
     NAME: "Home",
-    PATH: "/",
+    PATH: "",
   },
   PORTFOLIO: {
     NAME: "Portfolio",
-    PATH: "/portfolio",
+    PATH: "portfolio",
   },
   TECH_STACK: {
     NAME: "Tech Stack",
-    PATH: "/techstack",
+    PATH: "techstack",
   },
   PAPERS: {
     NAME: "Papers",
-    PATH: "/papers",
+    PATH: "papers",
   },
   EDUCATION: {
     NAME: "Education",
-    PATH: "/education",
+    PATH: "education",
   },
   CERTIFICATIONS: {
     NAME: "Certifications",
-    PATH: "/certifications",
+    PATH: "certifications",
   },
   ACADEMIC_PORTFOLIO: {
     NAME: "Academic Portfolio",
-    PATH: "/portfolio/academic",
+    PATH: "portfolio/academic",
   },
   EXPERIENCE: {
     NAME: "Experience",
-    PATH: "/experience",
+    PATH: "experience",
   },
 };
