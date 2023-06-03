@@ -18,16 +18,18 @@ module.exports = {
     "./src/screens/App/screens/**/utils/*.{js,jsx,ts,tsx}",
     "./src/screens/App/screens/**/utils/**/*.{js,jsx,ts,tsx}",
   ],
-  mode: "jit",
+
   theme: {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
       serif: ["Bitter", "serif"],
     },
+
     extend: {
       colors: {
         black: "#1D1D1F",
         white: "#FAFAFA",
+        "white-tone": "#F5F5F7",
 
         "body-color": "#292929",
         accent: "#2196F3",
