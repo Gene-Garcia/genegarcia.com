@@ -94,6 +94,21 @@ export default {
 };
 
 const sortedData = {
+  FTSI: {
+    title: "Business Analytics Consultant Intern",
+    date: "June 2023",
+
+    organization: "Fasttrack Solutions Inc.",
+    location: "Valero, Makati, Philippines-Remote",
+    organizationLogo: rangsit,
+
+    description:
+      "Underwent a CODEX program and trained to become a BA consultant capable of developing dashboards and reports for organizations.",
+
+    outputs: ["Power BI Case Study"],
+    achievements: ["Offered a Position"],
+  },
+
   RESEARCH_FMIS_COVID: {
     title: "International Research Conference",
     date: "April 2021",
