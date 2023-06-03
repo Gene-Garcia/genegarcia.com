@@ -13,7 +13,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center py-8 lg:py-0 gap-y-8 sm:gap-y-10 lg:gap-y-0 lg:h-full">
+    <div className="flex flex-col lg:flex-row w-full items-center justify-center py-8 lg:py-0 gap-y-8 sm:gap-y-10 lg:gap-y-0 lg:h-full">
       <div className="lg:w-1/2 xl:w-2/5 flex justify-center items-center">
         <Hero />
       </div>

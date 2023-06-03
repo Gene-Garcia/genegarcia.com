@@ -9,8 +9,9 @@ module.exports = {
     "./src/shared/**/**/**/*.{jsx,js}",
 
     // App directories
-    "./src/screens/App/components/*.{jsx,js}",
-    "./src/screens/App/components/**/*.{jsx,js}",
+    "./src/screens/App/components/*.{jsx,js,ts,tsx}",
+    "./src/screens/App/components/**/*.{jsx,js,ts,tsx}",
+    "./src/screens/layout/*.{jsx,js,ts,tsx}",
 
     "./src/screens/App/screens/**/*.{js,jsx,ts,tsx}",
     "./src/screens/App/screens/**/components/*.{js,jsx,ts,tsx}",
@@ -32,7 +33,7 @@ module.exports = {
         "white-tone": "#F5F5F7",
 
         "body-color": "#292929",
-        accent: "#2196F3",
+        accent: "#617A55",
         "my-green": "#16C79A",
         "my-orange": "#EE6F57",
         "my-purple": "#A82FFC",
