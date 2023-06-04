@@ -37,8 +37,23 @@ import imb3 from "../images/project_images/imbentaryo/imb-3.webp";
 import imb4 from "../images/project_images/imbentaryo/imb-4.webp";
 import imb5 from "../images/project_images/imbentaryo/imb-5.webp";
 
+import aw1 from "../images/project_images/adventure-works/adventure-works-1.webp";
+import aw2 from "../images/project_images/adventure-works/adventure-works-2.webp";
+import aw3 from "../images/project_images/adventure-works/adventure-works-3.webp";
+import aw4 from "../images/project_images/adventure-works/adventure-works-4.webp";
+import aw5 from "../images/project_images/adventure-works/adventure-works-5.webp";
+
+import scgp1 from "../images/project_images/scgp/scgp-1.webp";
+import scgp2 from "../images/project_images/scgp/scgp-2.webp";
+import scgp3 from "../images/project_images/scgp/scgp-3.webp";
+import scgp4 from "../images/project_images/scgp/scgp-4.webp";
+import scgp5 from "../images/project_images/scgp/scgp-5.webp";
+import scgp6 from "../images/project_images/scgp/scgp-6.webp";
+
 // data object to hold the array of the project screenshot image objects
 const projectGallery = {
+  SCGP: [scgp1, scgp2, scgp3, scgp4, scgp5, scgp6],
+  ADVENTURE: [aw1, aw2, aw3, aw4, aw5],
   IMBENTARYO: [imb1, imb2, imb3, imb4, imb5],
   LOKAL: [lm1, lm2, lm3, lm4, lm5, lm6, lm7, lm8],
   MCL_SCHOLAR_WEBSITE: [mcl1, mcl2],

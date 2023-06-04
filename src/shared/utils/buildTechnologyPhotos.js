@@ -40,6 +40,14 @@ import jupyter from "../images/technologies/jupyter.webp";
 import localStorage from "../images/technologies/local-storage.webp";
 import excel from "../images/technologies/excel.webp";
 
+import dataGateway from "../images/technologies/data gateway.webp";
+import automate from "../images/technologies/automate.webp";
+import pbi from "../images/technologies/pbi.webp";
+
+import sequelize from "../images/technologies/sequelize.webp";
+import mySql from "../images/technologies/mysql.webp";
+import tailwind from "../images/technologies/tailwind.webp";
+
 // 404
 import notFound from "../images/404.png";
 
@@ -86,6 +94,14 @@ const techObject = {
   VS_CODE: vsCode,
   WINDOWS_FORMS: winforms,
   XAMARIN: xamarin,
+
+  POWER_BI: pbi,
+  DATA_GATEWAY: dataGateway,
+  POWER_AUTOMATE: automate,
+
+  SEQUELIZE: sequelize,
+  MY_SQL: mySql,
+  TAILWIND: tailwind,
 };
 
 /*

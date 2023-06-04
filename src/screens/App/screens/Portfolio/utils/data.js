@@ -4,8 +4,46 @@ import floresDeMayoIs from "../../../../../shared/images/project_logos/floresdem
 import tutoQuizzer from "../../../../../shared/images/project_logos/tutoquizzer.png";
 import sinisianBMIS from "../../../../../shared/images/project_logos/sinisian-bmis.png";
 import imbentaryo from "../../../../../shared/images/project_logos/imbentaryo.png";
+import adventureWorks from "../../../../../shared/images/project_logos/adventure works.png";
+import ccis from "../../../../../shared/images/project_logos/ccis.png";
 
 export default {
+  ADVENTURE: {
+    name: "AdventureWorks Cycle",
+    logo: adventureWorks,
+
+    description: "A business analytics case study using Power BI.",
+    longDescription:
+      "The company has a challenging experience in maintaining various versions of different flat spreadsheet files. Thus, AdventureWorks also has a hard time generating reports from multiple flat files. The proposed solution is the use of Power BI to both perform the Extraction-Transformation-Loading (ETL) and the development of reports. A centralized dashboard was also made to provide an overview across datasets.",
+    date: "June 2023",
+    technologies: ["EXCEL", "POWER_BI", "DATA_GATEWAY", "POWER_AUTOMATE"],
+    github: "",
+    live: "",
+  },
+
+  SCGP: {
+    name: "Student Curriculum Guide and Portfolio",
+    logo: ccis,
+
+    description:
+      "A web application designed for student's e-portfolio and administrator's dashboard and reports.",
+    longDescription:
+      "The web application allows students to collect and build their portfolio composed of academic outputs as defined by their curriculum. Students are also enabled to dynamically track their progress in completing their curriculum through an academic roadmap. On the other hand, program administrators are empowered by being able to monitor and track the real-time progression and credentials of students. As a result, the college will be able to assess the academic performance and progression of every student from the first year until graduation.",
+    date: "August 2022 - June 2023",
+    technologies: [
+      "JAVASCRIPT",
+      "REACT",
+      "NODE_JS",
+      "SEQUELIZE",
+      "MY_SQL",
+      "SQL",
+      "EXPRESS",
+      "TAILWIND",
+    ],
+    github: "",
+    live: "https://www.currport.vercel.app",
+  },
+
   IMBENTARYO: {
     name: "imbentaryo",
     logo: imbentaryo,

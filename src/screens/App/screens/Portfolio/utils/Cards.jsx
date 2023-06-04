@@ -44,7 +44,7 @@ function ProjectCard({
         <div className="flex-grow flex flex-col justify-between">
           <div className="p-5 flex-grow flex-shrink flex flex-col justify-around gap-4">
             <div>
-              <h3 className="text-xl font-semibold text-black">{name}</h3>
+              <h3 className="text-xl font-semibold text-accent">{name}</h3>
               <p className="text-sm font-light italic text-gray-500">{date}</p>
             </div>
 
@@ -127,12 +127,12 @@ function ProjectCard({
           </div>
 
           {/* languages & technologies */}
-          <div className=" py-2 px-4 flex flex-wrap row gap-4 2xl:gap-5 items-center justify-end">
+          <div className=" py-2 px-4 flex flex-wrap row gap-4 items-center justify-end">
             {technologies.map((e, i) => (
               <img
                 key={i}
                 src={GetImage(e)}
-                className="h-auto w-9 2xl:w-10 filter grayscale transition duration-150 ease-linear hover:filter-none"
+                className="h-auto w-8 filter grayscale transition duration-150 ease-linear hover:filter-none"
               />
             ))}
           </div>
