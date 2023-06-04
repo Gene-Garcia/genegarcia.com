@@ -43,13 +43,17 @@ function Home() {
             and <span className="font-semibold text-black">data analyst</span>.
           </p>
 
-          <div className="flex flex-row align-center gap-5">
+          <div
+            className="flex flex-col items-start sm:flex-row align-center 
+                      gap-4"
+          >
             <a
               target="_blank"
               href="mailto:genejogarcia.gg@gmail.com?subject=Let's create and collaborate!"
               className="font-bold bg-accent text-md text-white 
+                        text-sm md:text-base
                         px-5 lg:px-7 py-2 lg:py-2.5 
-                        shadow-xl rounded
+                        shadow-md md:shadow-xl rounded
                         inline-flex items-center 
                         transition duration-200 ease-linear 
                         ring-4 ring-transparent 
@@ -116,7 +120,7 @@ const Hero = () => {
       <a
         href="https://www.linkedin.com/in/gene-joseph-garcia-633324171/"
         target="_blank"
-        className="absolute right-4 sm:right-6 lg:right-9 bottom-7 h-12 w-12 border-4 border-white rounded-full bg-accent shadow-xl text-accent transition duration-200 ease-linear ring-4 ring-transparent hover:ring-white hover:ring-opacity-40"
+        className="absolute right-6 sm:right-6 lg:right-9 bottom-7 h-12 w-12 border-4 border-white rounded-full bg-accent shadow-xl text-accent transition duration-200 ease-linear ring-4 ring-transparent hover:ring-white hover:ring-opacity-40"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

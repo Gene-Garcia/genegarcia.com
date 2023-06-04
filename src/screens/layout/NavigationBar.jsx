@@ -19,38 +19,46 @@ const NavigationBar = () => {
   // const { width } = useWindow();
 
   return (
-    <nav
-      className="shrink-0 h-20
-                flex items-center justify-center
+    <>
+      <nav
+        className="shrink-0 w-full h-auto lg:h-16
+                flex items-center
+                justify-center lg:justify-end xl:justify-center
                 relative
-                py-3 px-8
-                shadow-lg"
-    >
-      <div className="w-10 h-auto absolute left-8">
-        <img src={imageLogo} className="object-contain" alt="Gene Garcia" />
-      </div>
+                py-8 lg:py-3 
+                px-6 xl:px-8
+                lg:shadow-lg
+                text-end"
+      >
+        <div
+          className="w-8  h-auto absolute 
+                  lg:left-8"
+        >
+          <img src={imageLogo} className="object-contain" alt="Gene Garcia" />
+        </div>
 
-      <div className="space-x-4">
-        {Object.entries(routes).map(([k, v]) => (
-          <Link
-            key={k}
-            to={v.PATH}
-            className={`${
-              linksState[k]
-                ? "text-accent font-semibold bg-gray-50"
-                : "text-gray-800 font-medium"
-            } px-1.5 py-1.5 bg-gray-0
+        <div className="hidden lg:block space-x-2.5 xl:space-x-4">
+          {Object.entries(routes).map(([k, v]) => (
+            <Link
+              key={k}
+              to={v.PATH}
+              className={`${
+                linksState[k]
+                  ? "text-accent font-semibold"
+                  : "text-gray-500 font-medium"
+              } px-1.5 py-1.5 bg-gray-0
           font-sans text-xs lg:text-sm
           transition duration-200 ease-linear 
           border-b-2 border-transparent
           hover:text-accent hover:border-accent/80
           active:text-my-purple`}
-          >
-            {v.NAME.toUpperCase()}
-          </Link>
-        ))}
-      </div>
-    </nav>
+            >
+              {v.NAME.toUpperCase()}
+            </Link>
+          ))}
+        </div>
+      </nav>
+    </>
   );
 
   return (

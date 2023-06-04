@@ -16,7 +16,7 @@ const FloatingActionButton = () => {
   const { linksState } = useNavbar();
 
   return (
-    <div className="fixed md:hidden z-50  right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
+    <div className="fixed lg:hidden z-50  right-0 bottom-0 pr-5 pb-5 flex flex-col items-end justify-center gap-3">
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
