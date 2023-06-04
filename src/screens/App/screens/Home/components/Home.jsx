@@ -49,6 +49,7 @@ function Home() {
           >
             <a
               target="_blank"
+              rel="noreferrer"
               href="mailto:genejogarcia.gg@gmail.com?subject=Let's create and collaborate!"
               className="font-bold bg-accent text-md text-white 
                         text-sm md:text-base
@@ -74,6 +75,7 @@ function Home() {
               href="https://drive.google.com/file/d/1118h68AsvciOOZoeT7Soc1Uo3buDp9Fu/view?usp=sharing"
               download
               target="_blank"
+              rel="noreferrer"
               className="font-bold text-md text-black 
                         px-5 py-2 lg:py-2.5 
                         inline-flex items-center 
@@ -113,14 +115,23 @@ export default Home;
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="object-contain w-72 h-72 sm:w-80 sm:h-80 lg:h-86 lg:w-86 xl:w-96 xl:h-96 rounded-full  flex items-center justify-center">
-        <img src={meHero} className="m-auto" />
+      <div className="object-contain w-72 h-72 sm:w-80 sm:h-80 lg:h-86 lg:w-86 xl:w-96 xl:h-96 rounded-full flex items-center justify-center">
+        <img src={meHero} className="m-auto" alt="Gene Garcia Hero" />
       </div>
 
       <a
         href="https://www.linkedin.com/in/gene-joseph-garcia-633324171/"
         target="_blank"
-        className="absolute right-6 sm:right-6 lg:right-9 bottom-7 h-12 w-12 border-4 border-white rounded-full bg-accent shadow-xl text-accent transition duration-200 ease-linear ring-4 ring-transparent hover:ring-white hover:ring-opacity-40"
+        rel="noreferrer"
+        className="absolute 
+                  right-6 sm:right-6 lg:right-9 
+                  bottom-10
+                  h-12 w-12 border-4 
+                  border-white rounded-full bg-accent shadow-xl 
+                  text-accent 
+                  transition duration-200 ease-linear 
+                  ring-4 ring-transparent hover:ring-accent hover:ring-opacity-60
+                  active:ring-opacity-100"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
