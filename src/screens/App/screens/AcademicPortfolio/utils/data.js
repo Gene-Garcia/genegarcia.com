@@ -277,10 +277,40 @@ const academicPortData = {
           "https://drive.google.com/drive/folders/16ACRb6-nsVRuyoCHmB3vF2Mocwp1EKRZ?usp=sharing",
       },
     ],
-    // TERM3: [],
+    TERM3: [
+      {
+        COURSE_NAME: "Introduction to Data Analytics",
+        COURSE_CODE: "IS130 & IS130-L",
+        PROFESSOR: "Jennifer Contreras",
+
+        TYPES: ["Programming"],
+        PROJECT_NAME: "Machine Problem Data Analysis",
+        PROJECT_DESCRIPTION:
+          "A further development of company's study of improving a problematic business process through an IT project, specifically, the creation of standard project management plan used for project execution.",
+
+        FILE_LINK: "",
+      },
+    ],
   },
 
-  SENIOR: {},
+  SENIOR: {
+    T2: [
+      {
+        COURSE_NAME: "IS Capstone Project",
+        COURSE_CODE: "IS200-1D & IS200-2D",
+        PROFESSOR: "Khristian G. Kikuchi",
+
+        TYPES: ["RESEARCH", "PROGRAMMING"],
+        PROJECT_NAME: "Student Curriculum Guide and Portfolio.",
+        PROJECT_DESCRIPTION:
+          "A capstone project on developing a web application for students to track academic progress, build an academic portfolio, and generate a curriculum vitae. The project also enables program administrators to monitor student's academic performance and credentials through a dashboard and reports.",
+
+        LIVE_LINK: "https://currport.vercel.app",
+        // FILE_LINK:
+        // "https://drive.google.com/drive/folders/16ACRb6-nsVRuyoCHmB3vF2Mocwp1EKRZ?usp=sharing",
+      },
+    ],
+  },
 
   //   SENIOR: {
   //     NAME: "SENIOR",
