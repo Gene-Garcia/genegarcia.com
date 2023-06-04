@@ -1,4 +1,14 @@
 export default {
+  SCGP: {
+    id: "SCGP",
+    date: "June 2023",
+    title: "Development of a Web-based Student Curriculum Guide and Portfolio",
+
+    paperType: "Capstone",
+    abstract:
+      "The contents of a curriculum can be valuable in guiding learning processes and academic decisions. Students become motivated to engage and desire to learn, resulting in academic success. It is equally essential for any student to build his portfolio while monitoring his academic progression. The College of Computer and Information Science (CCIS) Program Administrators pointed out how an analytical tool for knowing students' academic progress, i.e., skills and achievements would be valuable to students' success on their career paths and for the professor to monitor the outcomes and progress of the students. The study developed a web-based platform for students to view their curriculum progression and for program administrators to monitor student curriculum progression. The study followed a quantitative research design to assess the system's quality through usability testing with 40 students and a user acceptance test with three faculty members and two program administrators under CCIS. The project was conducted following the project management process groups and the spiral methodology for web application development. The project created plans about the scope, cost, schedule, risk, communication, quality, human resource, procurement plan, monitoring and controlling, implementation, and training. The project also conducted an IT audit based on NIST EP-ITS, where the web application passed the risk-based, ease-of-use, and reduced vulnerabilities of the audit's processes. The students, faculty, and program administrators strongly agree with web applications' functional usability, performance efficiency, usability, reliability, security, and portability. Students could identify their curriculum progress and generate their submitted portfolios as a templated curriculum vitae. Subsequently, the faculty was able to validate the portfolio submission of students. Lastly, the program administrators could access the curriculum progression and portfolio data of students.",
+  },
+
   SHAKEYS: {
     id: "SHAKEYS",
     date: "June 2022",

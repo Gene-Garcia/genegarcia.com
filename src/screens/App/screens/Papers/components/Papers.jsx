@@ -16,7 +16,7 @@ function Papers() {
   //
   useEffect(() => {
     activateThisLink("PAPERS");
-    setPaper({ ...paperData.COVID_FMIS });
+    setPaper({ ...paperData.SCGP });
   }, []);
 
   // function to toggle active paper
@@ -180,17 +180,20 @@ function PaperContainer({
       {/* some details */}
       <div className="space-y-2.5 text-sm font-semibold text-gray-500">
         <p>{date}</p>
-        <p>
-          DOI:{" "}
-          <a
-            href={link}
-            className="underline hover:text-accent transition duration-200"
-            target="_blank"
-          >
-            {doi}
-          </a>
-        </p>
-        <p>{location}</p>
+        {doi && (
+          <p>
+            DOI:{" "}
+            <a
+              href={link}
+              className="underline hover:text-accent transition duration-200"
+              target="_blank"
+            >
+              {doi}
+            </a>
+          </p>
+        )}
+
+        {location && <p>{location}</p>}
       </div>
 
       {/* abstract */}
