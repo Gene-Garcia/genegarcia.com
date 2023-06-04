@@ -6,7 +6,10 @@ import FloatingActionButton from "../../shared/components/FloatingActionButton";
 const Layout = () => {
   return (
     <NavbarProvider>
-      <div className="flex flex-col h-full w-full items-center">
+      <div
+        className="flex flex-col h-full w-full items-center mb-20
+                    overflow-auto"
+      >
         <NavigationBar />
 
         <main

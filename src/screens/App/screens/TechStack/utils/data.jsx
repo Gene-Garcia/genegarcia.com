@@ -1,4 +1,4 @@
-export default {
+const data = {
   DATA_ANALYTICS: {
     title: "Data Analytics",
     svg: (
@@ -17,6 +17,17 @@ export default {
         />
       </svg>
     ),
+
+    technologies: [
+      "PYTHON",
+      "SQL",
+      "PANDAS",
+      "MATPLOTLIB",
+      "SEABORN",
+      "JUPYTER",
+      "EXCEL",
+    ],
+
     groups: [
       {
         title: "Programming Languages",
@@ -51,6 +62,26 @@ export default {
         />
       </svg>
     ),
+
+    technologies: [
+      "MONGO_DB",
+      "EXPRESS",
+      "REACT",
+      "NODE_JS",
+      "HTML_5",
+      "CSS_3",
+      "BOOTSTRAP",
+      "JAVASCRIPT",
+      "C_SHARP",
+      "PYTHON",
+      "ASP_DOT_NET",
+      "MONGOOSE",
+      "FLASK",
+      "ENTITY",
+      "IDENTITY",
+      "MVC_ARCH",
+    ],
+
     groups: [
       {
         title: "MERN Full Stack",
@@ -100,6 +131,19 @@ export default {
         />
       </svg>
     ),
+
+    technologies: [
+      "ANDROID",
+      "JAVA",
+      "C_SHARP",
+      "SQL",
+      "SQL_LITE",
+      "ROOM_DB",
+      "MVVM_ARCH",
+      "XAMARIN",
+      "RESTFUL_API",
+    ],
+
     groups: [
       {
         title: "Programming Language",
@@ -134,6 +178,9 @@ export default {
         />
       </svg>
     ),
+
+    technologies: ["C_SHARP", "SQL", "SQL_SERVER", "MVP_ARCH", "WINDOWS_FORMS"],
+
     groups: [
       {
         title: "Programming Language",
@@ -168,6 +215,21 @@ export default {
         />
       </svg>
     ),
+
+    technologies: [
+      "GITHUB",
+      "MONGO_DB",
+      "AZURE",
+      "GITHUB",
+      "AZURE",
+      "HEROKU",
+      "NETLIFY",
+      "NAMECHEAP",
+      "FIGMA",
+      "VISUAL_STUDIO",
+      "VS_CODE",
+    ],
+
     groups: [
       {
         title: "Version Control",
@@ -192,3 +254,4 @@ export default {
     ],
   },
 };
+export default data;

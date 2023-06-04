@@ -19,9 +19,10 @@
   #root {
     height: 100%;
     width: 100%;
+    overflow: hidden;
   }
 
-  /* * {
-    border: coral solid 0.5px;
-  } */
+  * {
+    /* border: coral solid 0.5px; */
+  }
 }

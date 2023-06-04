@@ -8,6 +8,50 @@ import { GetImage } from "../../../../../shared/utils/buildTechnologyPhotos";
 import techStackData from "../utils/data";
 
 function TechStack() {
+  return (
+    <Container>
+      <Heading head="Technology Stack" />
+
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3
+                  gap-4 md:gap-6 xl:gap-8
+                  w-full h-full
+                  pb-8"
+      >
+        {Object.entries(techStackData).map(([key, { title, technologies }]) => (
+          <div
+            key={key}
+            className="h-max p-6
+                      shadow-sm
+                      bg-gray-50/50
+                      rounded-xl
+                      flex flex-col gap-6
+                      transition duration-300 ease-linear
+                      hover:shadow-xl hover:bg-white"
+          >
+            <h3
+              className="font-serif text-center font-bold text-accent 
+                text-base md:text-lg lg:text-xl"
+            >
+              {title}
+            </h3>
+
+            <div className="grid grid-cols-4 gap-6 justify-items-center">
+              {technologies.map((s) => (
+                <img
+                  src={GetImage(s)}
+                  key={s}
+                  alt={s}
+                  className="w-16 h-auto"
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </Container>
+  );
+
   // navbar context
   const { activateThisLink } = useNavbar();
 
