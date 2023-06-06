@@ -1,9 +1,11 @@
 import hero from "../../../../../shared/images/internship/hero.jpg";
+import ftsi from "../../../../../shared/images/internship/ftsi.png";
 
 const Hero = () => {
   return (
     <div
       className="flex items-center justify-center
+                py-20
                 px-8 sm:px-12 lg:px-16
                 relative 
                 min-h-screen"
@@ -13,9 +15,15 @@ const Hero = () => {
                 text-white text-center
                 space-y-12"
       >
+        <div className="h-auto max-w-[10rem] md:max-w-[12rem] lg:max-w-[16rem] mx-auto">
+          <img src={ftsi} alt="Fasttrack Logo" className="w-full" />
+        </div>
+
         <div className="space-y-3">
-          <h1 className="text-5xl font-black">Fasttrack Solutions Inc</h1>
-          <h2 className="font-medium text-xl italic">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-black">
+            Fasttrack Solutions, Inc.
+          </h1>
+          <h2 className="font-medium text-lg lg:text-xl italic">
             IT Solutions and Consulting Company
           </h2>
         </div>
@@ -35,7 +43,8 @@ const Hero = () => {
 
         <div
           className="text-left
-                    flex flex-row gap-10
+                    flex flex-col md:flex-row 
+                    gap-10
                     items-start justify-center"
         >
           <div className="max-w-[35rem]">
