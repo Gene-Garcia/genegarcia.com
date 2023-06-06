@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import useNavbar from "../../../../../context/useNavbar";
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
 import Codex from "./Codex";
@@ -7,6 +9,14 @@ import Outputs from "./Outputs";
 import Timeline from "./Timeline";
 
 const Internship = () => {
+  // navbar context
+  const { activateThisLink } = useNavbar();
+
+  //
+  useEffect(() => {
+    activateThisLink("INTERNSHIP");
+  }, []);
+
   return (
     <div
       className="w-full h-full 
