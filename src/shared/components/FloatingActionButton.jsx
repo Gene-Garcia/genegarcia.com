@@ -79,7 +79,7 @@ const SubButton = ({ name, link, svg, active, listener }) => {
       className="group flex flex-row items-center w-max gap-2"
     >
       <div
-        className={`font-medium text-xs 
+        className={`font-medium text-xs lowercase
                     text-stone-600
                     tracking-normal
                     bg-zinc-200 px-3 rounded py-0.5

@@ -37,7 +37,7 @@ const NavigationBar = () => {
           <img src={imageLogo} className="object-contain" alt="Gene Garcia" />
         </div>
 
-        <div className="hidden lg:block space-x-2.5 xl:space-x-4">
+        <div className="hidden lg:block space-x-2 xl:space-x-4">
           {Object.entries(routes).map(([k, v]) => (
             <Link
               key={k}
@@ -47,13 +47,14 @@ const NavigationBar = () => {
                   ? "text-accent font-semibold"
                   : "text-gray-500 font-medium"
               } px-1.5 py-1.5 bg-gray-0
-          font-sans text-xs lg:text-sm
+          font-sans text-xs xl:text-sm
           transition duration-200 ease-linear 
           border-b-2 border-transparent
           hover:text-accent hover:border-accent/80
-          active:text-my-purple`}
+          active:text-my-purple
+          lowercase`}
             >
-              {v.NAME.toUpperCase()}
+              {v.NAME}
             </Link>
           ))}
         </div>
