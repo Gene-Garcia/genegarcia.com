@@ -3,9 +3,9 @@ import hero from "../../../../../shared/images/internship/hero.jpg";
 const Hero = () => {
   return (
     <div
-      className="
-                flex items-center justify-center py-32
-                relative "
+      className="flex items-center justify-center
+                relative 
+                min-h-screen"
     >
       <div
         className="z-50

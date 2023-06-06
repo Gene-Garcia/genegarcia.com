@@ -3,7 +3,7 @@ import logo from "../../../../../shared/images/internship/codex.png";
 const Codex = () => {
   return (
     <div
-      className="grow shrink-0 py-32
+      className="snap-proximity grow shrink-0 py-32
                 relative flex flex-col items-center
                 gap-6"
     >

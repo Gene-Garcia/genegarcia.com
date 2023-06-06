@@ -21,17 +21,17 @@ const NavigationBar = () => {
   return (
     <>
       <nav
-        className="shrink-0 w-full h-auto lg:h-16
+        className="shrink-0 w-full h-auto 
                 flex items-center
                 justify-center lg:justify-end xl:justify-center
                 relative
-                py-8 lg:py-3 
+                py-8 lg:py-4
                 px-6 xl:px-8
                 lg:shadow-lg
                 text-end"
       >
         <div
-          className="w-8  h-auto absolute 
+          className="w-7  h-auto absolute 
                   lg:left-8"
         >
           <img src={imageLogo} className="object-contain" alt="Gene Garcia" />
