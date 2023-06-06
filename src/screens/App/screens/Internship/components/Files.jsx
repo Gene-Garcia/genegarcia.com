@@ -4,6 +4,7 @@ const Files = () => {
   return (
     <div
       className="mx-auto grow shrink-0 py-28
+              px-8 sm:px-12 lg:px-16
               relative w-full  max-w-[60rem]
               flex flex-col
               gap-10"
@@ -16,7 +17,18 @@ const Files = () => {
         Practicum Files
       </h2>
 
-      <div className="grid grid-cols-2 gap-12   ">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 
+                   gap-3 md:gap-6 lg:gap-8 xl:gap-10 2xl:gap-12"
+      >
+        <div className=" md:col-span-2">
+          <File
+            title="Certificate of Completion"
+            location="https://drive.google.com/file/d/1hZaK9rbCboruN7KKDclrsigY9AG8SMBm/view?usp=sharing"
+            size="132"
+          />
+        </div>
+
         <File
           title="Practicum Report"
           location="https://drive.google.com/file/d/1Yhx0kzvNcreJQO-kRnnWtmfQkxA8qHeO/view?usp=drive_link"
@@ -73,9 +85,10 @@ const File = ({ title, size, type = "PDF", location, ext = "KB" }) => {
       className="group w-full flex items-center gap-4
                 bg-gray-50 p-2 rounded-lg
                 border border-transparent
-                hover:border-accent
+                shadow
+                hover:border-accent hover:shadow-lg
                 cursor-pointer
-                transition duration-150 ease-linear"
+                transition-all duration-150 ease-in-out"
     >
       <span
         className="shrink-0 text-white bg-accent rounded-md p-3
