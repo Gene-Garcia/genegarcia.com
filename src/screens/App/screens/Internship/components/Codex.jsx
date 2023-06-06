@@ -16,7 +16,7 @@ const Codex = () => {
       </h2>
 
       <div
-        className="shadow rounded-md w-[40%] m-auto
+        className="shadow rounded-md min-w-[16rem] w-[60%] md:w-1/2 lg:w-[40%] m-auto
                     space-y-10"
       >
         <img

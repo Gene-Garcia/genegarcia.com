@@ -20,6 +20,7 @@ const Outputs = () => {
   return (
     <div
       className="mx-auto grow shrink-0 py-10
+                px-8 sm:px-12 lg:px-16
                 relative w-full max-w-[70rem]
                 flex flex-col
                 gap-12 "
@@ -54,7 +55,7 @@ export default Outputs;
 
 const Output = ({ title, media }) => {
   return (
-    <div className="py-3 relative">
+    <div className="py-3 relative group">
       <div className="w-full max-h-[25rem] rounded-lg overflow-auto flex flex-col items-center justify-start">
         {Array.isArray(media) ? (
           media.map((m, i) => (
@@ -77,7 +78,9 @@ const Output = ({ title, media }) => {
         className="absolute top-0 inset-x-0 
                     font-sans font-semibold text-white p-2 text-md 
                     bg-gradient-to-b from-neutral-800 min-h-[5rem]
-                    rounded-t-lg"
+                    rounded-t-lg
+                    group-hover:opacity-30
+                    transition-opacity duration-300 ease-in-out"
       >
         {title}
       </h4>

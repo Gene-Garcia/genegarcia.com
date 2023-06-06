@@ -4,6 +4,7 @@ const Hero = () => {
   return (
     <div
       className="flex items-center justify-center
+                px-8 sm:px-12 lg:px-16
                 relative 
                 min-h-screen"
     >
@@ -13,21 +14,22 @@ const Hero = () => {
                 space-y-12"
       >
         <div className="space-y-3">
-          <h1 className="text-5xl font-black">FastTrack Solutions Inc</h1>
-          <h2 className="font-medium text-xl">
+          <h1 className="text-5xl font-black">Fasttrack Solutions Inc</h1>
+          <h2 className="font-medium text-xl italic">
             IT Solutions and Consulting Company
           </h2>
         </div>
 
-        <div>
+        <div className="space-y-3 text-lg">
           <p>
-            IT and SAP-enabled business solutions centered on reengineering
-            business processes.
+            IT and SAP-enabled <Emphasize>business solutions</Emphasize>{" "}
+            centered on reengineering business processes.
           </p>
 
           <p>
-            1st Filipino SAP Platinum Partner and Member of the elite SAP
-            Platinum Partners United VARs
+            1st Filipino <Emphasize>SAP Platinum Partner</Emphasize> and Member
+            of the elite SAP Platinum Partners{" "}
+            <Emphasize>United VARs</Emphasize>.
           </p>
         </div>
 
@@ -37,16 +39,16 @@ const Hero = () => {
                     items-start justify-center"
         >
           <div className="max-w-[35rem]">
-            <p>Mission</p>
-            <p>
+            <p className="font-bold mb-1.5">Mission</p>
+            <p className="pl-4 font-serif">
               To be the best software solutions consulting company in Southeast
               Asia
             </p>
           </div>
 
           <div className="max-w-[35rem]">
-            <p>Vision</p>
-            <ul className="list-disc pl-6">
+            <p className="font-bold mb-1.5">Vision</p>
+            <ul className="list-disc pl-8 font-serif space-y-2">
               <li>By producing the best quality consultants in the region.</li>
               <li>
                 By making Fasttrack's customers delighted as their businesses
@@ -64,7 +66,9 @@ const Hero = () => {
       <div
         className="z-10 absolute w-full h-full
                 bg-cover bg-center bg-no-repeat
-                blur-sm"
+                blur-sm
+                brightness-50
+                grayscale"
         style={{
           backgroundImage: `url('${hero}')`,
         }}
@@ -79,3 +83,7 @@ const Hero = () => {
   );
 };
 export default Hero;
+
+const Emphasize = ({ children }) => {
+  return <span className="font-bold">{children}</span>;
+};

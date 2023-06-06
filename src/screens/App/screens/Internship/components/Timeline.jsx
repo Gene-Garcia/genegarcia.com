@@ -3,7 +3,8 @@ import figure from "../../../../../shared/images/internship/timeline.png";
 const Timeline = () => {
   return (
     <div
-      className="grow shrink-0 py-32
+      className="grow shrink-0 py-32 
+                px-8 sm:px-12 lg:px-16
                 relative flex flex-col items-center
                 gap-6
                 bg-gray-100/50"
@@ -28,7 +29,10 @@ const Timeline = () => {
         />
       </div>
 
-      <div className="flex gap-16">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 
+                  gap-6 sm:gap-8 xl:gap-16"
+      >
         <Phase phase={1} title="General and IT Soft Skills" hours={27} />
         <Phase phase={2} title="Business Analytics Training" hours={41} />
         <Phase phase={3} title="Case Study" hours={40} />
