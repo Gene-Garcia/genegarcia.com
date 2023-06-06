@@ -105,8 +105,8 @@ const sortedData = {
     description:
       "Underwent a CODEX program and trained to become a BA consultant capable of developing dashboards and reports for organizations.",
 
-    outputs: ["Power BI Case Study"],
-    achievements: ["Offered a Position"],
+    outputs: ["Power BI Case Study", "PBI Client Dashboard & Reports"],
+    achievements: [],
   },
 
   RESEARCH_FMIS_COVID: {
