@@ -3,12 +3,12 @@ import hero from "../../../../../shared/images/internship/hero.jpg";
 const Hero = () => {
   return (
     <div
-      className="grow shrink-0 
-                w-full h-full
-                relative flex items-center"
+      className="
+                flex items-center justify-center py-32
+                relative "
     >
       <div
-        className="z-50 m-auto h-max w-max 
+        className="z-50
                 text-white text-center
                 space-y-12"
       >
@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="z-10 absolute h-full w-full
+        className="z-10 absolute w-full h-full
                 bg-cover bg-center bg-no-repeat
                 blur-sm"
         style={{
@@ -72,40 +72,9 @@ const Hero = () => {
 
       {/* overlay */}
       <div
-        className="z-20 bg-accent absolute h-full w-full 
+        className="z-20 bg-accent absolute w-full h-full
                 opacity-80 brightness-50"
       ></div>
-    </div>
-  );
-
-  return (
-    <div
-      className="w-full h-full relative
-                bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url('${hero}')`,
-      }}
-    >
-      {/* overlay */}
-      <div className="z-20 bg-accent absolute inset-0 opacity-80 brightness-50"></div>
-    </div>
-  );
-
-  return (
-    <div class="flex h-full justify-center items-center flex-col">
-      <div
-        style={{
-          backgroundImage: `url('${hero}')`,
-        }}
-        class={`w-full h-full bg-cover bg-center`}
-      >
-        <div
-          class="w-full h-full flex  justify-center items-center 
-         bg-accent/30 "
-        >
-          <div className="bg-white w-[20rem] h-[20rem]"></div>
-        </div>
-      </div>
     </div>
   );
 };

@@ -1,21 +1,20 @@
 import Container from "../../../../../shared/components/Container";
 import Heading from "../../../../../shared/components/Heading";
+import Codex from "./Codex";
 import Hero from "./Hero";
+import Outputs from "./Outputs";
+import Timeline from "./Timeline";
 
 const Internship = () => {
   return (
     <div
       className="w-full h-full 
-                    overflow-y-auto
-                    flex flex-col items-stretch"
+                flex flex-col"
     >
-      {/* <Heading head="Internship" /> */}
-
       <Hero />
-
-      <div className="grow shrink-0 w-full h-full">
-        <h1>Hey, I'm Gene</h1>
-      </div>
+      <Codex />
+      <Timeline />
+      {/* <Outputs /> */}
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <NavbarProvider>
       <div
-        className="flex flex-col h-full w-full items-center mb-20
+        className="flex flex-col h-full w-full items-center 
                     overflow-auto"
       >
         <NavigationBar />
