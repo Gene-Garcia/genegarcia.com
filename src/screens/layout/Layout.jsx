@@ -14,8 +14,7 @@ const Layout = () => {
 
         <main
           className="grow w-full 
-                    flex items-center justify-center
-                    max-w-[110rem]"
+                    flex items-center justify-center"
         >
           <Outlet />
         </main>

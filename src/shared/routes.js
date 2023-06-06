@@ -1,4 +1,4 @@
-export default {
+const routes = {
   HOME: {
     NAME: "Home",
     PATH: "",
@@ -31,4 +31,9 @@ export default {
     NAME: "Experience",
     PATH: "experience",
   },
+  INTERNSHIP: {
+    NAME: "Internship",
+    PATH: "internship",
+  },
 };
+export default routes;
