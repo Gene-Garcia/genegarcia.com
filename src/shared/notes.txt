@@ -1,0 +1,26 @@
+SYNTHESIS
+
+General IT and Soft Skills
+- Some of it became a review, but some were significantly new
+- Learned more about the accounting process necessary for my line of work
+- GAAP and accounting cycle
+
+BA Training
+- PBI Sself service bi and viz tool
+- Introduced to SAP Bobj
+- DW = the bus, start, and inmon schema
+- cloudera modern data warehouse
+- Data Science
+
+Immersion
+- application of knowledge and skills from phase 1 and 2
+- experience the proposal and maintenancy part of a BA project cycle 
+- businesses makes remedies to problem, they do not immediately spend
+- monitoring may not sound fancy but it is essential part of BA
+- contribute to the proposal phase of PBI dashboards and reports - actually used and presented to the client
+
+Result
+- Hardwork has been acknowledged by fasttrack by giving me the chance to work for them full time
+- step outside of the my comfort zone with development
+- contributing to the disocvery of insights from raw data to support informed decision making
+- Continue to build my career on analytics

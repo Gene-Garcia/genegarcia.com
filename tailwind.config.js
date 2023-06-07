@@ -22,7 +22,7 @@ module.exports = {
 
   theme: {
     fontFamily: {
-      sans: ["Open Sans", "sans-serif"],
+      sans: ["roboto", "sans-serif"],
       serif: ["Bitter", "serif"],
     },
 

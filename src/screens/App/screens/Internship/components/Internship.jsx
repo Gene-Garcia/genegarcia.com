@@ -7,6 +7,7 @@ import Files from "./Files";
 import Hero from "./Hero";
 import Outputs from "./Outputs";
 import Timeline from "./Timeline";
+import Synthesis from "./Synthesis";
 
 const Internship = () => {
   // navbar context
@@ -26,6 +27,7 @@ const Internship = () => {
       <Codex />
       <Timeline />
       <Outputs />
+      <Synthesis />
       <Files />
     </div>
   );
