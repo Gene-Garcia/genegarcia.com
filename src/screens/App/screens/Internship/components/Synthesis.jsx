@@ -21,7 +21,7 @@ const Synthesis = () => {
         </h2>
 
         {/* cards */}
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <Card icon={foundation} num="1" title="General IT and Soft SKills" />
           <Card icon={ba} num="2" title="BA Training" />
           <Card icon={immersion} num="3" title="Immersion" />
@@ -35,7 +35,7 @@ export default Synthesis;
 const Card = ({ num, title, icon }) => {
   return (
     <div
-      className="w-full flex gap-8 items-center
+      className="w-full flex gap-4 sm:gap-8 items-center
                 shadow rounded-lg p-6 bg-white
                 transition-all ease-in-out
                 border border-transparent
@@ -52,18 +52,19 @@ const Card = ({ num, title, icon }) => {
       </div>
 
       <div
-        className="shrink-0 w-32 h-32 rounded-lg bg-gray-100
+        className="shrink-0 
+                    w-24 lg:w-32 h-24 lg:h-32 
+                    rounded-lg bg-gray-100
                     transition-all ease-in-out duration-200
                     group-hover:rotate-6 group-hover:scale-110
-                    object-contain p-6"
+                    object-contain 
+                    p-4 lg:p-6"
       >
         <img src={icon} className="w-full" />
       </div>
 
       <div className="grow shrink">
-        <h3 className="text-xl font-semibold">{title}</h3>
-
-        <div></div>
+        <h3 className="text-lg lg:text-xl font-semibold">{title}</h3>
       </div>
     </div>
   );

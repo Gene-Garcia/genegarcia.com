@@ -8,6 +8,14 @@ import { GetImage } from "../../../../../shared/utils/buildTechnologyPhotos";
 import techStackData from "../utils/data";
 
 function TechStack() {
+  // navbar context
+  const { activateThisLink } = useNavbar();
+
+  //
+  useEffect(() => {
+    activateThisLink("TECH_STACK");
+  }, []);
+
   return (
     <Container>
       <Heading head="Technology Stack" />
@@ -48,55 +56,6 @@ function TechStack() {
             </div>
           </div>
         ))}
-      </div>
-    </Container>
-  );
-
-  // navbar context
-  const { activateThisLink } = useNavbar();
-
-  //
-  useEffect(() => {
-    activateThisLink("TECH_STACK");
-    setData(techStackData.WEB_APPLICATION);
-  }, []);
-
-  // state variable to hold the current toggled tech stack card button
-  const [data, setData] = useState(null);
-
-  // drilled onclick function to change toggled data. maybe use a context?
-  const updateData = (id) => {
-    setData(techStackData[id]);
-  };
-
-  return (
-    <Container>
-      <Heading head="Technology Stack" />
-
-      <div className="flex flex-col sm:flex-row gap-12 sm:gap-8 md:gap-16 xl:gap-8">
-        {/* buttons */}
-        <div className="sm:w-2/5 grid grid-cols-1 xl:grid-cols-2 justify-start gap-4 sm:gap-6 xl:gap-8 h-min">
-          {Object.entries(techStackData).map(([k, v], i) => {
-            console.log(i);
-
-            return (
-              <CardButton
-                key={k}
-                id={k}
-                name={v.title}
-                svg={v.svg}
-                color={i}
-                onClick={updateData}
-              />
-            );
-          })}
-        </div>
-
-        {/* content */}
-        <div className="sm:w-3/5">
-          {/* check first if data is not null, as it is populate in useEffect. */}
-          {data != null && <TechnologyContainer data={data} />}
-        </div>
       </div>
     </Container>
   );

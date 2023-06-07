@@ -6,6 +6,7 @@ const Files = () => {
       className="mx-auto grow shrink-0 py-28
               px-8 sm:px-12 lg:px-16
               relative w-full  max-w-[60rem]
+              min-h-screen
               flex flex-col
               gap-10"
     >

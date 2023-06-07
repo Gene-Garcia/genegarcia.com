@@ -5,6 +5,7 @@ const Timeline = () => {
     <div
       className="grow shrink-0 py-32 
                 px-8 sm:px-12 lg:px-16
+                min-h-screen
                 relative flex flex-col items-center
                 gap-6
                 bg-gray-100/50"
